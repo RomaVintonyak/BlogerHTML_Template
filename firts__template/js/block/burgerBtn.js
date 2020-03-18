@@ -1,8 +1,9 @@
-jQuery(document).ready(function(){
+jQuery(document).ready(function() {
   "use script";
-  var burgerBtn = ("#burferBtn");
-  burgerBtn.on("click", function(){
-    
+  var burgerBtn = $("#burgerToggle");
+  burgerBtn.on("click", function(event) {
+    event.preventDefault();
+    $(this).find("span").toggleClass("open");
   });
 });
   
