@@ -16,5 +16,29 @@
     color: @black;
     font-weight: 400;
     font-size: 1.06rem;
+    transition: color 0.4s ease-in-out;
+    &:hover{
+      color: @hover;
+    }
+  }
+}
+.top__social{
+  a{
+    text-decoration: none;
+    margin-left: 0.5rem;
+    &:first-child{
+      margin-left: 0;
+    }
+    &:hover{
+      i{
+        color: @hover;
+      }
+    }
+    i{
+      font-size: 1.06rem;
+      color: @black;
+      font-weight: 400;
+      transition: color 0.4s ease-in-out;
+    }
   }
 }
