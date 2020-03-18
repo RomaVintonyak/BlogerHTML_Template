@@ -1,10 +1,26 @@
 //main: ../style.less
-.nav__bar{
+.nav__bar {
   display: flex;
   align-items: center;
 }
-.nav__menu{
+.nav__menu {
   display: flex;
   list-style: none;
   padding: 0;
+}
+.nav__item {
+  margin-right: 2rem;
+}
+.nav__link {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.06rem;
+  color: @black;
+  padding: 0.8rem 1.18rem;
+  transition: background-color 0.3s linear, color 0.3s linear;
+  &:hover {
+    background-color: @black;
+    color: @white;
+  }
 }
