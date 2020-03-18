@@ -1,9 +1,12 @@
 //main: ../style.less
 .nav__bar {
+  display: -webkit-box;
   display: flex;
+  -webkit-box-align: center;
   align-items: center;
 }
 .nav__menu {
+  display: -webkit-box;
   display: flex;
   list-style: none;
   padding: 0;
@@ -18,6 +21,7 @@
   font-size: 1.06rem;
   color: @black;
   padding: 0.8rem 1.18rem;
+  -webkit-transition: background-color 0.3s linear, color 0.3s linear;
   transition: background-color 0.3s linear, color 0.3s linear;
   &:hover {
     background-color: @black;
