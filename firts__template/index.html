@@ -62,7 +62,7 @@
     </div><!--/.header__bottom-->
   </header>
   <!--section intro-->
-  <section id="intro">
+  <section id="intro" data-parallax="scroll" data-image-src="img/paralax/paralax.jpg">
     <div class="intro__bg">
       <div class="container">
         <div class="intro__content">
@@ -170,7 +170,15 @@
   <!--use js vendor-->
   <!--us jquery-->
   <script src="js/vendor/jquery-3.4.1.min.js"></script>
-  <!--us waves efect https://materializecss.com/waves.html -->
+  <!--us waves efect https://pixelcog.github.io/parallax.js/ -->
+  <script src="js/vendor/parallax.min.js"></script>
+  <script>
+    "use script"
+    $('.parallax-window').parallax({
+      speed: 0,
+    });
+  </script>
+  <!--us paralax efect https://materializecss.com/waves.html -->
   <script src="js/vendor/waves.min.js"></script>
   <script>
     "use script";
