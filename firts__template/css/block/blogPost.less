@@ -162,15 +162,16 @@
 }
 .post__footer {
   margin-top: 2.5rem;
-  display: -webkit-box;
   display: flex;
-  -webkit-box-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: start;
+  justify-content: center;
   align-items: flex-start;
 }
 .post__colum {
   width: 32%;
+  margin-right: 1.5rem;
+  &:last-child{
+    margin-right: 0;
+  }
   img {
     width: 100%;
     height: auto;
