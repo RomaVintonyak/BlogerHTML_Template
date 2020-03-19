@@ -1,0 +1,56 @@
+//main: ../style.less
+.subscribe__content {
+  margin-top: 2.93rem;
+  width: 100%;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+}
+.subscribe__form {
+  height: 15.62rem;
+  width: 46.87rem;
+  border: 10px solid #fcfcfc;
+  padding-top: 3.12rem;
+  padding-left: 3.12rem;
+  position: relative;
+  z-index: 1;
+  h3 {
+    font-weight: 700;
+    color: @black;
+    font-size: 2.25rem;
+    margin-bottom: 1.31rem;
+  }
+  input {
+    width: 18.25rem;
+    height: 2.62rem;
+    margin-right: 1.25rem;
+    background-color: #f3f3f3;
+    padding-left: 1.37rem;
+    border: none;
+    font-size: 1rem;
+    font-weight: 400;
+    color: @black;
+    &:nth-child(3) {
+      margin-right: 0;
+    }
+    &:focus {
+      outline-color: @black;
+    }
+  }
+  button {
+    position: absolute;
+    z-index: 2;
+    left: 42rem;
+    bottom: 15.4%;
+  }
+}
+.subscribe__plus {
+  position: absolute;
+  top: -12%;
+  right: -1%;
+}
+.subscribe__rectangle {
+  position: absolute;
+  top: 0;
+  right: 0;
+}

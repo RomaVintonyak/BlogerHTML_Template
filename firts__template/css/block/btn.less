@@ -10,6 +10,7 @@
   font-weight: 400;
   font-size: 1rem;
   color: @white;
+  border: none;
   -webkit-transition: background-color 0.15s ease-in-out;
   transition: background-color 0.15s ease-in-out;
   &:hover{
@@ -17,5 +18,8 @@
     &:active{
       background-color: rgba(@hover, 0.8);
     }
+  }
+  &:focus{
+    outline: none;
   }
 }
