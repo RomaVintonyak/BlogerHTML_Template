@@ -15,7 +15,7 @@ jQuery(document).ready(function(){
     var halfWidht = cardItem.innerWidth() / 2;
     //add css style to element
     $(this).css({
-      "transform": 'rotateX('+ -(Yinner - halfHeight) / 20 + 'deg) rotateY('+ -(Xinner - halfWidht) / 20 + 'deg)'
+      "transform": 'rotateX('+ -(Yinner - halfHeight) / 100 + 'deg) rotateY('+ -(Xinner - halfWidht) / 100 + 'deg)'
      });
     }
    //remove css style
