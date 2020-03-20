@@ -1,8 +1,8 @@
 jQuery(document).ready(function(){
   "use script";
   var cardItem = $(".post__colum");
-  cardItem.mousemove(rotate);
-    function rotate(event){
+  cardItem.mousemove(srartRotate);
+    function srartRotate(event){
     //position lelement in page
     var pos = $(this).offset();
     var elem_left = pos.left;
@@ -19,8 +19,8 @@ jQuery(document).ready(function(){
      });
     }
    //remove css style
-  cardItem.mouseleave(delRotate);
-    function delRotate(event){
+  cardItem.mouseleave(stopRotate);
+    function stopRotate(event){
     $(this).css({
       "transform":"rotate(0deg)",
     });
