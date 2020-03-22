@@ -5,7 +5,7 @@ jQuery(document).ready(function(){
   scrollDowm.on("click", function(event){
     event.preventDefault();
     $("html, body").animate({
-      scrollTop: introH + 280
+      scrollTop: introH + 100
     }, 800);
   });
 });

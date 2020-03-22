@@ -63,11 +63,14 @@
   -webkit-box-align: center;
   align-items: center;
   background-color: rgba(#e4ded9, 0.8);
+  transition: height 0.5s linear;
   &--fixed{
     position: fixed;
     z-index: 10;
     top: 0;
     left: 0;
+    height: 4rem;
+    background-color: rgba(#e4ded9, 0.9);
   }
 }
 .bottom__content {
@@ -86,6 +89,12 @@
     height: 3.33rem;
     margin-right: 0.93rem;
     border-radius: 50%;
+    transition: transform 1.5s linear;
+  }
+  &:hover{
+    img{
+      transform: scale(1.1);
+    }
   }
 }
 .logo__text {
