@@ -1,19 +1,21 @@
 //main: ../style.less
-.about__content{
+.about__content {
   margin-top: 3.12rem;
   width: 100%;
+  display: -webkit-box;
   display: flex;
   height: 27.5rem;
   overflow: hidden;
-  &:hover{
-    .collum__img{
-      img{
+  &:hover {
+    .collum__img {
+      img {
+        -webkit-transform: scale(1.1);
         transform: scale(1.1);
       }
     }
   }
 }
-.collum__text{
+.collum__text {
   width: 60%;
   background-color: #f3f3f3;
   height: 100%;
@@ -21,7 +23,7 @@
   z-index: 1;
   padding-top: 4.3rem;
   padding-left: 2.5rem;
-  h3{
+  h3 {
     font-style: normal;
     color: @black;
     font-weight: 700;
@@ -29,7 +31,7 @@
     font-size: 2.25rem;
     margin-bottom: 1.9rem;
   }
-  p{
+  p {
     width: 36rem;
     color: #6d6866;
     font-size: 1.1rem;
@@ -37,17 +39,20 @@
     margin-bottom: 1.9rem;
   }
 }
-.about__figure{
+.about__figure {
   position: absolute;
   top: 1.5rem;
   right: 1.5rem;
 }
-.collum__img{
+.collum__img {
   width: 40%;
   overflow: hidden;
-  img{
+  img {
     width: 100%;
     height: auto;
+    -webkit-transition: -webkit-transform 1.5s linear;
+    transition: -webkit-transform 1.5s linear;
     transition: transform 1.5s linear;
+    transition: transform 1.5s linear, -webkit-transform 1.5s linear;
   }
 }
