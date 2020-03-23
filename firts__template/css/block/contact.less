@@ -1,22 +1,25 @@
 //main: ../style.less
-#contact{
+#contact {
   background-color: @gray;
   width: 100%;
   margin-top: 3.12rem;
   padding-bottom: 4.3rem;
   overflow: hidden;
 }
-.contact__content{
+.contact__content {
+  display: -webkit-box;
   display: flex;
+  -webkit-box-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: start;
   align-items: flex-start;
   position: relative;
   z-index: 1;
 }
-.contact__social{
+.contact__social {
   flex-basis: 30%;
   padding-top: 4.3rem;
-  h3{
+  h3 {
     line-height: 43px;
     font-style: normal;
     font-weight: 700;
@@ -24,47 +27,57 @@
     font-size: 2.25rem;
   }
 }
-.social__link{
+.social__link {
+  display: -webkit-box;
   display: flex;
+  -webkit-box-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
   align-items: center;
   width: 55%;
-  a{
+  a {
     text-decoration: none;
-    i{
+    i {
       color: #6d6866;
       font-size: 1.12rem;
+      -webkit-transition: color 0.3s linear, -webkit-transform 0.3s linear;
+      transition: color 0.3s linear, -webkit-transform 0.3s linear;
       transition: color 0.3s linear, transform 0.3s linear;
+      transition: color 0.3s linear, transform 0.3s linear,
+        -webkit-transform 0.3s linear;
     }
   }
-  p{
+  p {
     color: #6d6866;
     font-size: 1.12rem;
     line-height: 170%;
+    -webkit-transition: color 0.3s linear;
     transition: color 0.3s linear;
   }
-  &:hover{
+  &:hover {
     cursor: pointer;
-    i{
+    i {
       color: @hover;
+      -webkit-transform: scale(1.1);
       transform: scale(1.1);
     }
-    p{
+    p {
       color: @hover;
     }
   }
 }
-.contact__form{
+.contact__form {
   flex-basis: 65%;
   background-color: @white;
   margin-top: 4.3rem;
   padding: 2.8rem;
   position: relative;
   z-index: 2;
-  form{
+  form {
+    display: -webkit-box;
     display: flex;
     flex-wrap: wrap;
-    input{
+    input {
       box-shadow: 0 0 3px @gray;
       border: 1px solid @gray;
       margin-bottom: 1.3rem;
@@ -75,21 +88,21 @@
       font-style: normal;
       font-weight: normal;
       padding-left: 1.6rem;
-      &:nth-child(1){
+      &:nth-child(1) {
         width: 49%;
         margin-right: 0.8rem;
       }
-      &:nth-child(2){
+      &:nth-child(2) {
         width: 49%;
       }
-      &:nth-child(3){
+      &:nth-child(3) {
         width: 100%;
       }
-      &:focus{
+      &:focus {
         outline-color: @hover;
       }
     }
-    textarea{
+    textarea {
       box-shadow: 0 0 3px @gray;
       border: 1px solid @gray;
       margin-bottom: 1.3rem;
@@ -103,13 +116,13 @@
       padding-left: 1.6rem;
       padding-top: 1.6rem;
       resize: none;
-      &:focus{
+      &:focus {
         outline-color: @hover;
       }
     }
   }
 }
-.form__figure{
+.form__figure {
   position: absolute;
   z-index: 1;
   top: 0;
