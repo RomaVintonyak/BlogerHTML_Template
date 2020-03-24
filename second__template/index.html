@@ -36,7 +36,7 @@
   </header>
   <!--intro section-->
   <section id="intro">
-    <div class="parallax-window ripples-efect" data-parallax="scroll" data-image-src="img/intro/intro__bg.png">
+    <div class="jquery-ripples parallax-window" data-parallax="scroll">
       <div class="header__bottom">
         <div class="container">
           <div class="bottom__content">
@@ -50,7 +50,7 @@
             <nav class="nav__bar">
               <ul class="nav__menu">
                 <li class="nav__item"><a href="#intro" class="nav__link">Home</a></li>
-                <li class="nav__item"><a href="#blogPost" class="nav__link">Pages</a></li>
+                <li class="nav__item"><a href="#blogPost" class="nav__link">Post</a></li>
                 <li class="nav__item"><a href="#about__me" class="nav__link">Blog</a></li>
                 <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
               </ul>
@@ -266,6 +266,7 @@
   <script>
     "use script"
     $('.parallax-window').parallax({
+      imageSrc: 'img/intro/intro__bg.png',
       speed: 0,
     });
   </script>
@@ -280,10 +281,10 @@
   <script src="js/vendor/jquery.ripples-min.js"></script>
   <script>
     "use script";
-    $(".ripples-efect").ripples({
+    $(".jquery-ripples").ripples({
       dropRadius: 25,
-      perturbance: 0.08,
-      resolution: 350
+      perturbance: 0.05,
+      resolution: 450
     });
   </script>
   <!--use main script-->
