@@ -36,7 +36,7 @@
   </header>
   <!--intro section-->
   <section id="intro">
-    <div class="parallax-window" data-parallax="scroll" data-image-src="img/intro/intro__bg.png">
+    <div class="parallax-window ripples-efect" data-parallax="scroll" data-image-src="img/intro/intro__bg.png">
       <div class="header__bottom">
         <div class="container">
           <div class="bottom__content">
@@ -276,11 +276,15 @@
     Waves.attach(".waves");
     Waves.init();
   </script>
-  <!--us typed.js efect https://github.com/mattboldt/typed.js/ -->
-  <script src=""></script>
+  <!--us ripples.js efect https://github.com/sirxemic/jquery.ripples -->
+  <script src="js/vendor/jquery.ripples-min.js"></script>
   <script>
     "use script";
-    
+    $(".ripples-efect").ripples({
+      dropRadius: 25,
+      perturbance: 0.08,
+      resolution: 350
+    });
   </script>
   <!--use main script-->
   <!--use burger btn script-->
