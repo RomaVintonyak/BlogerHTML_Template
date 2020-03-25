@@ -51,7 +51,7 @@
               <ul class="nav__menu">
                 <li class="nav__item"><a href="#intro" class="nav__link">Home</a></li>
                 <li class="nav__item"><a href="#post" class="nav__link">Post</a></li>
-                <li class="nav__item"><a href="#about__me" class="nav__link">Blog</a></li>
+                <li class="nav__item"><a href="#about__me" class="nav__link">About</a></li>
                 <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
               </ul>
               <div class="burger__button" id="burgerToggle">
@@ -104,14 +104,35 @@
     </div><!--/.post__block-->
   </div><!--/.container-->
 </div><!--/.post-->
+  <!--section about me-->
+  <section id="about__me">
+    <div class="container">
+      <div class="about__content">
+        <div class="collum__text">
+          <img src="img/about/rectangle.png" alt="figure" class="about__figure">
+          <h3>Few words about me</h3>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+            when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+            It has survived not only five centuries, 
+            but also the leap into electronic typesetting, remaining essentially
+          </p>
+          <a href="#" class="btn waves waves-light">More info</a>
+        </div><!--/.collum__text-->
+        <div class="collum__img">
+          <img src="img/about/about__foto.png" alt="about__foto" class="">
+        </div>
+      </div><!--/.about__content-->
+    </div><!--/.container-->
+  </section>
   <!--blog post-->
   <section id="blogPost">
     <div class="container">
-    <div class="post__header">
-      <div class="post__header--img">
-        <img src="img/blog/header.png" alt="post">
+    <div class="post__block">
+      <div class="post__block--img">
+        <img src="img/blog/post__logo.png" alt="post">
       </div><!--/.post__header--img-->
-      <div class="post__header--content">
+      <div class="post__block--content">
         <div class="content__text">
           <div class="content__date">
             <i class="far fa-calendar-alt"></i>
@@ -127,44 +148,9 @@
           </div>
           <img src="img/blog/rectangle.png" alt="figure" class="content__rectangle">
         </div><!--/.content__text-->
-      </div><!--/.post__header--content-->
-    </div><!--/.post__header-->
-    <div class="post__footer">
-        <div class="post__colum">
-          <img src="img/blog/blog__foto1.jpeg" alt="blog foto">
-          <div class="post__figure">
-            <div class="content__date">
-            <i class="far fa-calendar-alt"></i>
-            <p>October 8, 2019</p>
-          </div>
-          <h4>Lorem Ipsum is simply 
-            dummy simply</h4>
-          </div>
-         </div>
-         <div class="post__colum">
-          <img src="img/blog/blog__foto2.jpeg" alt="blog foto">
-          <div class="post__figure">
-            <div class="content__date">
-            <i class="far fa-calendar-alt"></i>
-            <p>October 8, 2019</p>
-          </div>
-          <h4>Lorem Ipsum is simply 
-            dummy simply</h4>
-          </div>
-         </div>
-         <div class="post__colum">
-          <img src="img/blog/blog__foto3.jpeg" alt="blog foto">
-          <div class="post__figure">
-            <div class="content__date">
-            <i class="far fa-calendar-alt"></i>
-            <p>October 8, 2019</p>
-          </div>
-          <h4>Lorem Ipsum is simply 
-            dummy simply</h4>
-          </div>
-         </div>     
-    </div><!--/.post__footer-->
-    </div><!--/.container-->
+      </div><!--/.post__block--content-->
+    </div><!--/.post__block-->
+   </div><!--/.container-->
   </section>
   <!--subscribe section-->
   <section id="subscribe">
@@ -182,27 +168,6 @@
         <img src="img/subscribe/rectangle.png" alt="vectot object" class="subscribe__rectangle">
       </div>
     </div>
-  </section>
-  <!--section about me-->
-  <section id="about__me">
-    <div class="container">
-      <div class="about__content">
-        <div class="collum__text">
-          <img src="img/about/rectangle.png" alt="figure" class="about__figure">
-          <h3>Few words about me</h3>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-            when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-            It has survived not only five centuries, 
-            but also the leap into electronic typesetting, remaining essentially
-          </p>
-          <a href="#" class="btn waves waves-light">More info</a>
-        </div><!--/.collum__text-->
-        <div class="collum__img">
-          <img src="img/about/about__foto.jpeg" alt="about__foto" class="">
-        </div>
-      </div><!--/.about__content-->
-    </div><!--/.container-->
   </section>
   <!--contact section-->
   <section id="contact" >
@@ -300,12 +265,8 @@
   <!--use main script-->
   <!--use burger btn script-->
   <script src="js/block/burgerBtn.js"></script>
-  <!--use more blog posts script-->
-  <script src="js/block/more__post.js"></script>
   <!--use intro scroll down btn script-->
   <script src="js/block/scroll__down.js"></script>
-  <!--use 3d transform card script-->
-  <script src="js/block/3dcard__transform.js"></script>
   <!--use fixed header script-->
   <script src="js/block/fixed__header.js"></script>
   <!--use top btn script-->

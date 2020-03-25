@@ -1,6 +1,30 @@
 //main: ../style.less
+#about__me {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  &::before {
+    content: "";
+    width: 50%;
+    height: 100%;
+    background-color: #f3f3f3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  &::after {
+    content: "";
+    width: 50%;
+    height: 100%;
+    background-color: @white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+  }
+}
 .about__content {
-  margin-top: 3.12rem;
   width: 100%;
   display: -webkit-box;
   display: flex;
