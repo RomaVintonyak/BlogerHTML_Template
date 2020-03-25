@@ -1,11 +1,15 @@
 //main: ../style.less
-.post__block {
-  margin-top: 3.12rem;
+#post{
+  padding-top: 3.12rem;
   width: 100%;
+  background-color: @white;
+  position: relative;
+  z-index: 1;
+}
+.post__block {
   display: -webkit-box;
   display: flex;
-  justify-content: space-around;
-  padding: 0 5rem;
+  justify-content: space-between; 
 }
 .post__collum-l {
   flex-basis: 45%;
@@ -27,15 +31,36 @@
     }
   }
 }
-.post__collum-r {
+.post__collum-c {
   flex-basis: 45%;
   overflow: hidden;
+  margin: 0 1rem;
   img {
-    margin-bottom: 1.4rem;
+    margin-bottom: 2rem;
     -webkit-transition: -webkit-transform 1.5s linear;
     transition: -webkit-transform 1.5s linear;
     transition: transform 1.5s linear;
     transition: transform 1.5s linear, -webkit-transform 1.5s linear;
+  }
+  &:hover {
+    img {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+  }
+}
+.post__collum-r {
+  flex-basis: 45%;
+  overflow: hidden;
+  img {
+    margin-bottom: 1.3rem;
+    -webkit-transition: -webkit-transform 1.5s linear;
+    transition: -webkit-transform 1.5s linear;
+    transition: transform 1.5s linear;
+    transition: transform 1.5s linear, -webkit-transform 1.5s linear;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
   &:hover {
     img {
