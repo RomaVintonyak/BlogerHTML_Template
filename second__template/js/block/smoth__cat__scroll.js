@@ -6,7 +6,7 @@ jQuery(document).ready(function(){
       var scrollId = $(this).attr("href");
       var ofsetTop = $(scrollId).offset().top;
       $("html, body").animate({
-        scrollTop: ofsetTop - 100
+        scrollTop: ofsetTop - 50
       }, 1000);
   });
 });
