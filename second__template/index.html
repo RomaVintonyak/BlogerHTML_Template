@@ -36,15 +36,15 @@
   </header>
   <!--intro section-->
   <section id="intro">
-    <div class="jquery-ripples parallax-window" data-parallax="scroll">
+    <div class="jquery-ripples parallax-window rellax" data-rellax-speed="0">
       <div class="header__bottom">
         <div class="container">
-          <div class="bottom__content">
+          <div class="bottom__content" >
             <div class="bottom__logo">
                 <img src="img/header/logo.png" alt="logo">
                 <div class="logo__text">
-                <p>Elizabeth</p>
-                <p>travel blogger</p> 
+                <p>Our Family</p>
+                <p>travel blog</p> 
                 </div>    
             </div>
             <nav class="nav__bar">
@@ -261,14 +261,13 @@
   <!--use js vendor-->
   <!--us jquery-->
   <script src="js/vendor/jquery-3.4.1.min.js"></script>
-  <!--us paralax efect https://pixelcog.github.io/parallax.js/ -->
-  <script src="js/vendor/parallax.min.js"></script>
+  <!--us paralax efect https://github.com/dixonandmoe/rellax -->
+  <script src="js/vendor/rellax.min.js"></script>
   <script>
     "use script"
-    $('.parallax-window').parallax({
-      imageSrc: 'img/intro/intro__bg.png',
-      speed: 0,
-    });
+    var rellax = new Rellax('.rellax', {
+    
+  });
   </script>
   <!--us waves efect https://materializecss.com/waves.html -->
   <script src="js/vendor/waves.min.js"></script>
@@ -284,7 +283,7 @@
     $(".jquery-ripples").ripples({
       dropRadius: 25,
       perturbance: 0.05,
-      resolution: 450
+      resolution: 350
     });
   </script>
   <!--use main script-->
