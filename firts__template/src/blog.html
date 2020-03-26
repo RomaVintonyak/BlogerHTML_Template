@@ -59,7 +59,102 @@
   </header>
   <!--blog post-->
   <section id="blogPost" style="margin-top: 0rem;">
-    <div class="container">
+  <div class="container">
+   <div id="postSlider" class="slider__wraper">
+    <!-- first slide block-->
+    <div class="post__footer post__footer--page">
+      <div class="post__colum">
+        <img src="../img/post__page/1.jpeg" alt="blog foto">
+        <div class="post__figure">
+          <div class="content__date">
+          <i class="far fa-calendar-alt"></i>
+          <p>October 8, 2019</p>
+        </div>
+        <h4>How to prepare for shooting</h4>
+        </div>
+       </div>
+       <div class="post__colum">
+        <img src="../img/post__page/2.jpeg" alt="blog foto">
+        <div class="post__figure">
+          <div class="content__date">
+          <i class="far fa-calendar-alt"></i>
+          <p>October 8, 2019</p>
+        </div>
+        <h4>What videos need to watching before shooting</h4>
+        </div>
+       </div>
+       <div class="post__colum">
+        <img src="../img/post__page/3.jpeg" alt="blog foto">
+        <div class="post__figure">
+          <div class="content__date">
+          <i class="far fa-calendar-alt"></i>
+          <p>October 8, 2019</p>
+        </div>
+        <h4>What time of day to choose for shooting</h4>
+        </div>
+       </div>
+       <div class="post__colum">
+        <img src="../img/post__page/4.jpeg" alt="blog foto">
+        <div class="post__figure">
+          <div class="content__date">
+          <i class="far fa-calendar-alt"></i>
+          <p>October 8, 2019</p>
+        </div>
+        <h4>What you need to take with you to the shooting</h4>
+        </div>
+       </div>
+       <div class="post__colum">
+        <img src="../img/post__page/5.jpeg" alt="blog foto">
+        <div class="post__figure">
+          <div class="content__date">
+          <i class="far fa-calendar-alt"></i>
+          <p>October 8, 2019</p>
+        </div>
+        <h4>How to choose the right light</h4>
+        </div>
+       </div>
+       <div class="post__colum">
+        <img src="../img/post__page/6.jpeg" alt="blog foto">
+        <div class="post__figure">
+          <div class="content__date">
+          <i class="far fa-calendar-alt"></i>
+          <p>October 8, 2019</p>
+        </div>
+        <h4>What makeup you can be choose</h4>
+        </div>
+       </div>  
+       <div class="post__colum">
+        <img src="../img/post__page/7.jpeg" alt="blog foto">
+        <div class="post__figure">
+          <div class="content__date">
+          <i class="far fa-calendar-alt"></i>
+          <p>October 8, 2019</p>
+        </div>
+        <h4>Which camera to choose</h4>
+        </div>
+       </div>
+       <div class="post__colum">
+        <img src="../img/post__page/8.jpeg" alt="blog foto">
+        <div class="post__figure">
+          <div class="content__date">
+          <i class="far fa-calendar-alt"></i>
+          <p>October 8, 2019</p>
+        </div>
+        <h4>The necessary equipment of the photographer</h4>
+        </div>
+       </div>
+       <div class="post__colum">
+        <img src="../img/post__page/9.jpeg" alt="blog foto">
+        <div class="post__figure">
+          <div class="content__date">
+          <i class="far fa-calendar-alt"></i>
+          <p>October 8, 2019</p>
+        </div>
+        <h4>Common mistakes during shooting</h4>
+        </div>
+     </div>
+  </div><!--/.post__footer-->
+     <!--second slide block-->    
     <div class="post__footer post__footer--page">
         <div class="post__colum">
           <img src="../img/blog/blog__foto1.jpeg" alt="blog foto">
@@ -150,14 +245,15 @@
           </div>
           <h4>Common mistakes during shooting</h4>
           </div>
-         </div> 
-         <div class="post__button">
-           <button type="button" class="btn__post btn__post--prev waves waves-light" id="previousPost">Previous Post</button>
-           <button type="button" class="btn__post btn__post--next waves waves-light" id="nextPost">Next Post</button>
-         </div> 
+       </div>    
     </div><!--/.post__footer-->
-    </div><!--/.container-->
-  </section>
+</div><!--/.slider__wraper-->
+   <div class="post__button">
+      <button type="button" class="btn__post btn__post--prev waves" id="previousPost"><span>Previous Post</span></button>
+      <button type="button" class="btn__post btn__post--next waves" id="nextPost"><span>Next Post</span></button>
+   </div>
+ </div><!--/.container-->
+</section>
   <!--footer-->
   <footer id="footer">
     <div class="container">
@@ -189,6 +285,20 @@
     "use script";
     Waves.attach(".waves");
     Waves.init();
+  </script>
+  <!--us slick slider https://kenwheeler.github.io/slick/ -->
+  <script src="../js/vendor/slick.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    $("#postSlider").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,
+        dots: false
+    });
+  });
   </script>
   <!--use main script-->
   <!--use burger btn script-->
