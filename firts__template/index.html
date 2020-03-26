@@ -45,23 +45,23 @@
           </div>
           <nav class="nav__bar">
             <ul class="nav__menu">
-              <li class="nav__item"><a href="#intro" class="nav__link">Home</a></li>
-              <li class="nav__item" id="dropDownItem"><a href="#blogPost" class="nav__link">Pages</a>
-              <div class="dpor__down">
-                <div class="drop__item">
-                  <img src="img/drop__down/figure__right.svg" alt="figure" class="img"/>
-                  <a href="index.html">Home page 1</a></div>
-                <div class="drop__item">
-                  <img src="img/drop__down/figure__right.svg" alt="figure" class="img"/>
-                  <a href="../second__template/index.html">Home page 2</a></div>
-                <div class="drop__item">
-                  <img src="img/drop__down/figure__right.svg" alt="figure" class="img"/>
-                  <a href="#">Home page 3</a></div>
-                <div class="drop__item">
-                  <img src="img/drop__down/figure__right.svg" alt="figure" class="img"/>
-                  <a href="#">Home page 4</a></div>
-              </div> 
+              <li class="nav__item" id="dropDownItem"><a href="#intro" class="nav__link">Home</a>
+                <div class="dpor__down">
+                  <div class="drop__item">
+                    <img src="img/drop__down/figure__right.svg" alt="figure" class="img"/>
+                    <a href="index.html">Home page 1</a></div>
+                  <div class="drop__item">
+                    <img src="img/drop__down/figure__right.svg" alt="figure" class="img"/>
+                    <a href="../second__template/index.html">Home page 2</a></div>
+                  <div class="drop__item">
+                    <img src="img/drop__down/figure__right.svg" alt="figure" class="img"/>
+                    <a href="#">Home page 3</a></div>
+                  <div class="drop__item">
+                    <img src="img/drop__down/figure__right.svg" alt="figure" class="img"/>
+                    <a href="#">Home page 4</a></div>
+                </div> 
               </li>
+              <li class="nav__item"><a href="#blogPost" class="nav__link">Pages</a></li>
               <li class="nav__item"><a href="#about__me" class="nav__link">Blog</a></li>
               <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
             </ul>
@@ -81,7 +81,6 @@
     <div class="intro__bg">
       <div class="container">
         <div class="intro__content">
-          <!--<img src="img/intro/figure__pluss.png" alt="plus" class="img figure__plus">-->
           <div class="bloger__foto">
             <img src="img/intro/bloger__img.png"  alt="foto" class="img">
           </div>
@@ -120,10 +119,10 @@
           <h3>Lorem Ipsum is simply dummy text of the 
             printing and typesetting industry. Lorem Ipsum has been the industry's
           </h3>
-          <div class="content__button waves waves-light" id="postBtn">
+          <a class="content__button waves waves-light" id="postBtn">
             <span></span>
             <span></span>
-          </div>
+          </a>
           <img src="img/blog/rectangle.png" alt="figure" class="content__rectangle">
         </div><!--/.content__text-->
       </div><!--/.post__header--content-->
@@ -313,8 +312,6 @@
   <!--use main script-->
   <!--use burger btn script-->
   <script src="js/block/burgerBtn.js"></script>
-  <!--use more blog posts script-->
-  <script src="js/block/more__post.js"></script>
   <!--use intro scroll down btn script-->
   <script src="js/block/scroll__down.js"></script>
   <!--use 3d transform card script-->
