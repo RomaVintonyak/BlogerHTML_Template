@@ -150,7 +150,11 @@
           </div>
           <h4>Common mistakes during shooting</h4>
           </div>
-         </div>  
+         </div> 
+         <div class="post__button">
+           <button type="button" class="btn__post btn__post--prev waves waves-light" id="previousPost">Previous Post</button>
+           <button type="button" class="btn__post btn__post--next waves waves-light" id="nextPost">Next Post</button>
+         </div> 
     </div><!--/.post__footer-->
     </div><!--/.container-->
   </section>
@@ -178,50 +182,22 @@
   </div>
   <!--use js vendor-->
   <!--us jquery-->
-  <script src="js/vendor/jquery-3.4.1.min.js"></script>
-  <!--us paralax efect https://pixelcog.github.io/parallax.js/ -->
-  <script src="js/vendor/parallax.min.js"></script>
-  <script>
-    "use script"
-    $('.parallax-window').parallax({
-      speed: 0,
-    });
-  </script>
+  <script src="../js/vendor/jquery-3.4.1.min.js"></script>
   <!--us waves efect https://materializecss.com/waves.html -->
-  <script src="js/vendor/waves.min.js"></script>
+  <script src="../js/vendor/waves.min.js"></script>
   <script>
     "use script";
     Waves.attach(".waves");
     Waves.init();
   </script>
-  <!--us typed.js efect https://github.com/mattboldt/typed.js/ -->
-  <script src="js/vendor/typed.min.js"></script>
-  <script>
-    "use script";
-    var typed = new Typed("#typed",{
-      strings: ["Hi there, I’m Elizabeth", "travel blogger..."],
-      startDelay: 100,
-      typeSpeed: 120,
-      backSpeed: 50,
-      backDelay: 1000,
-      showCursor: false,
-      loop: true
-    });
-  </script>
   <!--use main script-->
   <!--use burger btn script-->
-  <script src="js/block/burgerBtn.js"></script>
-  <!--use intro scroll down btn script-->
-  <script src="js/block/scroll__down.js"></script>
+  <script src="../js/block/burgerBtn.js"></script>
   <!--use 3d transform card script-->
-  <script src="js/block/3dcard__transform.js"></script>
+  <script src="../js/block/3dcard__transform.js"></script>
   <!--use fixed header script-->
-  <script src="js/block/fixed__header.js"></script>
+  <script src="../js/block/fixed__header.js"></script>
   <!--use top btn script-->
-  <script src="js/block/back__top.js"></script>
-  <!--use smoth scroll to cat script-->
-  <script src="js/block/smoth__cat__scroll.js"></script>
-  <!--use hover drop down script script-->
-  <script src="js/block/hover__dropdown.js"></script>
+  <script src="../js/block/back__top.js"></script>
 </body>
 </html>
