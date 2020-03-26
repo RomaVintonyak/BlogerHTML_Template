@@ -293,10 +293,26 @@
     $("#postSlider").slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
         arrows: false,
-        dots: false
+        dots: false,
+        easing: 'ease-in-out',
+        speed: 1500,
+        draggable: false,
+        swipe: false,
+        infinite: false
+    });
+    /*controll slide*/
+    $("#previousPost").on("click", function(){
+        var curentSlider = $(this).parent(".post__button")
+        .parent(".container")
+        .find("#postSlider");
+        curentSlider.slick("slickPrev");
+    });
+    $("#nextPost").on("click", function(){
+        var curentSlider = $(this).parent(".post__button")
+        .parent(".container")
+        .find("#postSlider");
+        curentSlider.slick("slickNext");
     });
   });
   </script>
