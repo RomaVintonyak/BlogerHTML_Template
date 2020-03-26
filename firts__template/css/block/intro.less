@@ -36,6 +36,12 @@
   top: 1.46rem;
   z-index: 1;
   overflow: hidden;
+  @media @tablet{
+    width: 22.26rem;
+  }
+  @media @mobile-sm{
+    width: 18.26rem;
+  }
   &::after{
     content: "";
     width: 100%;
@@ -58,6 +64,16 @@
   @media @notebook{
     left: 52rem;
   }
+  @media @tablet{
+    top: 7rem;
+    left: 40rem;
+  }
+  @media @mobile{
+    left: 15.8rem;
+  }
+  @media @mobile-sm{
+    left: 11.5rem;
+  }
 }
 .intro__title {
   width: 43.5rem;
@@ -74,6 +90,22 @@
   font-size: 3.12rem;
   @media @notebook{
     left: 10rem;
+  }
+  @media @tablet{
+    left: 1rem;
+  }
+  @media @mobile{
+    left: 0;
+    width: 22.26rem;
+    height: 4rem;
+    font-size: 1.7rem;
+    line-height: 64px;
+  }
+  @media @mobile-sm{
+    width: 18.26rem;
+    height: 3rem;
+    font-size: 1.4rem;
+    line-height: 48px;
   }
 }
 .intro__text {
@@ -92,6 +124,21 @@
   @media @notebook{
     left: 19.07rem;
     color: @white;
+    font-weight: 700;
+  }
+  @media @tablet{
+    left: 1rem;
+  }
+  @media @mobile{
+    left: 0;
+    bottom: -23rem;
+    width: 22.26rem;
+    font-size: 1.1rem;
+  }
+  @media @mobile-sm{
+    width: 18.26rem;
+    font-size: 1rem;
+    line-height: 22px;
   }
   
 }
@@ -103,6 +150,12 @@
   @media @notebook{
     left: 30rem;
   }
+  @media @tablet{
+    left: 0rem;
+  }
+  @media @mobile-sm{
+    top: 26rem;
+  }
 }
 .intro__scroll {
   position: absolute;
@@ -111,6 +164,15 @@
   z-index: 2;
   @media @notebook{
     left: 55rem;
+  }
+  @media @tablet{
+    left: 43rem;
+  }
+  @media @mobile{
+    left: 20rem;
+  }
+  @media @mobile-sm{
+    left: 16rem;
   }
   span {
     width: 10px;
