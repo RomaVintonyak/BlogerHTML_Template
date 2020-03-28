@@ -4,15 +4,13 @@ jQuery(document).ready(function () {
   dropList.hover(startHover);
   function startHover() {
     $(this).parent(".dropDownItem").find(".nav__link").css({
-      "background-color": "#2B2320",
-      "color": "#ffffff"
+      "background-color": "#57948F",
     });
   }
   dropList.mouseleave(stopHover);
   function stopHover() {
     $(this).parent(".dropDownItem").find(".nav__link").css({
       "background-color": "transparent",
-      "color": "#2B2320"
     });
   }
 });
