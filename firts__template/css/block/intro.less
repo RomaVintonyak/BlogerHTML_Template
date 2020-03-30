@@ -38,13 +38,7 @@
   z-index: 1;
   overflow: hidden;
   @media @tablet {
-    width: 22.26rem;
-  }
-  @media @mobile {
-    width: 18.26rem;
-  }
-  @media @mobile-sm {
-    width: 10rem;
+    width: 50%;
   }
   &::after {
     content: "";
@@ -80,7 +74,6 @@
     top: 1.46rem;
   }
   @media @mobile-sm {
-    top: 4.46rem;
     right: 1%;
     width: 3rem;
   }
@@ -103,7 +96,7 @@
   }
   @media @tablet {
     right: 10%;
-    width: 30rem;
+    width: 50%;
     height: 5rem;
     line-height: 90px;
     font-size: 2rem;
@@ -111,18 +104,17 @@
   }
   @media @mobile {
     top: 7rem;
-    width: 24rem;
     height: 4rem;
     line-height: 64px;
     font-size: 1.6rem;
   }
   @media @mobile-sm {
-    top: 7.5rem;
+    top: 4.46rem;
     right: 1%;
-    width: 15rem;
-    height: 2rem;
-    font-size: 1.2rem;
-    line-height: 32px;
+    height: 3rem;
+    font-size: 1rem;
+    line-height: 48px;
+    width: 65%;
   }
 }
 .intro__text {
@@ -139,22 +131,25 @@
   width: 35.68rem;
   padding: 0.2rem;
   @media @notebook {
-    right: 3%;
-    width: 30rem;
+    right: 1%;
+    width: 50%;
   }
   @media @tablet {
-    width: 20rem;
+    width: 46%;
     bottom: -24rem;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
   @media @mobile {
-    width: 15rem;
+    width: 48%;
     bottom: -18rem;
-    font-size: 1rem;
+    font-size: 1.1rem;
+    line-height: 26px;
   }
   @media @mobile-sm {
-    bottom: -21rem;
-    width: 100%;
+    bottom: -14rem;
+    width: 45%;
+    font-size: 0.8rem;
+    line-height: 12px;
   }
 }
 .intro__link {
@@ -163,18 +158,13 @@
   top: 33.27rem;
   left: 31.94rem;
   @media @notebook {
-    left: 30rem;
+    left: 51%;
   }
-  @media @tablet {
-    left: 15rem;
-  }
-  @media @mobile {
-    top: 26rem;
-    left: calc(50% - 11.13rem);
-  }
-  @media @mobile-sm {
-    left: calc(50% - 9.13rem);
-  }
+ @media @mobile{
+   top: 20rem;
+   left: 50%;
+ }
+ 
 }
 .intro__scroll {
   position: absolute;
@@ -186,10 +176,6 @@
   }
   @media @tablet {
     right: 4%;
-  }
-  @media @mobile {
-  }
-  @media @mobile-sm {
   }
   span {
     width: 10px;
