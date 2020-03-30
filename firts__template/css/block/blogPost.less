@@ -4,6 +4,15 @@
   background-color: @white;
   position: relative;
   z-index: 1;
+  @media @tablet{
+    margin-top: 6.56rem;
+  }
+  @media @mobile{
+    margin-top: 4.56rem;
+  }
+  @media @mobile-sm{
+    margin-top: 2.56rem;
+  }
 }
 .post__header {
   width: 100%;
@@ -13,6 +22,11 @@
   display: flex;
   -webkit-box-align: center;
   align-items: center;
+  @media @tablet{
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    height: 47rem;
+  }
   &--img {
     width: 40%;
     height: auto;
@@ -21,6 +35,13 @@
     transition: -webkit-transform 1.5s linear;
     transition: transform 1.5s linear;
     transition: transform 1.5s linear, -webkit-transform 1.5s linear;
+    @media @tablet{
+      width: 65%;
+      height: 20rem;
+    }
+    @media @mobile{
+      width: 100%;
+    }
   }
   &:hover {
     .post__header--img {
@@ -35,6 +56,9 @@
     padding: 2.75rem 0;
     position: relative;
     z-index: 1;
+    @media @tablet{
+      width: 100%;
+    }
   }
 }
 .content__text {
@@ -52,6 +76,10 @@
     font-weight: 700;
     color: @black;
     margin-bottom: 1rem;
+    @media @mobile-sm{
+      font-size: 1.6rem;
+      width: 80%;
+    }
   }
   h3 {
     width: 28.75rem;
@@ -61,6 +89,26 @@
     color: #6d6d6d;
     line-height: 31px;
     margin-bottom: 2.2rem;
+    @media @mobile-sm{
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      width: 90%;
+    }
+  }
+  @media @notebook{
+    width: 33.25rem;
+  }
+  @media @tablet{
+    width: 80%;
+  }
+  @media @mobile{
+    width: 90%;
+    padding-left: 2.06rem;
+  }
+  @media @mobile-sm{
+    width: 98%;
+    padding-left: 1rem;
+    padding-top: 1rem;
   }
 }
 .content__date {
