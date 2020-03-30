@@ -6,6 +6,13 @@
   display: flex;
   justify-content: space-around;
   padding: 0 5rem;
+  @media @tablet {
+    padding: 0 1rem;
+    margin-top: 2.12rem;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    justify-content: center;
+  }
 }
 .post__collum-l {
   flex-basis: 45%;
@@ -26,6 +33,17 @@
       transform: scale(1.1);
     }
   }
+  @media @tablet {
+    flex-basis: 60%;
+    -webkit-box-ordinal-group: 3;
+    order: 2;
+  }
+  @media @mobile {
+    flex-basis: 80%;
+  }
+  @media @mobile-sm {
+    flex-basis: 100%;
+  }
 }
 .post__collum-r {
   flex-basis: 45%;
@@ -36,11 +54,29 @@
     transition: -webkit-transform 1.5s linear;
     transition: transform 1.5s linear;
     transition: transform 1.5s linear, -webkit-transform 1.5s linear;
+    @media @tablet {
+      margin-bottom: 1rem;
+    }
   }
   &:hover {
     img {
       -webkit-transform: scale(1.1);
       transform: scale(1.1);
     }
+  }
+  @media @tablet {
+    flex-basis: 60%;
+    -webkit-box-ordinal-group: 2;
+    order: 1;
+    margin-bottom: 1rem;
+    a {
+      margin: 0 auto;
+    }
+  }
+  @media @mobile {
+    flex-basis: 80%;
+  }
+  @media @mobile-sm {
+    flex-basis: 100%;
   }
 }
