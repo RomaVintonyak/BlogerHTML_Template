@@ -15,6 +15,9 @@
     left: 0;
     z-index: -1;
   }
+  @media @mobile-sm {
+    height: 23.46rem;
+  }
 }
 .intro__content {
   width: 100%;
@@ -40,9 +43,9 @@
   @media @tablet {
     width: 50%;
   }
-  @media @mobile-sm{
-    width: 80%;
-    left: calc(50% - 40%);
+  @media @mobile-sm {
+    width: 40%;
+    left: 0;
     top: 0.5rem;
   }
   &::after {
@@ -79,7 +82,9 @@
     top: 1.46rem;
   }
   @media @mobile-sm {
-    display: none;
+    right: 1%;
+    top: 0.5rem;
+    width: 3rem;
   }
 }
 .intro__title {
@@ -113,11 +118,12 @@
     font-size: 1.6rem;
   }
   @media @mobile-sm {
-    right: 10%;
+    top: 3rem;
+    right: 1%;
     height: 3rem;
     font-size: 1rem;
     line-height: 48px;
-    width: 80%;
+    width: 75%;
   }
 }
 .intro__text {
@@ -149,10 +155,11 @@
     line-height: 26px;
   }
   @media @mobile-sm {
-    bottom: -14rem;
-    width: 45%;
-    font-size: 0.8rem;
-    line-height: 12px;
+    bottom: -12rem;
+    width: 58%;
+    right: 0;
+    line-height: 18px;
+    font-size: 0.9rem;
   }
 }
 .intro__link {
@@ -163,11 +170,13 @@
   @media @notebook {
     left: 51%;
   }
- @media @mobile{
-   top: 20rem;
-   left: 50%;
- }
- 
+  @media @mobile{
+    top: 28rem;
+    left: calc(50% - 7.13rem);
+  }
+  @media @mobile-sm{
+    top: 20rem;
+  }
 }
 .intro__scroll {
   position: absolute;
@@ -179,6 +188,9 @@
   }
   @media @tablet {
     right: 4%;
+  }
+  @media @mobile-sm{
+    top: 15rem;
   }
   span {
     width: 10px;
