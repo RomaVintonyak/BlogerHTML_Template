@@ -5,11 +5,11 @@
   margin-top: 3.12rem;
   padding-bottom: 4.3rem;
   overflow: hidden;
-  @media @tablet{
+  @media @tablet {
     margin-top: 2.12rem;
     padding-bottom: 1.3rem;
   }
-  @media @mobile{
+  @media @mobile {
     margin-top: 1rem;
   }
 }
@@ -22,8 +22,9 @@
   align-items: flex-start;
   position: relative;
   z-index: 1;
-  @media @tablet{
+  @media @tablet {
     flex-wrap: wrap;
+    -webkit-box-pack: center;
     justify-content: center;
   }
 }
@@ -36,11 +37,11 @@
     font-weight: 700;
     margin-bottom: 1.9rem;
     font-size: 2.25rem;
-    @media @tablet{
+    @media @tablet {
       margin-bottom: 0.5rem;
     }
   }
-  @media @tablet{
+  @media @tablet {
     flex-basis: 100%;
     padding-top: 1.3rem;
   }
@@ -61,7 +62,10 @@
       -webkit-transition: color 0.3s linear, -webkit-transform 0.3s linear;
       transition: color 0.3s linear, -webkit-transform 0.3s linear;
       transition: color 0.3s linear, transform 0.3s linear;
-      transition: color 0.3s linear, transform 0.3s linear, -webkit-transform 0.3s linear;
+      transition: color 0.3s linear, transform 0.3s linear,
+        -webkit-transform 0.3s linear;
+      transition: color 0.3s linear, transform 0.3s linear,
+        -webkit-transform 0.3s linear;
       transition: color 0.3s linear, transform 0.3s linear,
         -webkit-transform 0.3s linear;
     }
@@ -84,19 +88,19 @@
       color: @hover;
     }
   }
-  @media @notebook{
+  @media @notebook {
     width: 65%;
   }
-  @media @tablet{
-    width: 20%;
+  @media @tablet {
+    width: 25%;
   }
-  @media @mobile{
+  @media @mobile {
     width: 35%;
   }
-  @media @mobile-sm{
+  @media @mobile-sm {
     width: 45%;
   }
-  @media (max-width: 420px){
+  @media (max-width: 420px) {
     width: 100%;
   }
 }
@@ -125,14 +129,14 @@
       &:nth-child(1) {
         width: 49%;
         margin-right: 0.8rem;
-        @media @notebook{
+        @media @notebook {
           width: 100%;
           margin-right: 0;
         }
       }
       &:nth-child(2) {
         width: 49%;
-        @media @notebook{
+        @media @notebook {
           width: 100%;
         }
       }
@@ -162,7 +166,7 @@
       }
     }
   }
-  @media @tablet{
+  @media @tablet {
     flex-basis: 100%;
     margin-top: 1.3rem;
   }

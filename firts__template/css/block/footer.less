@@ -18,6 +18,9 @@
     transition: -webkit-transform 1.5s linear;
     transition: transform 1.5s linear;
     transition: transform 1.5s linear, -webkit-transform 1.5s linear;
+    @media @notebook {
+      margin: 0.5rem;
+    }
   }
   a {
     text-decoration: none;
@@ -44,6 +47,11 @@
       transform: scale(1.1);
     }
   }
+  @media @notebook {
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    justify-content: center;
+  }
 }
 .footer__copyright {
   margin-top: 1rem;
@@ -51,4 +59,7 @@
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;
+  @media @mobile-sm {
+    font-size: 0.9rem;
+  }
 }
