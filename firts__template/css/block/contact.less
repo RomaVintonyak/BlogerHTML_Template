@@ -7,6 +7,7 @@
   overflow: hidden;
   @media @tablet{
     margin-top: 2.12rem;
+    padding-bottom: 1.3rem;
   }
   @media @mobile{
     margin-top: 1rem;
@@ -21,6 +22,10 @@
   align-items: flex-start;
   position: relative;
   z-index: 1;
+  @media @tablet{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 .contact__social {
   flex-basis: 30%;
@@ -31,6 +36,13 @@
     font-weight: 700;
     margin-bottom: 1.9rem;
     font-size: 2.25rem;
+    @media @tablet{
+      margin-bottom: 0.5rem;
+    }
+  }
+  @media @tablet{
+    flex-basis: 100%;
+    padding-top: 1.3rem;
   }
 }
 .social__link {
@@ -72,6 +84,21 @@
       color: @hover;
     }
   }
+  @media @notebook{
+    width: 65%;
+  }
+  @media @tablet{
+    width: 20%;
+  }
+  @media @mobile{
+    width: 35%;
+  }
+  @media @mobile-sm{
+    width: 45%;
+  }
+  @media (max-width: 420px){
+    width: 100%;
+  }
 }
 .contact__form {
   flex-basis: 65%;
@@ -98,9 +125,16 @@
       &:nth-child(1) {
         width: 49%;
         margin-right: 0.8rem;
+        @media @notebook{
+          width: 100%;
+          margin-right: 0;
+        }
       }
       &:nth-child(2) {
         width: 49%;
+        @media @notebook{
+          width: 100%;
+        }
       }
       &:nth-child(3) {
         width: 100%;
@@ -128,7 +162,8 @@
       }
     }
   }
-  @media @notebook{
-   
+  @media @tablet{
+    flex-basis: 100%;
+    margin-top: 1.3rem;
   }
 }
