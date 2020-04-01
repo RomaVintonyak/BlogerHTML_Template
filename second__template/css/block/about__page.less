@@ -1,0 +1,96 @@
+//main: ../style.less
+.about__title {
+  width: 100%;
+  text-align: center;
+  margin-top: 3.12rem;
+  h2 {
+    color: @black;
+    font-weight: 700;
+    line-height: 43px;
+    font-size: 2.25rem;
+  }
+  h3 {
+    color: #6d6866;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    line-height: 26px;
+  }
+}
+.about__row {
+  margin-top: 1.5rem;
+  width: 100%;
+  height: 20rem;
+  overflow: hidden;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  &:hover {
+    .row__collum--img {
+      .img__1,
+      .img__2 {
+        img {
+          -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}
+.row__collum--img {
+  width: 49%;
+  height: 100%;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+}
+.img__1 {
+  width: 47%;
+  img {
+    -webkit-transition: -webkit-transform 1.5s linear;
+    transition: -webkit-transform 1.5s linear;
+    transition: transform 1.5s linear;
+    transition: transform 1.5s linear, -webkit-transform 1.5s linear;
+    &:first-child {
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+.img__2 {
+  width: 52%;
+  img {
+    -webkit-transition: -webkit-transform 1.5s linear;
+    transition: -webkit-transform 1.5s linear;
+    transition: transform 1.5s linear;
+    transition: transform 1.5s linear, -webkit-transform 1.5s linear;
+  }
+}
+.row__collum--text {
+  width: 49%;
+  height: 100%;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  align-items: flex-start;
+  p {
+    color: #6d6866;
+    font-size: 1.1rem;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 22px;
+    &:last-child {
+      font-style: italic;
+    }
+  }
+}
