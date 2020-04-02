@@ -18,6 +18,20 @@
       }
     }
   }
+  @media @tablet{
+    margin-top: 2.12rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1.2rem 1.2rem 1.2rem 0;
+  }
+  @media @mobile{
+    margin-top: 1.12rem;
+    padding: 1rem 1rem 1rem 0;
+  }
+  @media @mobile-sm{
+    margin-top: 1rem;
+    padding: 0.8rem 0.8rem 0.8rem 0;
+  }
 }
 .book__collum--img {
   width: 45%;
@@ -27,6 +41,16 @@
   -webkit-box-pack: justify;
   justify-content: space-between;
   overflow: hidden;
+  @media @tablet{
+    order: 2;
+    width: 80%;
+  }
+  @media @mobile{
+    width: 90%;
+  }
+  @media @mobile-sm{
+    width: 95%;
+  }
 }
 .book__img--1 {
   width: 49%;
@@ -63,6 +87,18 @@
     color: @black;
     font-size: 2.25rem;
     margin-bottom: 2rem;
+    @media @notebook{
+      margin-bottom: 1rem;
+    }
+    @media @tablet{
+      font-size: 2rem;
+    }
+    @media @mobile{
+      font-size: 1.8rem;
+    }
+    @media @mobile-sm{
+      font-size: 1.4rem;
+    }
   }
   h4 {
     color: #6d6866;
@@ -70,12 +106,36 @@
     font-weight: 400;
     line-height: 32px;
     margin-bottom: 2rem;
+    @media @notebook{
+      margin-bottom: 1rem;
+    }
   }
   p {
     color: #6d6866;
     font-size: 1rem;
     font-weight: 400;
     font-style: italic;
+    @media @notebook{
+      margin-bottom: 1rem;
+    }
+  }
+  @media @notebook{
+    padding: 2rem 1rem 0 2rem;
+  }
+  @media @tablet{
+    width: 80%;
+    order: 1;
+    border-left: none;
+    border-bottom: 5px solid @black;
+    padding: 1.5rem 0.5rem 0 1.5rem;
+  }
+  @media @mobile{
+    width: 90%;
+    padding: 1rem 0.5rem 0 1rem;
+  }
+  @media @mobile-sm{
+    width: 95%;
+    padding: 0.5rem 0.5rem 0 0.5rem;
   }
 }
 /*about post block for about page 2*/
