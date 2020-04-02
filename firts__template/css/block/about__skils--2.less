@@ -2,13 +2,13 @@
 #skils--2 {
   margin-top: 3.12rem;
   width: 100%;
-  @media @tablet{
+  @media @tablet {
     margin-top: 2.12rem;
   }
-  @media @mobile{
+  @media @mobile {
     margin-top: 1.12rem;
   }
-  @media @mobile-sm{
+  @media @mobile-sm {
     margin-top: 1rem;
   }
 }
@@ -19,7 +19,8 @@
   justify-content: space-between;
   -webkit-box-align: start;
   align-items: flex-start;
-  @media @notebook{
+  @media @notebook {
+    -webkit-box-pack: center;
     justify-content: center;
     flex-wrap: wrap;
   }
@@ -34,6 +35,8 @@
   transition: transform 0.3s linear, box-shadow 0.3s linear;
   transition: transform 0.3s linear, box-shadow 0.3s linear,
     -webkit-transform 0.3s linear;
+  transition: transform 0.3s linear, box-shadow 0.3s linear,
+    -webkit-transform 0.3s linear;
   img {
     margin-bottom: 0.6rem;
   }
@@ -44,7 +47,7 @@
     color: @black;
     font-size: 1.5rem;
     margin-bottom: 0.3rem;
-    @media @mobile{
+    @media @mobile {
       font-size: 1.4rem;
     }
   }
@@ -62,26 +65,26 @@
     -webkit-transform: translateX(-8px);
     transform: translateX(-8px);
   }
-  @media @notebook{
+  @media @notebook {
     width: 40%;
     margin-bottom: 1rem;
-    &:first-child{
+    &:first-child {
       margin-right: 1rem;
     }
-    &:last-child{
+    &:last-child {
       margin-bottom: 0;
     }
   }
-  @media @tablet{
+  @media @tablet {
     width: 60%;
-    &:first-child{
+    &:first-child {
       margin-right: 0;
     }
   }
-  @media @mobile{
+  @media @mobile {
     width: 80%;
   }
-  @media @mobile-sm{
+  @media @mobile-sm {
     width: 100%;
   }
 }
