@@ -8,6 +8,12 @@
     font-weight: 700;
     line-height: 43px;
     font-size: 2.25rem;
+    @media @mobile {
+      font-size: 1.9rem;
+    }
+    @media @mobile-sm {
+      font-size: 1.4rem;
+    }
   }
   h3 {
     color: #6d6866;
@@ -15,6 +21,12 @@
     font-style: normal;
     font-size: 1rem;
     line-height: 26px;
+  }
+  @media @tablet {
+    margin-top: 2.12rem;
+  }
+  @media @mobile {
+    margin-top: 1.12rem;
   }
 }
 .about__row {
@@ -39,6 +51,15 @@
       }
     }
   }
+  @media @notebook {
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    justify-content: center;
+    height: auto;
+  }
+  @media @mobile {
+    margin-top: 0.8rem;
+  }
 }
 .row__collum--img {
   width: 49%;
@@ -49,6 +70,21 @@
   align-items: flex-start;
   -webkit-box-pack: justify;
   justify-content: space-between;
+  @media @notebook {
+    width: 60%;
+    overflow: hidden;
+    -webkit-box-ordinal-group: 3;
+    order: 2;
+    margin-top: 1.5rem;
+  }
+  @media @mobile {
+    margin-top: 1rem;
+    width: 80%;
+  }
+  @media @mobile-sm {
+    width: 100%;
+    margin-top: 0.7rem;
+  }
 }
 .img__1 {
   width: 47%;
@@ -59,6 +95,16 @@
     transition: transform 1.5s linear, -webkit-transform 1.5s linear;
     &:first-child {
       margin-bottom: 0.5rem;
+    }
+  }
+  @media @notebook {
+    width: 53%;
+  }
+  @media @mobile-sm {
+    img {
+      &:first-child {
+        margin-bottom: 0.35rem;
+      }
     }
   }
 }
@@ -92,5 +138,10 @@
     &:last-child {
       font-style: italic;
     }
+  }
+  @media @notebook {
+    width: 100%;
+    -webkit-box-ordinal-group: 2;
+    order: 1;
   }
 }
