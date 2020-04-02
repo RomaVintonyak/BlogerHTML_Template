@@ -8,7 +8,7 @@
   overflow: hidden;
   position: relative;
   z-index: 0;
-  &::before{
+  &::before {
     content: "";
     width: 100%;
     height: 3.12rem;
@@ -52,16 +52,17 @@
     @media @tablet {
       margin-bottom: 0.5rem;
     }
-    @media @mobile{
+    @media @mobile {
       font-size: 2rem;
     }
-    @media @mobile-sm{
+    @media @mobile-sm {
       font-size: 1.4rem;
+      margin-bottom: 0.25rem;
     }
   }
   @media @tablet {
     flex-basis: 100%;
-    padding-top: 1.3rem;
+    padding-top: 1rem;
   }
 }
 .social__link {
@@ -80,6 +81,8 @@
       -webkit-transition: color 0.3s linear, -webkit-transform 0.3s linear;
       transition: color 0.3s linear, -webkit-transform 0.3s linear;
       transition: color 0.3s linear, transform 0.3s linear;
+      transition: color 0.3s linear, transform 0.3s linear,
+        -webkit-transform 0.3s linear;
       transition: color 0.3s linear, transform 0.3s linear,
         -webkit-transform 0.3s linear;
       transition: color 0.3s linear, transform 0.3s linear,
@@ -172,5 +175,13 @@
   @media @tablet {
     flex-basis: 100%;
     margin-top: 1.3rem;
+    padding: 2.3rem;
+  }
+  @media @mobile {
+    padding: 1.8rem;
+  }
+  @media @mobile-sm {
+    margin-top: 1rem;
+    padding: 1.3rem;
   }
 }
