@@ -16,9 +16,9 @@ jQuery(document).ready(function(){
       .addClass("link__itmem--active");*/
     /*filter menu block*/
     var cat = $(this).data("link");
-    if (cat == "Photoshoot") {
+    /*if (cat == "all") {
       $(this).removeClass("hide");
-    } else {
+    } else {*/
       $("[data-cat]").each(function() {
         var workCat = $(this).data("cat");
         if (workCat != cat) {
@@ -27,6 +27,6 @@ jQuery(document).ready(function(){
           $(this).removeClass("hide");
         }
       });
-    }
+   /* }*/
   });
 });
