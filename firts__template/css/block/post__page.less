@@ -15,7 +15,7 @@
     color: @black;
   }
 }
-.intro__post--date{
+.intro__post--date {
   font-weight: 400;
   font-style: normal;
   font-size: 0.9rem;
@@ -23,38 +23,38 @@
   background-color: #f3f3f3;
   padding: 0.8rem 1.5rem;
 }
-.intro__post--img{
+.intro__post--img {
   margin-top: 3.12rem;
 }
-.intro__post--content{
+.intro__post--content {
   margin-top: 2rem;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
 }
-.post__content--text{
+.post__content--text {
   flex-basis: 70%;
   line-height: 32px;
   font-size: 1.1rem;
   font-weight: 400;
   font-style: normal;
-  color: #6D6866;
+  color: #6d6866;
 }
-.post__content--cat{
+.post__content--cat {
   width: 25%;
   border: 10px solid #f3f3f3;
   display: flex;
   flex-direction: column;
   padding-top: 2rem;
   padding-left: 2rem;
-  h3{
+  h3 {
     margin-bottom: 1.5rem;
     font-size: 1.5rem;
     color: @black;
     font-weight: 700;
     font-style: normal;
   }
-  a{
+  a {
     text-decoration: none;
     font-size: 1.1rem;
     color: #6d6866;
@@ -63,9 +63,63 @@
     margin-bottom: 1.5rem;
     transition: color 0.3s linear, transform 0.3s linear;
     transform-origin: left bottom;
-    &:hover{
+    &:hover {
       color: @black;
       transform: scale(1.2);
     }
   }
+}
+/*galery post*/
+#galeryPost {
+  margin-top: 3.12rem;
+}
+.galery__post--row {
+  width: 100%;
+  background-color: #f3f3f3;
+}
+.galery__post--tittle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1rem 0 1rem;
+  h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: @black;
+  }
+}
+.tittle__arrows{
+   width: 4rem;
+   display: flex;
+   justify-content: space-between;
+   span{
+     width: 30px;
+     height: 30px;
+     text-align: center;
+     line-height: 34px;
+     background-color: rgba(@gray, 0.6);
+     transition: background-color 0.2s linear;
+     i{
+       color: @black;
+       font-size: 1rem;
+     }
+     &:hover{
+       cursor: pointer;
+       background-color: rgba(@gray, 1);
+     }
+   }
+}
+.galery__post--colum{
+  width: 100%;
+  margin-top: 1.5rem;
+}
+.galery__post--content{
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.galery__post--block{
+  width: 24%;
 }
