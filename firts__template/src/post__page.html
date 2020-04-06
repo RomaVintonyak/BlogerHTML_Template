@@ -125,10 +125,10 @@
           </div>
           <div class="post__content--cat">
             <h3>Categories</h3>
-            <a class="post__cat--link" href="#Photoshoot">Photoshoot</a>
-            <a class="post__cat--link" href="#Camera">Camera</a>
-            <a class="post__cat--link" href="#Cloth">Cloth</a>
-            <a class="post__cat--link" href="#Details">Details</a>
+            <a class="post__cat--link" data-link="Photoshoot" href="#">Photoshoot</a>
+            <a class="post__cat--link" data-link="Camera" href="#">Camera</a>
+            <a class="post__cat--link" data-link="Cloth" href="#">Cloth</a>
+            <a class="post__cat--link" data-link="Details" href="#">Details</a>
           </div>
         </div>
       </div><!--/.post__row-->
@@ -147,7 +147,7 @@
         </div><!--galery__post--tittle-->
         <div class="galery__post--colum">
           <!--phoho shot-->
-           <div class="galery__post--content" id="Photoshoot" data-slider="galery-slider">
+           <div class="galery__post--content" data-cat="Photoshoot" data-slider="galery-slider">
              <div class="galery__post--block">
                <img src="../img/blog/blog__foto1.jpeg" alt="post" class="img">
                <div class="content__date">
@@ -200,7 +200,7 @@
             </div>
            </div><!--/.galery__post--content-->
            <!--camera-->
-           <div class="galery__post--content" id="Camera" data-slider="galery-slider">
+           <div class="galery__post--content" data-cat="Camera" data-slider="galery-slider">
             <div class="galery__post--block">
               <img src="../img/post__page/1.jpeg" alt="post" class="img">
               <div class="content__date">
@@ -253,7 +253,7 @@
            </div>
           </div><!--/.galery__post--content-->
           <!--cloth-->
-          <div class="galery__post--content" id="Cloth" data-slider="galery-slider">
+          <div class="galery__post--content" data-cat="Cloth" data-slider="galery-slider">
             <div class="galery__post--block">
               <img src="../img/post__page/7.jpeg" alt="post" class="img">
               <div class="content__date">
@@ -306,7 +306,7 @@
            </div>
           </div><!--/.galery__post--content-->
           <!--Details-->
-          <div class="galery__post--content" id="Details" data-slider="galery-slider">
+          <div class="galery__post--content" data-cat="Details" data-slider="galery-slider">
             <div class="galery__post--block">
               <img src="../img/blog/blog__foto2.jpeg" alt="post" class="img">
               <div class="content__date">
@@ -539,7 +539,9 @@
   <script src="../js/block/fixed__header.js"></script>
   <!--use top btn script-->
   <script src="../js/block/back__top.js"></script>
-  <!--use hover drop down script script-->
+  <!--use hover drop down script-->
   <script src="../js/block/hover__dropdown.js"></script>
+  <!--use filter category post galery block script-->
+  <script src="../js/block/filter__cat.js"></script>
 </body>
 </html>
