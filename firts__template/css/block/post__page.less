@@ -6,8 +6,11 @@
   width: 100%;
 }
 .intro__post--title {
+  display: -webkit-box;
   display: flex;
+  -webkit-box-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
   align-items: center;
   h2 {
     font-weight: bold;
@@ -28,8 +31,11 @@
 }
 .intro__post--content {
   margin-top: 2rem;
+  display: -webkit-box;
   display: flex;
+  -webkit-box-align: start;
   align-items: flex-start;
+  -webkit-box-pack: justify;
   justify-content: space-between;
 }
 .post__content--text {
@@ -43,7 +49,10 @@
 .post__content--cat {
   width: 25%;
   border: 10px solid #f3f3f3;
+  display: -webkit-box;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
   flex-direction: column;
   padding-top: 2rem;
   padding-left: 2rem;
@@ -61,10 +70,16 @@
     font-weight: 400;
     font-style: normal;
     margin-bottom: 1.5rem;
+    -webkit-transition: color 0.3s linear, -webkit-transform 0.3s linear;
+    transition: color 0.3s linear, -webkit-transform 0.3s linear;
     transition: color 0.3s linear, transform 0.3s linear;
+    transition: color 0.3s linear, transform 0.3s linear,
+      -webkit-transform 0.3s linear;
+    -webkit-transform-origin: left bottom;
     transform-origin: left bottom;
     &:hover {
       color: @black;
+      -webkit-transform: scale(1.2);
       transform: scale(1.2);
     }
   }
@@ -78,8 +93,11 @@
   background-color: #f3f3f3;
 }
 .galery__post--tittle {
+  display: -webkit-box;
   display: flex;
+  -webkit-box-align: center;
   align-items: center;
+  -webkit-box-pack: justify;
   justify-content: space-between;
   padding: 1rem 1rem 0 1rem;
   h3 {
@@ -89,37 +107,106 @@
     color: @black;
   }
 }
-.tittle__arrows{
-   width: 4rem;
-   display: flex;
-   justify-content: space-between;
-   span{
-     width: 30px;
-     height: 30px;
-     text-align: center;
-     line-height: 34px;
-     background-color: rgba(@gray, 0.6);
-     transition: background-color 0.2s linear;
-     i{
-       color: @black;
-       font-size: 1rem;
-     }
-     &:hover{
-       cursor: pointer;
-       background-color: rgba(@gray, 1);
-     }
-   }
+.tittle__arrows {
+  width: 4rem;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  span {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 34px;
+    background-color: rgba(@gray, 0.6);
+    -webkit-transition: background-color 0.2s linear;
+    transition: background-color 0.2s linear;
+    i {
+      color: @black;
+      font-size: 1rem;
+    }
+    &:hover {
+      cursor: pointer;
+      background-color: rgba(@gray, 1);
+    }
+  }
 }
-.galery__post--colum{
+.galery__post--colum {
   width: 100%;
   margin-top: 1.5rem;
 }
-.galery__post--content{
+.galery__post--content {
   width: 100%;
+  display: -webkit-box;
   display: flex;
+  -webkit-box-align: start;
   align-items: flex-start;
+  -webkit-box-pack: justify;
   justify-content: space-between;
 }
-.galery__post--block{
+.galery__post--block {
   width: 24%;
+  overflow: hidden;
+  text-align: center;
+  img {
+    margin-bottom: 0.7rem;
+    -webkit-transition: -webkit-transform 1.5s linear;
+    transition: -webkit-transform 1.5s linear;
+    transition: transform 1.5s linear;
+    transition: transform 1.5s linear, -webkit-transform 1.5s linear;
+  }
+  .content__date {
+    margin-bottom: 0;
+    -webkit-box-pack: center;
+    justify-content: center;
+  }
+  h4 {
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.25rem;
+    color: @black;
+    margin-bottom: 0.5rem;
+  }
+  p {
+    padding-bottom: 0.5rem;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    line-height: 32px;
+  }
+  &:hover {
+    img {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+  }
+}
+/*post text*/
+#postText {
+  margin-top: 3.12rem;
+}
+.about__post--text {
+  width: 100%;
+  img {
+    width: 22%;
+    float: left;
+    margin-right: 1rem;
+  }
+  p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: #6d6866;
+    line-height: 32px;
+    margin-bottom: 1rem;
+  }
+}
+.post__text {
+  width: 100%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.1rem;
+  color: #6d6866;
+  line-height: 32px;
+  margin-bottom: 3.12rem;
 }
