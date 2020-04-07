@@ -102,6 +102,7 @@
   -webkit-box-pack: justify;
   justify-content: space-between;
   padding: 1rem 1rem 0 1rem;
+  margin-bottom: 1.5rem;
   h3 {
     font-style: normal;
     font-weight: 700;
@@ -138,7 +139,6 @@
  
 }
 .galery__post--content { 
-  margin-top: 1.5rem;
   width: 100%;
   display: -webkit-box;
   display: flex;
@@ -146,6 +146,15 @@
   align-items: flex-start;
   -webkit-box-pack: justify;
   justify-content: space-between;
+  opacity: 1;
+  height: 100%;
+  transition: height 0.2s ease-out, opacity 0.2s ease-out;
+} 
+.hide__content{
+    visibility: hidden;
+    height: 0;
+    opacity: 0;
+    transition: height 0.2s ease-in, opacity 0.2s ease-in;
 }
 .galery__post--block {
   padding: 0 1rem;
