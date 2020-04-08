@@ -1,6 +1,16 @@
 jQuery(document).ready(function () {
   "use script";
   var catBtn = $("[data-link]");
+ 
+ catBtn.on("click", function(event){
+      event.preventDefault();
+      catBtn
+          .removeClass("post__cat--link")
+          .eq($(this).index())
+          .addClass("post__cat--link");
+      
+    });
+
     catBtn.on("click", function (event) {
     event.preventDefault();
     var cat = $(this).data("link");
