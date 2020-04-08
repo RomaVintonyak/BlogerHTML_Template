@@ -1,20 +1,15 @@
 //main: ../style.less
+.wraper__container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100vh;
+}
 #errorBlock {
   display: flex;
   align-items: center;
-  padding: 10rem 0;
-  @media @notebook{
-    padding: 8rem 0;
-  }
-  @media @tablet{
-    padding: 6rem 0;
-  }
-  @media @mobile{
-    padding: 4rem 0;
-  }
-  @media @mobile-sm{
-    padding: 2rem 0;
-  }
+  padding: 1rem 0;
 }
 .error__row {
   width: 100%;
