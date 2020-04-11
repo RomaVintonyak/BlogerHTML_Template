@@ -1,17 +1,14 @@
 jQuery(document).ready(function () {
   "use script";
   var catBtn = $("[data-link]");
- 
- catBtn.on("click", function(event){
-      event.preventDefault();
-      catBtn
-          .removeClass("post__cat--link")
-          .eq($(this).index())
-          .addClass("post__cat--link");
-      
-    });
 
-    catBtn.on("click", function (event) {
+  catBtn.on("click", function (event) {
+    event.preventDefault();
+    catBtn.not("active").removeClass("post__cat--link");
+    $(this).toggleClass("post__cat--link");
+  });
+
+  catBtn.on("click", function (event) {
     event.preventDefault();
     var cat = $(this).data("link");
     $("[data-cat]").each(function () {
