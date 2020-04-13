@@ -34,6 +34,47 @@
       </div><!--/.container-->
     </div><!--/.header__top-->
   </header>
+  <!--mobile menu-->
+  <div id="mobile" class="mobile__content">
+    <ul class="mobile__menu">
+      <li class="mobile__item">
+        <img src="img/drop__down/figure__mobile.svg" alt="figure" class="mobile__img" />
+        <span>Home</span> 
+      <div class="mobile__dropdown">
+        <a href="index.html" class="mobile__link">Home page 1</a>
+        <a href="../second__template/index.html" class="mobile__link">Home page 2</a>
+        <a href="#" class="mobile__link">Home page 3</a>
+        <a href="#" class="mobile__link">Home page 4</a>
+      </div>
+      </li>
+      <li class="mobile__item">
+        <img src="img/drop__down/figure__mobile.svg" alt="figure" class="mobile__img" />
+        <span>About</span> 
+      <div class="mobile__dropdown">
+        <a href="src/about__page.html" class="mobile__link">About page 1</a>
+        <a href="src/about__page2.html" class="mobile__link">About page 2</a>
+        <a href="src/404.html" class="mobile__link">Error page404</a>
+      </div>
+      </li>
+      <li class="mobile__item">
+        <img src="img/drop__down/figure__mobile.svg" alt="figure" class="mobile__img" />
+        <span>Blog</span> 
+      <div class="mobile__dropdown">
+        <a href="src/blog.html" class="mobile__link">Blog page 1</a>
+        <a href="src/second_blog.html" class="mobile__link">Blog page 2</a>
+        <a href="src/third__blog.html" class="mobile__link">Blog page 3</a>
+        <a href="src/post__page.html" class="mobile__link">Post page</a>
+      </div>
+      </li>
+      <li class="mobile__item">
+        <img src="img/drop__down/figure__mobile.svg" alt="figure" class="mobile__img" />
+        <span>Contact</span>
+      <div class="mobile__dropdown">
+        <a href="src/contact__page.html" class="mobile__link">Contact page</a>
+      </div>
+      </li>
+    </ul><!--/.mobile__menu-->
+  </div><!--/.mobile__content-->
   <!--intro section-->
   <section id="intro">
     <div class="intro__container">
@@ -76,9 +117,12 @@
                     <div class="drop__item">
                       <img src="img/drop__down/figure__right.svg" alt="figure" class="img"/>
                       <a href="src/third__blog.html">Blog page 3</a></div>
+                    <div class="drop__item">
+                      <img src="img/drop__down/figure__right.svg" alt="figure" class="img"/>
+                      <a href="src/post__page.html">Post page</a></div>
                   </div> 
                 </li>
-                <li class="nav__item"><a href="#about__me" class="nav__link">About</a>
+                <li class="nav__item dropDownItem"><a href="#about__me" class="nav__link">About</a>
                   <div class="dpor__down">
                     <div class="drop__item">
                       <img src="img/drop__down/figure__right.svg" alt="figure" class="img"/>
@@ -88,10 +132,15 @@
                       <a href="src/about__page2.html">About page 2</a></div>
                     <div class="drop__item">
                       <img src="img/drop__down/figure__right.svg" alt="figure" class="img"/>
-                      <a href="src/third__blog.html">Error page404</a></div>
+                      <a href="src/404.html">Error page404</a></div>
                   </div> 
                 </li>
-                <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                <li class="nav__item dropDownItem"><a href="#contact" class="nav__link">Contact</a>
+                  <div class="dpor__down">
+                    <div class="drop__item">
+                      <img src="img/drop__down/figure__right.svg" alt="figure" class="img"/>
+                      <a href="src/contact__page.html">Contact page</a></div>
+                </li>
               </ul>
               <div class="burger__button" id="burgerToggle">
                 <span></span>
@@ -368,5 +417,7 @@
   <script src="js/block/smoth__cat__scroll.js"></script>
   <!--use drop down hover script-->
   <script src="js/block/hover__dropdown.js"></script>
+  <!--use mobile menu script-->
+  <script src="js/block/mobile__menu.js"></script>
 </body>
 </html>
