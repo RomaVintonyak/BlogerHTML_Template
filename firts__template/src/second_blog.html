@@ -153,11 +153,11 @@
   <div class="container">
     <div class="filter__content filter__content--second">
       <h3>Categories</h3>
-      <a data-link="All" href="#">All</a>
-      <a data-link="Photoshoot" href="#">Photoshoot</a>
-      <a data-link="Camera" href="#">Camera</a>
-      <a data-link="Cloth" href="#">Cloth</a>
-      <a data-link="Details" href="#">Details</a>
+      <a data-filter="all" href="#">All</a>
+      <a data-filter="Photoshoot" href="#">Photoshoot</a>
+      <a data-filter="Camera" href="#">Camera</a>
+      <a data-filter="Cloth" href="#">Cloth</a>
+      <a data-filter="Details" href="#">Details</a>
     </div>
   </div>
   <!--blog post-->
@@ -166,7 +166,7 @@
    <div id="postSlider" class="slider__wraper">
     <!-- first slide block-->
     <div class="post__footer post__footer--page">
-      <div class="post__colum post__colum--secondBlog">
+      <div class="post__colum post__colum--secondBlog" data-blog="Photoshoot">
          <img src="../img/post__page/1.jpeg" alt="blog foto">
          <div class="post__content">
            <h4>How to prepare for shooting</h4>
@@ -181,7 +181,7 @@
            </div>
         </div>
       </div>
-      <div class="post__colum post__colum--secondBlog">
+      <div class="post__colum post__colum--secondBlog" data-blog="Photoshoot">
         <img src="../img/post__page/2.jpeg" alt="blog foto">
         <div class="post__content">
           <h4>What videos need to watching before shooting</h4>
@@ -196,7 +196,7 @@
           </div>
        </div>
      </div>
-     <div class="post__colum post__colum--secondBlog">
+     <div class="post__colum post__colum--secondBlog" data-blog="Photoshoot">
       <img src="../img/post__page/3.jpeg" alt="blog foto">
       <div class="post__content">
         <h4>What time of day to choose for shooting</h4>
@@ -211,7 +211,7 @@
         </div>
      </div>
    </div>
-   <div class="post__colum post__colum--secondBlog">
+   <div class="post__colum post__colum--secondBlog" data-blog="Camera">
     <div class="post__content">
       <h4>What you need to take with you to the shooting</h4>
       <p>Lorem Ipsum is simply dummy text 
@@ -225,7 +225,7 @@
       </div>
    </div>
  </div>
- <div class="post__colum post__colum--secondBlog">
+ <div class="post__colum post__colum--secondBlog" data-blog="Camera">
   <img src="../img/post__page/5.jpeg" alt="blog foto">
   <div class="post__content">
     <h4>How to choose the right light</h4>
@@ -240,7 +240,7 @@
     </div>
  </div>
 </div>
-<div class="post__colum post__colum--secondBlog">
+<div class="post__colum post__colum--secondBlog" data-blog="Camera">
   <img src="../img/post__page/6.jpeg" alt="blog foto">
   <div class="post__content">
     <h4>What makeup you can be choose</h4>
@@ -255,7 +255,7 @@
     </div>
  </div>
 </div>
-<div class="post__colum post__colum--secondBlog">
+<div class="post__colum post__colum--secondBlog" data-blog="Cloth">
   <img src="../img/post__page/7.jpeg" alt="blog foto">
   <div class="post__content">
     <h4>Which camera to choose</h4>
@@ -270,7 +270,7 @@
     </div>
  </div>
 </div>
-<div class="post__colum post__colum--secondBlog">
+<div class="post__colum post__colum--secondBlog" data-blog="Cloth">
   <div class="post__content">
     <h4>The necessary equipment of the photographer</h4>
     <p>Lorem Ipsum is simply dummy text 
@@ -284,7 +284,7 @@
     </div>
  </div>
 </div>
-<div class="post__colum post__colum--secondBlog">
+<div class="post__colum post__colum--secondBlog" data-blog="Details">
   <img src="../img/post__page/2.jpeg" alt="blog foto">
   <div class="post__content">
     <h4>Which camera to choose</h4>
@@ -299,7 +299,7 @@
     </div>
  </div>
 </div>
-<div class="post__colum post__colum--secondBlog">
+<div class="post__colum post__colum--secondBlog" data-blog="Details">
   <img src="../img/post__page/9.jpeg" alt="blog foto">
   <div class="post__content">
     <h4>Common mistakes during shooting</h4>
@@ -317,7 +317,7 @@
 </div><!--/.post__footer-->
   <!--second slide block-->    
 <div class="post__footer post__footer--page">
-  <div class="post__colum post__colum--secondBlog">
+  <div class="post__colum post__colum--secondBlog" data-blog="Photoshoot">
     <img src="../img/blog/blog__foto1.jpeg" alt="blog foto">
     <div class="post__content">
       <h4>How to prepare for shooting</h4>
@@ -332,7 +332,7 @@
       </div>
    </div>
  </div>
- <div class="post__colum post__colum--secondBlog">
+ <div class="post__colum post__colum--secondBlog" data-blog="Photoshoot">
    <img src="../img/blog/blog__foto2.jpeg" alt="blog foto">
    <div class="post__content">
      <h4>What videos need to watching before shooting</h4>
@@ -347,7 +347,7 @@
      </div>
   </div>
 </div>
-<div class="post__colum post__colum--secondBlog">
+<div class="post__colum post__colum--secondBlog" data-blog="Photoshoot">
  <img src="../img/blog/blog__foto3.jpeg" alt="blog foto">
  <div class="post__content">
    <h4>What time of day to choose for shooting</h4>
@@ -362,7 +362,7 @@
    </div>
 </div>
 </div>
-  <div class="post__colum post__colum--secondBlog">
+  <div class="post__colum post__colum--secondBlog" data-blog="Camera">
     <div class="post__content">
     <h4>What you need to take with you to the shooting</h4>
     <p>Lorem Ipsum is simply dummy text 
@@ -376,7 +376,7 @@
       </div>
   </div>
 </div>
-  <div class="post__colum post__colum--secondBlog">
+  <div class="post__colum post__colum--secondBlog" data-blog="Camera">
     <img src="../img/blog/blog__foto3.jpeg" alt="blog foto">
       <div class="post__content">
         <h4>How to choose the right light</h4>
@@ -391,7 +391,7 @@
         </div>
       </div>
   </div>
-  <div class="post__colum post__colum--secondBlog">
+  <div class="post__colum post__colum--secondBlog" data-blog="Camera">
     <img src="../img/blog/blog__foto2.jpeg" alt="blog foto">
     <div class="post__content">
       <h4>What makeup you can be choose</h4>
@@ -406,7 +406,7 @@
       </div>
     </div>
   </div>
-  <div class="post__colum post__colum--secondBlog">
+  <div class="post__colum post__colum--secondBlog" data-blog="Cloth">
     <img src="../img/blog/blog__foto1.jpeg" alt="blog foto">
     <div class="post__content">
       <h4>Which camera to choose</h4>
@@ -421,7 +421,7 @@
       </div>
     </div>
   </div>
-  <div class="post__colum post__colum--secondBlog">
+  <div class="post__colum post__colum--secondBlog" data-blog="Cloth">
     <div class="post__content">
       <h4>The necessary equipment of the photographer</h4>
       <p>Lorem Ipsum is simply dummy text 
@@ -435,7 +435,7 @@
       </div>
     </div>
   </div>
-  <div class="post__colum post__colum--secondBlog">
+  <div class="post__colum post__colum--secondBlog" data-blog="Details">
     <img src="../img/blog/blog__foto2.jpeg" alt="blog foto">
     <div class="post__content">
       <h4>Which camera to choose</h4>
@@ -450,7 +450,7 @@
         </div>
     </div>
   </div>
-  <div class="post__colum post__colum--secondBlog">
+  <div class="post__colum post__colum--secondBlog" data-blog="Details">
     <img src="../img/blog/blog__foto3.jpeg" alt="blog foto">
     <div class="post__content">
       <h4>Common mistakes during shooting</h4>
