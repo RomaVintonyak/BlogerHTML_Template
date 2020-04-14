@@ -44,7 +44,57 @@
           </div>
           <nav class="nav__bar">
             <ul class="nav__menu">
-              <li class="nav__item"><a href="../index.html" class="nav__link">Home</a></li>
+              <li class="nav__item dropDownItem"><a href="#" class="nav__link">Home</a>
+                <div class="dpor__down">
+                  <div class="drop__item">
+                    <img src="../img/drop__down/figure__right.svg" alt="figure" class="img"/>
+                    <a href="../../firts__template/index.html">Home page 1</a></div>
+                  <div class="drop__item">
+                    <img src="../img/drop__down/figure__right.svg" alt="figure" class="img"/>
+                    <a href="../index.html">Home page 2</a></div>
+                  <div class="drop__item">
+                    <img src="../img/drop__down/figure__right.svg" alt="figure" class="img"/>
+                    <a href="#">Home page 3</a></div>
+                  <div class="drop__item">
+                    <img src="../img/drop__down/figure__right.svg" alt="figure" class="img"/>
+                    <a href="#">Home page 4</a></div>
+                </div> 
+              </li>
+              <li class="nav__item dropDownItem"><a href="#" class="nav__link">About</a>
+                <div class="dpor__down">
+                  <div class="drop__item">
+                    <img src="../img/drop__down/figure__right.svg" alt="figure" class="img"/>
+                    <a href="about__page.html">About page 1</a></div>
+                  <div class="drop__item">
+                    <img src="../img/drop__down/figure__right.svg" alt="figure" class="img"/>
+                    <a href="about__page2.html">About page 2</a></div>
+                  <div class="drop__item">
+                    <img src="../img/drop__down/figure__right.svg" alt="figure" class="img"/>
+                    <a href="404.html">Error page404</a></div>
+                </div> 
+              </li>
+              <li class="nav__item dropDownItem"><a href="#" class="nav__link">Post</a>
+                <div class="dpor__down">
+                  <div class="drop__item">
+                    <img src="../img/drop__down/figure__right.svg" alt="figure" class="img"/>
+                    <a href="blog.html">Blog page 1</a></div>
+                  <div class="drop__item">
+                    <img src="../img/drop__down/figure__right.svg" alt="figure" class="img"/>
+                    <a href="second_blog.html">Blog page 2</a></div>
+                  <div class="drop__item">
+                    <img src="../img/drop__down/figure__right.svg" alt="figure" class="img"/>
+                    <a href="third__blog.html">Blog page 3</a></div>
+                  <div class="drop__item">
+                    <img src="../img/drop__down/figure__right.svg" alt="figure" class="img"/>
+                    <a href="post__page.html">Post page</a></div>
+                </div> 
+              </li>
+              <li class="nav__item dropDownItem"><a href="#" class="nav__link">Contact</a>
+                <div class="dpor__down">
+                  <div class="drop__item">
+                    <img src="../img/drop__down/figure__right.svg" alt="figure" class="img"/>
+                    <a href="contact__page.html">Contact page</a></div>
+              </li>
             </ul>
             <div class="burger__button" id="burgerToggle">
               <span></span>
@@ -57,13 +107,65 @@
       </div><!--/.container-->
     </div><!--/.header__bottom-->
   </header>
+   <!--mobile menu-->
+   <div id="mobile" class="mobile__content">
+    <ul class="mobile__menu">
+      <li class="mobile__item">
+        <img src="../img/drop__down/figure__mobile.svg" alt="figure" class="mobile__img" />
+        <span>Home</span> 
+      <div class="mobile__dropdown">
+        <a href="../index.html" class="mobile__link">Home page 1</a>
+        <a href="../../second__template/index.html" class="mobile__link">Home page 2</a>
+        <a href="#" class="mobile__link">Home page 3</a>
+        <a href="#" class="mobile__link">Home page 4</a>
+      </div>
+      </li>
+      <li class="mobile__item">
+        <img src="../img/drop__down/figure__mobile.svg" alt="figure" class="mobile__img" />
+        <span>About</span> 
+      <div class="mobile__dropdown">
+        <a href="about__page.html" class="mobile__link">About page 1</a>
+        <a href="about__page2.html" class="mobile__link">About page 2</a>
+        <a href="404.html" class="mobile__link">Error page404</a>
+      </div>
+      </li>
+      <li class="mobile__item">
+        <img src="../img/drop__down/figure__mobile.svg" alt="figure" class="mobile__img" />
+        <span>Blog</span> 
+      <div class="mobile__dropdown">
+        <a href="blog.html" class="mobile__link">Blog page 1</a>
+        <a href="second_blog.html" class="mobile__link">Blog page 2</a>
+        <a href="third__blog.html" class="mobile__link">Blog page 3</a>
+        <a href="post__page.html" class="mobile__link">Post page</a>
+      </div>
+      </li>
+      <li class="mobile__item">
+        <img src="../img/drop__down/figure__mobile.svg" alt="figure" class="mobile__img" />
+        <span>Contact</span>
+      <div class="mobile__dropdown">
+        <a href="contact__page.html" class="mobile__link">Contact page</a>
+      </div>
+      </li>
+    </ul><!--/.mobile__menu-->
+  </div><!--/.mobile__content-->
+  <!--blog category filter-->
+  <div class="container">
+    <div class="filter__content">
+      <h3>Categories</h3>
+      <a data-filter="all" href="#">All</a>
+      <a data-filter="Photoshoot" href="#">Photoshoot</a>
+      <a data-filter="Camera" href="#">Camera</a>
+      <a data-filter="Cloth" href="#">Cloth</a>
+      <a data-filter="Details" href="#">Details</a>
+    </div>
+  </div>
   <!--blog post-->
   <section id="blog__post" style="margin-top: 0rem;">
   <div class="container">
    <div id="postSlider" class="slider__wraper">
     <!-- first slide block-->
     <div class="post__footer post__footer--page">
-      <div class="post__colum">
+      <div class="post__colum" data-blog="Photoshoot">
         <img src="../img/post__page/1.jpeg" alt="blog foto">
         <div class="post__figure">
           <div class="content__date">
@@ -73,7 +175,7 @@
         <h4>How to prepare for shooting</h4>
         </div>
        </div>
-       <div class="post__colum">
+       <div class="post__colum" data-blog="Photoshoot">
         <img src="../img/post__page/2.jpeg" alt="blog foto">
         <div class="post__figure">
           <div class="content__date">
@@ -83,7 +185,7 @@
         <h4>What videos need to watching before shooting</h4>
         </div>
        </div>
-       <div class="post__colum">
+       <div class="post__colum" data-blog="Photoshoot">
         <img src="../img/post__page/3.jpeg" alt="blog foto">
         <div class="post__figure">
           <div class="content__date">
@@ -93,7 +195,7 @@
         <h4>What time of day to choose for shooting</h4>
         </div>
        </div>
-       <div class="post__colum">
+       <div class="post__colum" data-blog="Camera">
         <img src="../img/post__page/4.jpeg" alt="blog foto">
         <div class="post__figure">
           <div class="content__date">
@@ -103,7 +205,7 @@
         <h4>What you need to take with you to the shooting</h4>
         </div>
        </div>
-       <div class="post__colum">
+       <div class="post__colum" data-blog="Camera">
         <img src="../img/post__page/5.jpeg" alt="blog foto">
         <div class="post__figure">
           <div class="content__date">
@@ -113,7 +215,7 @@
         <h4>How to choose the right light</h4>
         </div>
        </div>
-       <div class="post__colum">
+       <div class="post__colum" data-blog="Camera">
         <img src="../img/post__page/6.jpeg" alt="blog foto">
         <div class="post__figure">
           <div class="content__date">
@@ -123,7 +225,7 @@
         <h4>What makeup you can be choose</h4>
         </div>
        </div>  
-       <div class="post__colum">
+       <div class="post__colum" data-blog="Cloth">
         <img src="../img/post__page/7.jpeg" alt="blog foto">
         <div class="post__figure">
           <div class="content__date">
@@ -133,7 +235,7 @@
         <h4>Which camera to choose</h4>
         </div>
        </div>
-       <div class="post__colum">
+       <div class="post__colum" data-blog="Cloth">
         <img src="../img/post__page/8.jpeg" alt="blog foto">
         <div class="post__figure">
           <div class="content__date">
@@ -143,7 +245,7 @@
         <h4>The necessary equipment of the photographer</h4>
         </div>
        </div>
-       <div class="post__colum">
+       <div class="post__colum" data-blog="Details">
         <img src="../img/post__page/9.jpeg" alt="blog foto">
         <div class="post__figure">
           <div class="content__date">
@@ -156,7 +258,7 @@
   </div><!--/.post__footer-->
      <!--second slide block-->    
     <div class="post__footer post__footer--page">
-        <div class="post__colum">
+        <div class="post__colum" data-blog="Photoshoot">
           <img src="../img/post__page/9.jpeg" alt="blog foto">
           <div class="post__figure">
             <div class="content__date">
@@ -166,7 +268,7 @@
           <h4>How to prepare for shooting</h4>
           </div>
          </div>
-         <div class="post__colum">
+         <div class="post__colum" data-blog="Photoshoot">
           <img src="../img/post__page/8.jpeg" alt="blog foto">
           <div class="post__figure">
             <div class="content__date">
@@ -176,7 +278,7 @@
           <h4>What videos need to watching before shooting</h4>
           </div>
          </div>
-         <div class="post__colum">
+         <div class="post__colum" data-blog="Photoshoot">
           <img src="../img/post__page/7.jpeg" alt="blog foto">
           <div class="post__figure">
             <div class="content__date">
@@ -186,7 +288,7 @@
           <h4>What time of day to choose for shooting</h4>
           </div>
          </div>
-         <div class="post__colum">
+         <div class="post__colum" data-blog="Camera">
           <img src="../img/post__page/6.jpeg" alt="blog foto">
           <div class="post__figure">
             <div class="content__date">
@@ -196,7 +298,7 @@
           <h4>What you need to take with you to the shooting</h4>
           </div>
          </div>
-         <div class="post__colum">
+         <div class="post__colum" data-blog="Camera">
           <img src="../img/post__page/5.jpeg" alt="blog foto">
           <div class="post__figure">
             <div class="content__date">
@@ -206,7 +308,7 @@
           <h4>How to choose the right light</h4>
           </div>
          </div>
-         <div class="post__colum">
+         <div class="post__colum" data-blog="Camera">
           <img src="../img/post__page/4.jpeg" alt="blog foto">
           <div class="post__figure">
             <div class="content__date">
@@ -216,7 +318,7 @@
           <h4>What makeup you can be choose</h4>
           </div>
          </div>  
-         <div class="post__colum">
+         <div class="post__colum" data-blog="Cloth">
           <img src="../img/post__page/3.jpeg" alt="blog foto">
           <div class="post__figure">
             <div class="content__date">
@@ -226,7 +328,7 @@
           <h4>Which camera to choose</h4>
           </div>
          </div>
-         <div class="post__colum">
+         <div class="post__colum" data-blog="Cloth">
           <img src="../img/post__page/2.jpeg" alt="blog foto">
           <div class="post__figure">
             <div class="content__date">
@@ -236,7 +338,7 @@
           <h4>The necessary equipment of the photographer</h4>
           </div>
          </div>
-         <div class="post__colum">
+         <div class="post__colum" data-blog="Details">
           <img src="../img/post__page/1.jpeg" alt="blog foto">
           <div class="post__figure">
             <div class="content__date">
@@ -379,5 +481,11 @@
   <script src="../js/block/fixed__header.js"></script>
   <!--use top btn script-->
   <script src="../js/block/back__top.js"></script>
+  <!--use drop down hover script-->
+  <script src="../js/block/hover__dropdown.js"></script>
+  <!--use mobile menu script-->
+  <script src="../js/block/mobile__menu.js"></script>
+  <!--use filter category post galery block script-->
+  <script src="../js/block/filter__cat.js"></script>
 </body>
 </html>
