@@ -1,11 +1,11 @@
 //main: ../style.less
-#subscribe{
+#subscribe {
   margin-top: 3.12rem;
   width: 100%;
-  background-color:@white;
+  background-color: @white;
   position: relative;
   z-index: 1;
-  &::before{
+  &::before {
     content: "";
     width: 100%;
     height: 3.12rem;
@@ -14,6 +14,27 @@
     top: -3.12rem;
     left: 0;
     z-index: 1;
+    @media @tablet {
+      top: -2.12rem;
+      height: 2.12rem;
+    }
+    @media @mobile {
+      top: -1.12rem;
+      height: 1.12rem;
+    }
+    @media @mobile-sm {
+      top: -1rem;
+      height: 1rem;
+    }
+  }
+  @media @tablet {
+    margin-top: 2.12rem;
+  }
+  @media @mobile {
+    margin-top: 1.12rem;
+  }
+  @media @mobile-sm {
+    margin-top: 1rem;
   }
 }
 .subscribe__content {
@@ -34,6 +55,18 @@
     color: @black;
     font-size: 2.25rem;
     margin-bottom: 1.31rem;
+    @media @notebook {
+      margin-bottom: 0.5em;
+    }
+    @media @mobile {
+      font-size: 1.8rem;
+    }
+    @media @mobile {
+      font-size: 1.6rem;
+    }
+    @media @mobile-sm {
+      font-size: 1.5rem;
+    }
   }
   input {
     width: 18.25rem;
@@ -49,7 +82,21 @@
       margin-right: 0;
     }
     &:focus {
-      outline-color: @black;
+      outline-color: @green;
+    }
+    @media @notebook {
+      width: 70%;
+      margin-right: 0;
+      margin-bottom: 1rem;
+    }
+    @media @tablet {
+      width: 80%;
+    }
+    @media @mobile {
+      width: 100%;
+    }
+    @media @mobile-sm {
+      margin-bottom: 0.5rem;
     }
   }
   button {
@@ -57,12 +104,40 @@
     z-index: 2;
     left: 42rem;
     bottom: 15.4%;
+    @media @notebook {
+      position: relative;
+      left: 0;
+      bottom: 0;
+    }
+  }
+  @media @notebook {
+    width: 100%;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 2rem;
+    height: 20rem;
+  }
+  @media @mobile {
+    padding-right: 1rem;
+    height: 18rem;
   }
 }
 .subscribe__plus {
   position: absolute;
   top: -12%;
   right: -1%;
+  @media @notebook {
+    top: -8%;
+  }
 }
 .subscribe__rectangle {
   position: absolute;

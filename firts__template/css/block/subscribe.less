@@ -5,11 +5,14 @@
   position: relative;
   z-index: 0;
   overflow: hidden;
-  @media @tablet{
+  @media @tablet {
     margin-top: 2.12rem;
   }
-  @media @mobile{
-    margin-top:  1.12rem;
+  @media @mobile {
+    margin-top: 1.12rem;
+  }
+  @media @mobile-sm {
+    margin-top: 1rem;
   }
 }
 .subscribe__form {
@@ -25,16 +28,16 @@
     color: @black;
     font-size: 2.25rem;
     margin-bottom: 1.31rem;
-    @media @notebook{
+    @media @notebook {
       margin-bottom: 0.5em;
     }
-    @media @mobile{
+    @media @mobile {
       font-size: 1.8rem;
     }
-    @media @mobile{
+    @media @mobile {
       font-size: 1.6rem;
     }
-    @media @mobile-sm{
+    @media @mobile-sm {
       font-size: 1.4rem;
     }
   }
@@ -54,18 +57,18 @@
     &:focus {
       outline-color: @black;
     }
-    @media @notebook{
+    @media @notebook {
       width: 70%;
       margin-right: 0;
       margin-bottom: 1rem;
     }
-    @media @tablet{
+    @media @tablet {
       width: 80%;
     }
-    @media @mobile{
+    @media @mobile {
       width: 100%;
     }
-    @media @mobile-sm{
+    @media @mobile-sm {
       margin-bottom: 0.5rem;
     }
   }
@@ -74,29 +77,29 @@
     z-index: 2;
     left: 42rem;
     bottom: 15.4%;
-    @media @notebook{
+    @media @notebook {
       position: relative;
       left: 0;
       bottom: 0;
     }
   }
-  @media @notebook{
+  @media @notebook {
     width: 100%;
     display: -webkit-box;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-            flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: center;
-            align-items: center;
+    align-items: center;
     -webkit-box-pack: center;
-            justify-content: center;
+    justify-content: center;
     padding-top: 1rem;
     padding-left: 1rem;
     padding-right: 2rem;
     height: 20rem;
   }
-  @media @mobile{
+  @media @mobile {
     padding-right: 1rem;
     height: 18rem;
   }
@@ -105,7 +108,7 @@
   position: absolute;
   top: -12%;
   right: -1%;
-  @media @notebook{
+  @media @notebook {
     top: -8%;
   }
 }
