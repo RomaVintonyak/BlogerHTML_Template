@@ -1,10 +1,43 @@
 //main: ../style.less
 #contact {
-  background-color: rgba(@gray, 0.8);
+  background-color: rgba(@gray, 1);
   width: 100%;
   margin-top: 3.12rem;
   padding-bottom: 4.3rem;
-  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  &::before {
+    content: "";
+    width: 100%;
+    height: 3.12rem;
+    background-color: @white;
+    position: absolute;
+    left: 0;
+    top: -3.12rem;
+    z-index: 4;
+    @media @tablet {
+      top: -2.12rem;
+      height: 2.12rem;
+    }
+    @media @mobile {
+      top: -1.12rem;
+      height: 1.12rem;
+    }
+    @media @mobile-sm {
+      top: -1rem;
+      height: 1rem;
+    }
+  }
+  @media @tablet {
+    margin-top: 2.12rem;
+    padding-bottom: 1.3rem;
+  }
+  @media @mobile {
+    margin-top: 1.12rem;
+  }
+  @media @mobile-sm {
+    margin-top: 1rem;
+  }
 }
 .contact__content {
   display: -webkit-box;
@@ -15,6 +48,11 @@
   align-items: flex-start;
   position: relative;
   z-index: 1;
+  @media @tablet {
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    justify-content: center;
+  }
 }
 .contact__social {
   flex-basis: 30%;
@@ -25,25 +63,48 @@
     font-weight: 700;
     margin-bottom: 1.9rem;
     font-size: 2.25rem;
+    @media @tablet {
+      margin-bottom: 0.5rem;
+    }
+    @media @mobile {
+      font-size: 2rem;
+    }
+    @media @mobile-sm {
+      font-size: 1.5rem;
+      margin-bottom: 0.25rem;
+    }
+  }
+  @media @tablet {
+    flex-basis: 100%;
+    padding-top: 1rem;
   }
 }
 .social__link {
   display: -webkit-box;
   display: flex;
-  -webkit-box-pack: justify;
-  justify-content: space-between;
   -webkit-box-align: center;
   align-items: center;
-  width: 55%;
   a {
     text-decoration: none;
+    display: block;
+    width: 1.5rem;
+    margin-right: 0.5rem;
     i {
       color: #6d6866;
       font-size: 1.12rem;
       -webkit-transition: color 0.3s linear, -webkit-transform 0.3s linear;
       transition: color 0.3s linear, -webkit-transform 0.3s linear;
       transition: color 0.3s linear, transform 0.3s linear;
-      transition: color 0.3s linear, transform 0.3s linear, -webkit-transform 0.3s linear;
+      transition: color 0.3s linear, transform 0.3s linear,
+        -webkit-transform 0.3s linear;
+      transition: color 0.3s linear, transform 0.3s linear,
+        -webkit-transform 0.3s linear;
+      transition: color 0.3s linear, transform 0.3s linear,
+        -webkit-transform 0.3s linear;
+      transition: color 0.3s linear, transform 0.3s linear,
+        -webkit-transform 0.3s linear;
+      transition: color 0.3s linear, transform 0.3s linear,
+        -webkit-transform 0.3s linear;
       transition: color 0.3s linear, transform 0.3s linear,
         -webkit-transform 0.3s linear;
     }
@@ -95,9 +156,16 @@
       &:nth-child(1) {
         width: 49%;
         margin-right: 0.8rem;
+        @media @notebook {
+          width: 100%;
+          margin-right: 0;
+        }
       }
       &:nth-child(2) {
         width: 49%;
+        @media @notebook {
+          width: 100%;
+        }
       }
       &:nth-child(3) {
         width: 100%;
@@ -124,5 +192,17 @@
         outline-color: @green;
       }
     }
+  }
+  @media @tablet {
+    flex-basis: 100%;
+    margin-top: 1.3rem;
+    padding: 2.3rem;
+  }
+  @media @mobile {
+    padding: 1.8rem;
+  }
+  @media @mobile-sm {
+    margin-top: 1rem;
+    padding: 1.3rem;
   }
 }
