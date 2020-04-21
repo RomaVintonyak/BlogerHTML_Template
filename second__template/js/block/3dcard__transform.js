@@ -22,7 +22,7 @@ jQuery(document).ready(function(){
   cardItem.mouseleave(stopRotate);
     function stopRotate(event){
     $(this).css({
-      "transform":"rotate(0deg)",
+      "transform":"rotate(0deg)"
     });
   }
 });

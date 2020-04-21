@@ -1,0 +1,33 @@
+jQuery(document).ready(function(){
+  "use script";
+  var imgTop = $(".parallax__top");
+  var imgCenter = $(".parallax__centr");
+  var paralaxContainer = $(".parallax__container");
+
+  paralaxContainer.mousemove(startParalax);
+  function startParalax(event){
+    //position lelement in page
+    var pos = $(this).offset();
+    var elem_left = pos.left;
+    // position cursor in element
+    var Xinner = event.pageX - elem_left;
+    // find half width & higth element
+    var halfWidht = paralaxContainer.innerWidth() / 2;
+    //add css style to element
+    imgTop.css({
+      "transform": 'translateX('+ -(Xinner - halfWidht) / 160 + 'px)'
+     });
+    imgCenter.css({
+      "transform": 'translateX('+ -(Xinner - halfWidht) / 140 + 'px)'
+    });
+  }
+  paralaxContainer.mouseleave(stopParalax);
+    function stopParalax(){
+      imgTop.css({
+      "transform":"translateX(0)"  
+    });
+    imgCenter.css({
+      "transform":"translateX(0)"  
+    });
+  }
+});
