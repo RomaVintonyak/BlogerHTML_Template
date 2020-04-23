@@ -48,6 +48,9 @@
   align-items: flex-start;
   position: relative;
   z-index: 1;
+  &--page{
+    padding-bottom: 1.5rem;
+  }
   @media @tablet {
     flex-wrap: wrap;
     -webkit-box-pack: center;
@@ -196,13 +199,13 @@
   @media @tablet {
     flex-basis: 100%;
     margin-top: 1.3rem;
-    padding: 2.3rem;
-  }
-  @media @mobile {
     padding: 1.8rem;
   }
+  @media @mobile {
+    padding: 1.3rem;
+  }
   @media @mobile-sm {
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     padding: 1.3rem;
   }
 }
