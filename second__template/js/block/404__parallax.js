@@ -18,7 +18,7 @@ jQuery(document).ready(function(){
       "transform": 'translateX('+ -(Xinner - halfWidht) / 160 + 'px)'
      });
     imgCenter.css({
-      "transform": 'translateX('+ -(Xinner - halfWidht) / 140 + 'px)'
+      "transform": 'translateX('+ -(Xinner - halfWidht) / 80 + 'px)'
     });
   }
   paralaxContainer.mouseleave(stopParalax);
