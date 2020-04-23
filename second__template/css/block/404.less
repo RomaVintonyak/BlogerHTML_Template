@@ -19,24 +19,18 @@
 }
 .parallax__container {
   width: 100%;
-  height: 550px;
+  height: 500px;
   position: relative;
   z-index: 1;
   overflow: hidden;
   @media @tablet {
-    height: 470px;
-  }
-  @media @mobile {
     height: 400px;
   }
-  @media (max-width: 650px) {
-    height: 320px;
+  @media @mobile {
+    height: 300px;
   }
   @media @mobile-sm {
-    height: 265px;
-  }
-  @media (max-width: 440px) {
-    height: 220px;
+    height: 200px;
   }
   @media @mobile-xsm {
     height: 160px;
@@ -48,6 +42,10 @@
   top: 0;
   right: -5%;
   z-index: 2;
+  -webkit-transition: -webkit-transform 0.5s linear;
+  transition: -webkit-transform 0.5s linear;
+  transition: transform 0.5s linear;
+  transition: transform 0.5s linear, -webkit-transform 0.5s linear;
 }
 .parallax__centr {
   width: 110%;
@@ -55,6 +53,10 @@
   top: 0;
   left: -5%;
   z-index: 1;
+  -webkit-transition: -webkit-transform 0.5s linear;
+  transition: -webkit-transform 0.5s linear;
+  transition: transform 0.5s linear;
+  transition: transform 0.5s linear, -webkit-transform 0.5s linear;
 }
 .parallax__bottom {
   position: absolute;
@@ -86,6 +88,12 @@
       font-size: 3rem;
     }
   }
+  @media @mobile-sm {
+    top: 18%;
+  }
+  @media @mobile-xsm {
+    top: 15%;
+  }
 }
 .error__link {
   position: absolute;
@@ -93,7 +101,7 @@
   left: 50%;
   z-index: 2;
   -webkit-transform: translateX(-50%) translateY(-35%);
-          transform: translateX(-50%) translateY(-35%);
+  transform: translateX(-50%) translateY(-35%);
   width: 100%;
   text-align: center;
   h2 {
@@ -103,8 +111,14 @@
     font-size: 1rem;
     height: 1rem;
     margin-bottom: 2rem;
+    @media @mobile-sm {
+      margin-bottom: 1.5rem;
+    }
   }
   a {
     margin: 0 auto;
+  }
+  @media @mobile {
+    top: 60%;
   }
 }
