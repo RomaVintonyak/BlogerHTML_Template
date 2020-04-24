@@ -1,6 +1,5 @@
 jQuery(document).ready(function(){
   "use script";
-  var imgTop = $(".parallax__top");
   var imgCenter = $(".parallax__centr");
   var paralaxContainer = $(".parallax__container");
 
@@ -14,18 +13,12 @@ jQuery(document).ready(function(){
     // find half width & higth element
     var halfWidht = paralaxContainer.innerWidth() / 2;
     //add css style to element
-    imgTop.css({
-      "transform": 'translateX('+ -(Xinner - halfWidht) / 160 + 'px)'
-     });
     imgCenter.css({
-      "transform": 'translateX('+ -(Xinner - halfWidht) / 80 + 'px)'
+      "transform": 'translateX('+ -(Xinner - halfWidht) / 50 + 'px)'
     });
   }
   paralaxContainer.mouseleave(stopParalax);
     function stopParalax(){
-      imgTop.css({
-      "transform":"translateX(0)"  
-    });
     imgCenter.css({
       "transform":"translateX(0)"  
     });
