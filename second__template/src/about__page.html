@@ -269,12 +269,8 @@
   <!--footer-->
   <footer id="footer" class="mt-2">
     <div class="container">
+      <div id="footer-instafeed"></div>
       <div class="footer__social">
-          <img src="../img/footer/1.png" alt="insta foto" class="img">
-          <img src="../img/footer/2.png" alt="insta foto" class="img">
-          <img src="../img/footer/3.png" alt="insta foto" class="img">
-          <img src="../img/footer/4.png" alt="insta foto" class="img">
-          <img src="../img/footer/5.png" alt="insta foto" class="img">
           <a href="#" target="_blank">
             <svg
                   height="48px"
@@ -351,6 +347,27 @@
         }
       };
     })();
+  </script>
+  <!--insta feed https://www.sowecms.com/demos/jquery.instagramFeed/index.html-->
+  <script src="../js/vendor/jquery.instagramFeed.min.js"></script>
+  <script>
+    (function($){
+      $(window).on('load', function(){
+          $.instagramFeed({
+              'tag': 'travelblogportfolio',
+              'container': "#footer-instafeed",
+              'display_profile': false,
+              'display_biography': false,
+              'display_gallery': true,
+              'callback': null,
+              'styling': false,
+              'items': 5,
+              'items_per_row': 5,
+              'margin': 0,
+              'image_size': 480
+          });
+      });
+  })(jQuery);
   </script>
   <!--use main script-->
   <!--use burger btn script-->
