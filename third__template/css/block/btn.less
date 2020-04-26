@@ -1,0 +1,35 @@
+//main: ../style.less
+.btn{
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  line-height: 42px;
+  width: 24.1rem;
+  height: 2.62rem;
+  background-color: @green;
+  font-weight: 400;
+  font-size: 1rem;
+  color: @white;
+  border: none;
+  -webkit-transition: background-color 0.15s ease-in-out;
+  transition: background-color 0.15s ease-in-out;
+  &:hover{
+    background-color: @hover;
+    &:active{
+      background-color: rgba(@hover, 0.8);
+    }
+  }
+  &:focus{
+    outline: none;
+  }
+  @media @tablet {
+    width: 22.26rem;
+  }
+  @media @mobile {
+    width: 18.26rem;
+  }
+  @media @mobile-sm {
+    width: 14.26rem;
+    font-size: 0.85rem;
+  }
+}

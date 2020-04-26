@@ -1,0 +1,146 @@
+//main: ../style.less
+#subscribe {
+  margin-top: 3.12rem;
+  width: 100%;
+  background-color: @white;
+  position: relative;
+  z-index: 1;
+  &::before {
+    content: "";
+    width: 100%;
+    height: 3.12rem;
+    background-color: @white;
+    position: absolute;
+    top: -3.12rem;
+    left: 0;
+    z-index: 1;
+    @media @tablet {
+      top: -2.12rem;
+      height: 2.12rem;
+    }
+    @media @mobile {
+      top: -1.12rem;
+      height: 1.12rem;
+    }
+    @media @mobile-sm {
+      top: -1rem;
+      height: 1rem;
+    }
+  }
+  @media @tablet {
+    margin-top: 2.12rem;
+  }
+  @media @mobile {
+    margin-top: 1.12rem;
+  }
+  @media @mobile-sm {
+    margin-top: 1rem;
+  }
+}
+.subscribe__content {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.subscribe__form {
+  height: 15.62rem;
+  width: 46.87rem;
+  border: 10px solid #fcfcfc;
+  padding-top: 3.12rem;
+  padding-left: 3.12rem;
+  position: relative;
+  z-index: 1;
+  h3 {
+    font-weight: 700;
+    color: @black;
+    font-size: 2.25rem;
+    margin-bottom: 1.31rem;
+    @media @notebook {
+      margin-bottom: 0.5em;
+    }
+    @media @mobile {
+      font-size: 1.8rem;
+    }
+    @media @mobile {
+      font-size: 1.6rem;
+    }
+    @media @mobile-sm {
+      font-size: 1.5rem;
+    }
+  }
+  input {
+    width: 18.25rem;
+    height: 2.62rem;
+    margin-right: 1.25rem;
+    background-color: #f3f3f3;
+    padding-left: 1.37rem;
+    border: none;
+    font-size: 1rem;
+    font-weight: 400;
+    color: @black;
+    &:nth-child(3) {
+      margin-right: 0;
+    }
+    &:focus {
+      outline-color: @green;
+    }
+    @media @notebook {
+      width: 70%;
+      margin-right: 0;
+      margin-bottom: 1rem;
+    }
+    @media @tablet {
+      width: 80%;
+    }
+    @media @mobile {
+      width: 100%;
+    }
+    @media @mobile-sm {
+      margin-bottom: 0.5rem;
+    }
+  }
+  button {
+    position: absolute;
+    z-index: 2;
+    left: 42rem;
+    bottom: 15.4%;
+    @media @notebook {
+      position: relative;
+      left: 0;
+      bottom: 0;
+    }
+  }
+  @media @notebook {
+    width: 100%;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 2rem;
+    height: 20rem;
+  }
+  @media @mobile {
+    padding-right: 1rem;
+    height: 18rem;
+  }
+}
+.subscribe__plus {
+  position: absolute;
+  top: -12%;
+  right: -1%;
+  @media @notebook {
+    top: -8%;
+  }
+}
+.subscribe__rectangle {
+  position: absolute;
+  top: 0;
+  right: 0;
+}

@@ -1,0 +1,128 @@
+//main: ../style.less
+#post {
+  padding-top: 3.12rem;
+  padding-bottom: 3.12rem;
+  width: 100%;
+  background-color: @white;
+  position: relative;
+  z-index: 1;
+  @media @tablet {
+    padding-top: 2.12rem;
+    padding-bottom: 2.12rem;
+  }
+  @media @mobile {
+    padding-top: 1.12rem;
+    padding-bottom: 1.12rem;
+  }
+  @media @mobile-sm {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+.post__block--post {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  @media @tablet {
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    justify-content: center;
+  }
+}
+.post__collum-l {
+  flex-basis: 45%;
+  overflow: hidden;
+  img {
+    margin-bottom: 1.3rem;
+    -webkit-transition: -webkit-transform 1.5s linear;
+    transition: -webkit-transform 1.5s linear;
+    transition: transform 1.5s linear;
+    transition: transform 1.5s linear, -webkit-transform 1.5s linear;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &:hover {
+    img {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+  }
+  @media @tablet {
+    -webkit-box-ordinal-group: 2;
+    order: 1;
+    flex-basis: 55%;
+  }
+  @media @mobile {
+    flex-basis: 70%;
+  }
+  @media @mobile-sm {
+    flex-basis: 100%;
+  }
+}
+.post__collum-c {
+  flex-basis: 50%;
+  overflow: hidden;
+  margin: 0 1rem;
+  img {
+    height: 23.5rem;
+    margin-bottom: 1.5rem;
+    -webkit-transition: -webkit-transform 1.5s linear;
+    transition: -webkit-transform 1.5s linear;
+    transition: transform 1.5s linear;
+    transition: transform 1.5s linear, -webkit-transform 1.5s linear;
+  }
+  &:hover {
+    img {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+  }
+  @media @tablet {
+    -webkit-box-ordinal-group: 3;
+    order: 2;
+    flex-basis: 55%;
+    margin: 1rem 0;
+    a {
+      margin: 0 auto;
+    }
+  }
+  @media @mobile {
+    flex-basis: 70%;
+  }
+  @media @mobile-sm {
+    flex-basis: 100%;
+  }
+}
+.post__collum-r {
+  flex-basis: 45%;
+  overflow: hidden;
+  img {
+    margin-bottom: 1.3rem;
+    -webkit-transition: -webkit-transform 1.5s linear;
+    transition: -webkit-transform 1.5s linear;
+    transition: transform 1.5s linear;
+    transition: transform 1.5s linear, -webkit-transform 1.5s linear;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &:hover {
+    img {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+  }
+  @media @tablet {
+    -webkit-box-ordinal-group: 4;
+    order: 3;
+    flex-basis: 55%;
+  }
+  @media @mobile {
+    flex-basis: 70%;
+  }
+  @media @mobile-sm {
+    flex-basis: 100%;
+  }
+}

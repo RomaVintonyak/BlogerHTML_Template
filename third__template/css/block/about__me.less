@@ -1,0 +1,134 @@
+//main: ../style.less
+#about__me {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  &::before {
+    content: "";
+    width: 50%;
+    height: 100%;
+    background-color: #f3f3f3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  &::after {
+    content: "";
+    width: 50%;
+    height: 100%;
+    background-color: @white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+  }
+}
+.about__content {
+  width: 100%;
+  display: -webkit-box;
+  display: flex;
+  height: 27.5rem;
+  overflow: hidden;
+  &:hover {
+    .collum__img {
+      img {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+.collum__text {
+  background-color: #f3f3f3;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+  padding-top: 4.3rem;
+  padding-left: 2.5rem;
+  h3 {
+    font-style: normal;
+    color: @black;
+    font-weight: 700;
+    line-height: 43px;
+    font-size: 2.25rem;
+    margin-bottom: 1.9rem;
+    @media @tablet{
+      font-size: 2rem;
+      line-height: 35px;
+      margin-bottom: 1.7rem;
+    }
+    @media @mobile{
+      font-size: 1.8rem;
+      line-height: 30px;
+      margin-bottom: 1.5rem;
+    }
+    @media @mobile{
+      font-size: 1.5rem;
+      line-height: 25px;
+      margin-bottom: 1.3rem;
+      position: relative;
+      z-index: 3;
+    }
+  }
+  p {
+    width: 36rem;
+    color: #6d6866;
+    font-size: 1.1rem;
+    line-height: 170%;
+    margin-bottom: 1.9rem;
+    @media @tablet{
+    width: 90%;
+    margin-bottom: 1.7rem;
+    }
+    @media @mobile{
+      margin-bottom: 1.5rem;
+      font-size: 1rem;
+      line-height: 160%;
+      position: relative;
+      z-index: 3;
+    }
+    @media @mobile-sm{
+      margin-bottom: 1.3rem;
+      font-size: 0.9rem;
+      line-height: 150%;
+      width: 100%;
+    }
+  } 
+  @media @tablet{
+    width: 100%;
+  }
+  @media @mobile-sm{
+    padding-top: 3.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  @media @mobile-xsm{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+.about__figure {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  @media @mobile-sm{
+    top: 0.5rem;
+    right: 0.5rem;
+  }
+}
+.collum__img {
+  width: 40%;
+  overflow: hidden;
+  img {
+    width: 100%;
+    height: auto;
+    -webkit-transition: -webkit-transform 1.5s linear;
+    transition: -webkit-transform 1.5s linear;
+    transition: transform 1.5s linear;
+    transition: transform 1.5s linear, -webkit-transform 1.5s linear;
+  }
+  @media @tablet{
+    display: none;
+  }
+}
