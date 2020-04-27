@@ -13,14 +13,19 @@
   display: flex;
   -webkit-box-align: center;
   align-items: center;
-  -webkit-box-pack: justify;
-  justify-content: space-between;
   overflow: hidden;
   a {
     text-decoration: none;
     position: relative;
+    margin-right: 0.5rem;
+    &:last-child{
+      margin-right: 0;
+    }
+    @media @mobile{
+      margin-right: 0;
+    }
     img {
-      width: 90%;
+      width: 100%;
       height: auto;
       @media @mobile {
         display: block;
