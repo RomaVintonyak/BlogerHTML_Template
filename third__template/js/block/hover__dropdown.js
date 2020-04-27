@@ -4,7 +4,7 @@ jQuery(document).ready(function () {
   dropList.hover(startHover);
   function startHover() {
     $(this).parent(".dropDownItem").find(".nav__link").css({
-      "background-color": "#57948F",
+      "background-color": "#C65C2E",
     });
   }
   dropList.mouseleave(stopHover);
