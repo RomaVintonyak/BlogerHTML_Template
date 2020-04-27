@@ -1,6 +1,8 @@
 //main: ../style.less
 #contact {
-  background-color: rgba(@gray, 1);
+  background: url(../img/contact/contact__bg.png) no-repeat center;
+  background-size: cover;
+  overflow: hidden;
   width: 100%;
   margin-top: 3.12rem;
   padding-bottom: 4.3rem;
@@ -48,7 +50,7 @@
   align-items: flex-start;
   position: relative;
   z-index: 1;
-  &--page{
+  &--page {
     padding-bottom: 1.5rem;
   }
   @media @tablet {
@@ -66,6 +68,7 @@
     font-weight: 700;
     margin-bottom: 1.9rem;
     font-size: 2.25rem;
+    color: @white;
     @media @tablet {
       margin-bottom: 0.5rem;
     }
@@ -93,7 +96,7 @@
     width: 1.5rem;
     margin-right: 0.5rem;
     i {
-      color: #6d6866;
+      color: @white;
       font-size: 1.12rem;
       -webkit-transition: color 0.3s linear, -webkit-transform 0.3s linear;
       transition: color 0.3s linear, -webkit-transform 0.3s linear;
@@ -110,10 +113,12 @@
         -webkit-transform 0.3s linear;
       transition: color 0.3s linear, transform 0.3s linear,
         -webkit-transform 0.3s linear;
+      transition: color 0.3s linear, transform 0.3s linear,
+        -webkit-transform 0.3s linear;
     }
   }
   p {
-    color: #6d6866;
+    color: @white;
     font-size: 1.12rem;
     line-height: 140%;
     -webkit-transition: color 0.3s linear;
@@ -122,12 +127,12 @@
   &:hover {
     cursor: pointer;
     i {
-      color: @hover;
+      color: @blue-l;
       -webkit-transform: scale(1.1);
       transform: scale(1.1);
     }
     p {
-      color: @hover;
+      color: @blue-l;
     }
   }
 }
@@ -174,7 +179,7 @@
         width: 100%;
       }
       &:focus {
-        outline-color: @green;
+        outline-color: @orange;
       }
     }
     textarea {
@@ -192,7 +197,7 @@
       padding-top: 1.6rem;
       resize: none;
       &:focus {
-        outline-color: @green;
+        outline-color: @orange;
       }
     }
   }
