@@ -7,7 +7,7 @@
   align-items: center;
   -webkit-box-pack: center;
   justify-content: center;
-  border: 10px solid #f3f3f3;
+  border: 10px solid @blue-l;
   width: 94%;
   margin: 3.12rem auto 0;
   padding: 1rem 0;
@@ -42,6 +42,8 @@
     -webkit-transition: color 0.3s linear, -webkit-transform 0.3s linear;
     transition: color 0.3s linear, -webkit-transform 0.3s linear;
     transition: color 0.3s linear, transform 0.3s linear;
+    transition: color 0.3s linear, transform 0.3s linear,
+      -webkit-transform 0.3s linear;
     transition: color 0.3s linear, transform 0.3s linear,
       -webkit-transform 0.3s linear;
     transition: color 0.3s linear, transform 0.3s linear,
@@ -235,9 +237,9 @@
       left top,
       right top,
       from(@white),
-      to(rgba(@gray, 0.5))
+      to(rgba(@blue-l, 0.5))
     );
-    background: linear-gradient(to right, @white, rgba(@gray, 0.5));
+    background: linear-gradient(to right, @white, rgba(@blue-l, 0.5));
     background-position: right;
     background-size: 100%;
   }
@@ -246,10 +248,10 @@
       linear,
       left top,
       right top,
-      from(rgba(@gray, 0.5)),
+      from(rgba(@blue-l, 0.5)),
       to(@white)
     );
-    background: linear-gradient(to right, rgba(@gray, 0.5), @white);
+    background: linear-gradient(to right, rgba(@blue-l, 0.5), @white);
     background-position: left;
     background-size: 100%;
   }
