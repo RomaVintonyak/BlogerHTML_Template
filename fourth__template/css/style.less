@@ -1,0 +1,98 @@
+//compress: true
+
+/*google foonts*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap&subset=cyrillic,cyrillic-ext,latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Literata&display=swap&subset=latin-ext');
+html{
+  font-size: 16px;
+}
+body{
+  font-family: @monserat;
+  font-size: 1rem;
+  -webkit-font-smoothing: antialiased;
+  color: @black;
+  margin: 0;
+  padding: 0;
+  background-color: @white;
+  overflow-x: hidden;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+a {
+  &:focus {
+    outline: none;
+  }
+}
+/*===================*/
+/*helpers*/
+@import "help.less";
+/*vars*/
+@import "var.less";
+/*===================*/
+/*vendor*/
+/*1. normalize css https://necolas.github.io/normalize.css/ */
+@import "vendor/normalize.less";
+/*2. waves efect https://materializecss.com/waves.html*/
+@import "vendor/waves.less";
+/*3. slick slider https://kenwheeler.github.io/slick/*/
+@import "vendor/slick.less";
+/*===================*/
+/*main style block*/
+/*1. container*/
+@import "block/container.less";
+/*2. header*/
+@import "block/header.less";
+/*3. nav*/
+@import "block/nav.less";
+/*4. burger*/
+@import "block/burger.less";
+/*5. intro*/
+@import "block/intro.less";
+/*6. btn*/
+@import "block/btn.less";
+/*7. btn*/
+@import "block/blogPost.less";
+/*8. subscribe*/
+@import "block/subscribe.less";
+/*9. about__me*/
+@import "block/about__me.less";
+/*10. post block*/
+@import "block/post__block.less";
+/*11. contact section*/
+@import "block/contact.less";
+/*12. footer section*/
+@import "block/footer.less";
+/*13. back top button*/
+@import "block/back__top.less";
+/*14. drop down list*/
+@import "block/drop__down.less";
+/*15. blog page style*/
+@import "block/blog__page.less";
+/*16. about page style*/
+@import "block/about__page.less";
+/*17. about skils style*/
+@import "block/about__skils.less";
+/*18. about page2 style*/
+@import "block/about__page2.less";
+/*19. about skils--2 style*/
+@import "block/about__skils--2.less";
+/*20. 404 page style*/
+@import "block/404.less";
+/*21. post page style*/
+@import "block/post__page.less";
+/*22. mobile menu style*/
+@import "block/mobile__menu.less";
