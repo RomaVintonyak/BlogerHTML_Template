@@ -7,7 +7,7 @@
     content: "";
     width: 50%;
     height: 100%;
-    background-color: #f3f3f3;
+    background-color: @blue-l;
     position: absolute;
     top: 0;
     left: 0;
@@ -40,7 +40,7 @@
   }
 }
 .collum__text {
-  background-color: #f3f3f3;
+  background-color: @blue-l;
   height: 100%;
   position: relative;
   z-index: 1;
@@ -53,17 +53,17 @@
     line-height: 43px;
     font-size: 2.25rem;
     margin-bottom: 1.9rem;
-    @media @tablet{
+    @media @tablet {
       font-size: 2rem;
       line-height: 35px;
       margin-bottom: 1.7rem;
     }
-    @media @mobile{
+    @media @mobile {
       font-size: 1.8rem;
       line-height: 30px;
       margin-bottom: 1.5rem;
     }
-    @media @mobile{
+    @media @mobile {
       font-size: 1.5rem;
       line-height: 25px;
       margin-bottom: 1.3rem;
@@ -77,45 +77,41 @@
     font-size: 1.1rem;
     line-height: 170%;
     margin-bottom: 1.9rem;
-    @media @tablet{
-    width: 90%;
-    margin-bottom: 1.7rem;
+    @media @tablet {
+      width: 90%;
+      margin-bottom: 1.7rem;
     }
-    @media @mobile{
+    @media @mobile {
       margin-bottom: 1.5rem;
       font-size: 1rem;
       line-height: 160%;
       position: relative;
       z-index: 3;
     }
-    @media @mobile-sm{
+    @media @mobile-sm {
       margin-bottom: 1.3rem;
       font-size: 0.9rem;
       line-height: 150%;
       width: 100%;
     }
-  } 
-  @media @tablet{
+  }
+  @media @tablet {
     width: 100%;
   }
-  @media @mobile-sm{
+  @media @mobile-sm {
     padding-top: 3.5rem;
     padding-left: 1rem;
     padding-right: 1rem;
   }
-  @media @mobile-xsm{
+  @media @mobile-xsm {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
   }
 }
 .about__figure {
   position: absolute;
-  top: 1.5rem;
-  right: 1.5rem;
-  @media @mobile-sm{
-    top: 0.5rem;
-    right: 0.5rem;
-  }
+  top: -3.5rem;
+  right: -9.5rem;
 }
 .collum__img {
   width: 40%;
@@ -128,7 +124,7 @@
     transition: transform 1.5s linear;
     transition: transform 1.5s linear, -webkit-transform 1.5s linear;
   }
-  @media @tablet{
+  @media @tablet {
     display: none;
   }
 }
