@@ -129,6 +129,7 @@
       }
       .post__figure {
         height: 12rem;
+        border-color: @blue-l;
         @media @tablet {
           height: 9rem;
         }
@@ -175,6 +176,14 @@
           }
           @media (max-width: 350px) {
             width: 32%;
+          }
+        }
+        .post__content{
+          .post__date{
+            background-color: @blue-l;
+            a{
+              background-color: rgba(@blue-d, 0.1);
+            }
           }
         }
       }
