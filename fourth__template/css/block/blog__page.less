@@ -7,7 +7,7 @@
   align-items: center;
   -webkit-box-pack: center;
   justify-content: center;
-  border: 10px solid #f3f3f3;
+  border: 10px solid @green-l;
   width: 94%;
   margin: 3.12rem auto 0;
   padding: 1rem 0;
@@ -20,7 +20,7 @@
   h3 {
     margin-right: 1.5rem;
     font-size: 1.5rem;
-    color: @black;
+    color: @blue-d;
     font-weight: 700;
     font-style: normal;
     @media @mobile {
@@ -35,7 +35,7 @@
   a {
     text-decoration: none;
     font-size: 1.1rem;
-    color: #6d6866;
+    color: @blue-d;
     font-weight: 400;
     font-style: normal;
     margin-right: 1.8rem;
@@ -126,6 +126,7 @@
       }
       .post__figure {
         height: 12rem;
+        border-color: @green-l;
         @media @tablet {
           height: 9rem;
         }
@@ -234,9 +235,9 @@
       left top,
       right top,
       from(@white),
-      to(rgba(@gray, 0.5))
+      to(rgba(@green-l, 0.5))
     );
-    background: linear-gradient(to right, @white, rgba(@gray, 0.5));
+    background: linear-gradient(to right, @white, rgba(@green-l, 0.5));
     background-position: right;
     background-size: 100%;
   }
@@ -245,10 +246,10 @@
       linear,
       left top,
       right top,
-      from(rgba(@gray, 0.5)),
+      from(rgba(@green-l, 0.5)),
       to(@white)
     );
-    background: linear-gradient(to right, rgba(@gray, 0.5), @white);
+    background: linear-gradient(to right, rgba(@green-l, 0.5), @white);
     background-position: left;
     background-size: 100%;
   }
