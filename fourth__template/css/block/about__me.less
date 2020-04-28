@@ -14,20 +14,20 @@
       }
     }
   }
-  @media @tablet{
-    margin-top:  2.12rem;
+  @media @tablet {
+    margin-top: 2.12rem;
     flex-wrap: wrap;
   }
-  @media @mobile{
+  @media @mobile {
     margin-top: 1.12rem;
   }
-  @media @mobile-sm{
+  @media @mobile-sm {
     height: auto;
   }
 }
 .collum__text {
   width: 60%;
-  background-color: #f3f3f3;
+  background-color: @gray-bl;
   height: 100%;
   position: relative;
   z-index: 1;
@@ -35,12 +35,12 @@
   padding-left: 2.5rem;
   h3 {
     font-style: normal;
-    color: @black;
+    color: @blue-d;
     font-weight: 700;
     line-height: 43px;
     font-size: 2.25rem;
     margin-bottom: 1.9rem;
-    @media @mobile-sm{
+    @media @mobile-sm {
       width: 70%;
       font-size: 1.4rem;
       margin-bottom: 2.2rem;
@@ -48,19 +48,19 @@
   }
   p {
     width: 95%;
-    color: #6d6866;
+    color: @blue-d;
     font-size: 1.1rem;
     line-height: 32px;
     margin-bottom: 1.9rem;
-    @media @mobile{
+    @media @mobile {
       width: 98%;
       margin-bottom: 0.9rem;
     }
   }
-  @media @tablet{
+  @media @tablet {
     width: 100%;
   }
-  @media @mobile-sm{
+  @media @mobile-sm {
     padding-top: 2rem;
     padding-left: 1rem;
     padding-bottom: 2rem;
@@ -70,7 +70,7 @@
   position: absolute;
   top: 1.5rem;
   right: 1.5rem;
-  @media @mobile-sm{
+  @media @mobile-sm {
     top: 1rem;
     right: 1rem;
   }
@@ -86,7 +86,7 @@
     transition: transform 1.5s linear;
     transition: transform 1.5s linear, -webkit-transform 1.5s linear;
   }
-  @media @tablet{
+  @media @tablet {
     display: none;
   }
 }

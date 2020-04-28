@@ -1,6 +1,6 @@
 //main: ../style.less
 #contact {
-  background-color: rgba(@gray, 0.8);
+  background-color: rgba(@green-l, 0.9);
   width: 100%;
   height: auto;
   margin-top: 3.12rem;
@@ -44,11 +44,16 @@
 .contact__social {
   flex-basis: 30%;
   padding-top: 4.3rem;
+  background: url(../img/contact/social__bg.png) no-repeat center;
+  background-size: cover;
+  overflow: hidden;
+  background-position: top;
   h3 {
     font-style: normal;
     font-weight: 700;
     margin-bottom: 1.9rem;
     font-size: 2.25rem;
+    color: @blue-d;
     @media @tablet {
       margin-bottom: 0.5rem;
     }
@@ -76,7 +81,7 @@
     width: 1.5rem;
     margin-right: 0.5rem;
     i {
-      color: #6d6866;
+      color: @yelow;
       font-size: 1.12rem;
       -webkit-transition: color 0.3s linear, -webkit-transform 0.3s linear;
       transition: color 0.3s linear, -webkit-transform 0.3s linear;
@@ -93,10 +98,12 @@
         -webkit-transform 0.3s linear;
       transition: color 0.3s linear, transform 0.3s linear,
         -webkit-transform 0.3s linear;
+      transition: color 0.3s linear, transform 0.3s linear,
+        -webkit-transform 0.3s linear;
     }
   }
   p {
-    color: #6d6866;
+    color: @blue-d;
     font-size: 1.12rem;
     line-height: 140%;
     -webkit-transition: color 0.3s linear;
@@ -105,12 +112,12 @@
   &:hover {
     cursor: pointer;
     i {
-      color: @hover;
+      color: rgba(@yelow, 0.7);
       -webkit-transform: scale(1.1);
       transform: scale(1.1);
     }
     p {
-      color: @hover;
+      color: rgba(@blue-d, 0.7);
     }
   }
 }
@@ -157,7 +164,7 @@
         width: 100%;
       }
       &:focus {
-        outline-color: @hover;
+        outline-color: @yelow;
       }
     }
     textarea {
@@ -175,7 +182,7 @@
       padding-top: 1.6rem;
       resize: none;
       &:focus {
-        outline-color: @hover;
+        outline-color: @yelow;
       }
     }
   }
