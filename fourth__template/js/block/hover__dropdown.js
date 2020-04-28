@@ -4,7 +4,7 @@ jQuery(document).ready(function () {
   dropList.hover(startHover);
   function startHover() {
     $(this).parent(".dropDownItem").find(".nav__link").css({
-      "background-color": "#2B2320",
+      "background-color": "#3C4652",
       "color": "#ffffff"
     });
   }
@@ -12,7 +12,7 @@ jQuery(document).ready(function () {
   function stopHover() {
     $(this).parent(".dropDownItem").find(".nav__link").css({
       "background-color": "transparent",
-      "color": "#2B2320"
+      "color": "#3C4652"
     });
   }
 });
