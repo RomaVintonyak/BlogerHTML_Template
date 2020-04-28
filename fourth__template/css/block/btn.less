@@ -6,7 +6,7 @@
   line-height: 42px;
   width: 24.1rem;
   height: 2.62rem;
-  background-color: @black;
+  background-color: @blue-d;
   font-weight: 400;
   font-size: 1rem;
   color: @white;
@@ -31,5 +31,14 @@
   @media @mobile-sm {
     width: 14.26rem;
     font-size: 0.85rem;
+  }
+  &--yelow {
+    background-color: @yelow;
+    &:hover {
+      background-color: rgba(@yelow, 0.8);
+      &:active {
+        background-color: rgba(@yelow, 0.7);
+      }
+    }
   }
 }
