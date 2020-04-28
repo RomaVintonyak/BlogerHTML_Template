@@ -3,7 +3,7 @@
   margin-top: 3.12rem;
   padding: 1.4rem 1.4rem 1.4rem 0;
   width: 100%;
-  background-color: #f3f3f3;
+  background-color: @gray-sl;
   display: -webkit-box;
   display: flex;
   align-content: flex-start;
@@ -18,18 +18,18 @@
       }
     }
   }
-  @media @tablet{
+  @media @tablet {
     margin-top: 2.12rem;
     -webkit-box-pack: center;
-            justify-content: center;
+    justify-content: center;
     flex-wrap: wrap;
     padding: 1.2rem 1.2rem 1.2rem 0;
   }
-  @media @mobile{
+  @media @mobile {
     margin-top: 1.12rem;
     padding: 1rem 1rem 1rem 0;
   }
-  @media @mobile-sm{
+  @media @mobile-sm {
     margin-top: 1rem;
     padding: 0.8rem 0.8rem 0.8rem 0;
   }
@@ -38,19 +38,20 @@
   width: 45%;
   display: -webkit-box;
   display: flex;
-  align-content: start;
+  -webkit-box-align: start;
+  align-items: flex-start;
   -webkit-box-pack: justify;
   justify-content: space-between;
   overflow: hidden;
-  @media @tablet{
+  @media @tablet {
     -webkit-box-ordinal-group: 3;
-            order: 2;
+    order: 2;
     width: 80%;
   }
-  @media @mobile{
+  @media @mobile {
     width: 90%;
   }
-  @media @mobile-sm{
+  @media @mobile-sm {
     width: 95%;
   }
 }
@@ -86,125 +87,131 @@
   h3 {
     font-weight: 700;
     font-style: normal;
-    color: @black;
+    color: @blue-d;
     font-size: 2.25rem;
     margin-bottom: 2rem;
-    @media @notebook{
+    @media @notebook {
       margin-bottom: 1rem;
     }
-    @media @tablet{
+    @media @tablet {
       font-size: 2rem;
     }
-    @media @mobile{
+    @media @mobile {
       font-size: 1.8rem;
     }
-    @media @mobile-sm{
+    @media @mobile-sm {
       font-size: 1.4rem;
     }
   }
   h4 {
-    color: #6d6866;
+    color: @blue-d;
     font-size: 1rem;
     font-weight: 400;
     line-height: 32px;
     margin-bottom: 2rem;
-    @media @notebook{
+    @media @notebook {
       margin-bottom: 1rem;
     }
   }
   p {
-    color: #6d6866;
+    color: @blue-d;
     font-size: 1rem;
     font-weight: 400;
     font-style: italic;
-    @media @notebook{
+    @media @notebook {
       margin-bottom: 1rem;
     }
   }
-  @media @notebook{
+  @media @notebook {
     padding: 2rem 1rem 0 2rem;
   }
-  @media @tablet{
+  @media @tablet {
     width: 80%;
     -webkit-box-ordinal-group: 2;
-            order: 1;
+    order: 1;
     border-left: none;
     border-bottom: 5px solid @black;
     padding: 1.5rem 0.5rem 0 1.5rem;
   }
-  @media @mobile{
+  @media @mobile {
     width: 90%;
     padding: 1rem 0.5rem 0 1rem;
   }
-  @media @mobile-sm{
+  @media @mobile-sm {
     width: 95%;
     padding: 0.5rem 0.5rem 0 0.5rem;
   }
 }
 /*about post block for about page 2*/
-.about__post--row{
+.about__post--row {
   margin-top: 3.12rem;
   display: -webkit-box;
   display: flex;
   align-content: flex-start;
   -webkit-box-pack: justify;
-          justify-content: space-between;
-  @media @notebook{
+  justify-content: space-between;
+  @media @notebook {
     -webkit-box-pack: center;
-            justify-content: center;
+    justify-content: center;
     flex-wrap: wrap;
   }
-  @media @tablet{
+  @media @tablet {
     margin-top: 2.12rem;
   }
-  @media @mobile{
+  @media @mobile {
     margin-top: 1.12rem;
   }
-  @media @mobile-sm{
+  @media @mobile-sm {
     margin-top: 1rem;
   }
 }
-.about__post--collum{
+.about__post--collum {
   width: 32%;
-  h4{
+  .post__date {
+    background-color: @gray-sl;
+    a {
+      background-color: @gray-bl;
+    }
+  }
+  h4 {
     font-weight: 700;
     font-style: normal;
-    color: @black;
+    color: @blue-d;
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    @media @mobile{
+    @media @mobile {
       font-size: 1.4rem;
     }
   }
-  h5{
+  h5 {
     font-weight: normal;
     font-style: normal;
     color: @black;
     font-size: 1rem;
     margin-bottom: 2rem;
     line-height: 27px;
-    color: #6d6866;
+    color: @blue-d;
   }
-  @media @notebook{
+  @media @notebook {
     width: 40%;
     margin-bottom: 1rem;
-    &:first-child{
+    &:first-child {
       margin-right: 1rem;
     }
-    &:last-child{
+    &:last-child {
       margin-bottom: 0;
     }
   }
-  @media @tablet{
+  @media @tablet {
     width: 60%;
-    &:first-child{
+    &:first-child {
       margin-right: 0;
     }
   }
-  @media @mobile{
+  @media @mobile {
     width: 80%;
   }
-  @media @mobile-sm{
+  @media @mobile-sm {
     width: 100%;
   }
 }
