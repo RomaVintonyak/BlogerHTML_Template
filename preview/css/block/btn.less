@@ -1,29 +1,74 @@
 //main: ../style.less
-.btn{
+.btn {
   padding: 1rem 1.5rem;
   text-decoration: none;
   text-transform: uppercase;
   color: @white;
   font-size: 0.9rem;
   font-weight: 400;
-  background: rgb(229,203,59);
-  background: linear-gradient(90deg, rgba(229,203,59,1) 0%, rgba(223,149,54,1) 100%);
+  background: rgb(229, 203, 59);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(rgba(229, 203, 59, 1)),
+    to(rgba(223, 149, 54, 1))
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(229, 203, 59, 1) 0%,
+    rgba(223, 149, 54, 1) 100%
+  );
   border-radius: 5px;
+  -webkit-transition: color 0.2s linear, box-shadow 0.2s linear;
   transition: color 0.2s linear, box-shadow 0.2s linear;
-  &:hover{
-    background: rgb(223,149,54);
-    background: linear-gradient(90deg, rgba(223,149,54,1) 0%, rgba(229,205,59,1) 100%);
-    &:active{
+  &:hover {
+    background: rgb(223, 149, 54);
+    background: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(rgba(223, 149, 54, 1)),
+      to(rgba(229, 205, 59, 1))
+    );
+    background: linear-gradient(
+      90deg,
+      rgba(223, 149, 54, 1) 0%,
+      rgba(229, 205, 59, 1) 100%
+    );
+    &:active {
       color: #62748c;
     }
   }
-  &--yellow{
-    background: rgb(205,0,255);
-    background: linear-gradient(90deg, rgba(205,0,255,1) 0%, rgba(137,0,255,1) 100%);
-    &:hover{
-      background: rgb(137,0,255);
-      background: linear-gradient(90deg, rgba(137,0,255,1) 0%, rgba(210,0,255,1) 100%);
-      &:active{
+  &--yellow {
+    background: rgb(205, 0, 255);
+    background: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(rgba(205, 0, 255, 1)),
+      to(rgba(137, 0, 255, 1))
+    );
+    background: linear-gradient(
+      90deg,
+      rgba(205, 0, 255, 1) 0%,
+      rgba(137, 0, 255, 1) 100%
+    );
+    &:hover {
+      background: rgb(137, 0, 255);
+      background: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from(rgba(137, 0, 255, 1)),
+        to(rgba(210, 0, 255, 1))
+      );
+      background: linear-gradient(
+        90deg,
+        rgba(137, 0, 255, 1) 0%,
+        rgba(210, 0, 255, 1) 100%
+      );
+      &:active {
         color: #62748c;
       }
     }
