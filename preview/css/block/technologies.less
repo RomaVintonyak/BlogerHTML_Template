@@ -32,3 +32,17 @@
   justify-content: space-between;
   margin-top: 3.12rem;
 }
+.technologies__col {
+  background-color: @white;
+  -webkit-transition: box-shadow 0.2s linear, -webkit-transform 0.2s linear;
+  transition: box-shadow 0.2s linear, -webkit-transform 0.2s linear;
+  transition: box-shadow 0.2s linear, transform 0.2s linear;
+  transition: box-shadow 0.2s linear, transform 0.2s linear,
+    -webkit-transform 0.2s linear;
+  &:hover {
+    box-shadow: 1px 1px @white, 2px 2px @white, 3px 3px @white, 4px 4px @white,
+      5px 5px @white, 6px 6px @white, 7px 7px @white, 8px 8px @white;
+    -webkit-transform: translateX(-8px);
+    transform: translateX(-8px);
+  }
+}
