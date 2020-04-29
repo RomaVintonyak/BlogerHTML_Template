@@ -1,1 +1,52 @@
 //main: ../style.less
+#header {
+  width: 100%;
+  position: relative;
+  z-index: 4;
+  background: rgb(116, 149, 165);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(rgba(116, 149, 165, 1)),
+    to(rgba(98, 117, 140, 1))
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(116, 149, 165, 1) 0%,
+    rgba(98, 117, 140, 1) 100%
+  );
+  padding: 1rem 0;
+}
+.header__row {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.navbar__brand {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  height: 100%;
+  a {
+    margin-right: 1rem;
+  }
+}
+.brand__text {
+  p {
+    &:first-child {
+      font-weight: 700;
+      font-size: 1.25rem;
+    }
+    color: @white;
+    font-weight: 500;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+  }
+}
