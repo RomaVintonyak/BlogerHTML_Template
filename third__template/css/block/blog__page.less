@@ -52,6 +52,8 @@
       -webkit-transform 0.3s linear;
     transition: color 0.3s linear, transform 0.3s linear,
       -webkit-transform 0.3s linear;
+    transition: color 0.3s linear, transform 0.3s linear,
+      -webkit-transform 0.3s linear;
     -webkit-transform-origin: center top;
     transform-origin: center top;
     &:last-child {
@@ -143,8 +145,6 @@
         margin: 2rem 0.5rem;
         width: 48%;
         height: 13rem;
-        display: -webkit-box;
-        display: flex;
         @media @tablet {
           width: 80%;
           height: 11rem;
@@ -161,6 +161,7 @@
         img {
           width: 30%;
           margin-right: 1rem;
+          float: left;
           @media @tablet {
             width: 26%;
           }
@@ -178,10 +179,10 @@
             width: 32%;
           }
         }
-        .post__content{
-          .post__date{
+        .post__content {
+          .post__date {
             background-color: @blue-l;
-            a{
+            a {
               background-color: rgba(@blue-d, 0.1);
             }
           }
@@ -192,12 +193,10 @@
         margin: 1rem 1rem;
         width: 30%;
         height: 15rem;
-        display: -webkit-box;
-        display: flex;
-        .post__content{
-          .post__date{
+        .post__content {
+          .post__date {
             background-color: @blue-l;
-            a{
+            a {
               background-color: rgba(@blue-d, 0.1);
             }
           }
