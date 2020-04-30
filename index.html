@@ -17,12 +17,12 @@
 </head>
 <body>
 <!--intro section-->
-<section id="intro">
+<section id="intro" class="wow fadeIn" data-wow-duration="4s">
   <!--intro header-->
  <header id="header">
   <div class="container">
     <div class="header__row">
-      <div class="navbar__brand">
+      <div class="navbar__brand wow fadeInLeft" data-wow-duration="3s">
         <a href="index.html"><img src="preview/img/intro/logo.png" alt="logo"></a>
         <div class="brand__text">
           <p>book of</p>
@@ -30,15 +30,15 @@
         </div>
       </div><!--/.navbar__brand-->
       <div class="navbar__button">
-        <a href="#" class="btn hvr-grow-shadow">Purchase now</a>
+        <a href="#" class="btn hvr-grow-shadow wow fadeInRight" data-wow-duration="3s">Purchase now</a>
       </div><!--/.navbar__button-->
     </div><!--/.header__row-->
   </div><!--/.container-->
  </header><!--/.header-->
  <!--intro contanr-->
- <img src="preview/img/intro/figure__tl.png" alt="figure" class="intro__top">
- <img src="preview/img/intro/figure__br.png" alt="figure" class="intro__bottom">
- <div class="intro__row">
+ <img src="preview/img/intro/figure__tl.png" alt="figure" class="intro__top wow fadeInLeft" data-wow-duration="3s">
+ <img src="preview/img/intro/figure__br.png" alt="figure" class="intro__bottom wow fadeInRight" data-wow-duration="3s">
+ <div class="intro__row wow zoomIn" data-wow-duration="3s">
    <div class="col__text">
      <h1>book of</h1>
      <h2>my strory</h2>
@@ -148,11 +148,25 @@
     &copy; dt__theme 2019 &mdash; <script>"use script"; document.write(new Date().getFullYear())</script>
   </div>
 </footer>
+<!--back top btn-->
+<div class="back__top" id="topBtn">
+  <i class="fas fa-angle-double-up"></i>
+</div>
 <!--include js files-->
 <!--jquery-->
 <script src="preview/js/vendor/jquery-3.4.1.min.js"></script>
 <!--wow.js https://wowjs.uk/ -->
 <script src="preview/js/vendor/wow.min.js"></script>
+<script>
+  wow = new WOW({
+    boxClass: "wow", // default
+    animateClass: "animated", // default
+    offset: 0, // default
+    mobile: false, // default
+    live: true // default
+  });
+  wow.init();
+</script>
 <!--main script-->
 <!--back top btn-->
 <script src="preview/js/block/back__top.js"></script>
