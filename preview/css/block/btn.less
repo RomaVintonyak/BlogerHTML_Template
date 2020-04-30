@@ -74,3 +74,22 @@
     }
   }
 }
+.hvr-grow-shadow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(100px) translateZ(0);
+  transform: perspective(100px) translateZ(0);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform;
+  &:hover {
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.8);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    &:active {
+      transform: scale(1);
+    }
+  }
+}
