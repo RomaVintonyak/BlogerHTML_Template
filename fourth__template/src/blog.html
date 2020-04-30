@@ -17,7 +17,7 @@
   </head>
 <body>
   <!--header-->
-  <header id="header">
+  <header id="header" class="wow fadeIn" data-wow-duration="3s">
     <div class="header__top">
       <div class="container">
         <div class="top__content">
@@ -151,7 +151,7 @@
   </div><!--/.mobile__content-->
   <!--blog category filter-->
   <div class="container">
-    <div class="filter__content">
+    <div class="filter__content wow zoomInUp" data-wow-duration="3s">
       <h3>Categories</h3>
       <a data-filter="all" href="#">All</a>
       <a data-filter="Photoshoot" href="#">Photoshoot</a>
@@ -163,7 +163,7 @@
   <!--blog post-->
   <section id="blogPost" style="margin-top: 0rem;">
   <div class="container">
-   <div id="postSlider" class="slider__wraper">
+   <div id="postSlider" class="slider__wraper wow zoomInUp" data-wow-duration="3s">
     <!-- first slide block-->
     <div class="post__footer post__footer--page">
       <div class="post__colum" data-blog="Photoshoot">
@@ -358,7 +358,7 @@
  </div><!--/.container-->
 </section>
   <!--footer-->
-  <footer id="footer">
+  <footer id="footer" class="wow fadeIn" data-wow-duration="3s">
     <div class="container">
       <div id="footer-instafeed"></div>
       <div class="footer__social">
@@ -489,6 +489,19 @@
           });
       });
   })(jQuery);
+  </script>
+  <!--wow animation https://wowjs.uk/ -->
+  <script src="../js/vendor/wow.min.js"></script>
+  <!--use wow animation-->
+  <script>
+    wow = new WOW({
+      boxClass: "wow", // default
+      animateClass: "animated", // default
+      offset: 0, // default
+      mobile: false, // default
+      live: true // default
+    });
+    wow.init();
   </script>
   <!--use main script-->
   <!--use burger btn script-->

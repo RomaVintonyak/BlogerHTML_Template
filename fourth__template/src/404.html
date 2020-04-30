@@ -19,7 +19,7 @@
   <!--wraper container-->
   <div class="wraper__container">
   <!--header-->
-  <header id="header">
+  <header id="header" class="wow fadeIn" data-wow-duration="3s">
     <div class="header__top">
       <div class="container">
         <div class="top__content">
@@ -152,7 +152,7 @@
     </ul><!--/.mobile__menu-->
   </div><!--/.mobile__content-->
   <!--main block-->
-  <section id="errorBlock">
+  <section id="errorBlock" class="wow fadeIn" data-wow-duration="3s">
     <div class="container">
       <div class="error__row">
         <div class="error__collum--text">
@@ -171,7 +171,7 @@
     </div>
   </section>
   <!--footer section-->
-  <footer id="footer">
+  <footer id="footer" class="wow fadeIn" data-wow-duration="3s">
     <div class="container">
       <div id="footer-instafeed"></div>
       <div class="footer__social">
@@ -287,6 +287,19 @@
           });
       });
   })(jQuery);
+  </script>
+  <!--wow animation https://wowjs.uk/ -->
+  <script src="../js/vendor/wow.min.js"></script>
+  <!--use wow animation-->
+  <script>
+    wow = new WOW({
+      boxClass: "wow", // default
+      animateClass: "animated", // default
+      offset: 0, // default
+      mobile: false, // default
+      live: true // default
+    });
+    wow.init();
   </script>
   <!--use main script-->
   <!--use burger btn script-->

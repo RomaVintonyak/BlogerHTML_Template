@@ -17,7 +17,7 @@
   </head>
 <body>
   <!--header-->
-  <header id="header">
+  <header id="header" class="wow fadeIn" data-wow-duration="3s">
     <div class="header__top">
       <div class="container">
         <div class="top__content">
@@ -152,13 +152,13 @@
   <section id="introPost">
     <div class="container">
       <div class="intro__post--row">
-        <div class="intro__post--title">
+        <div class="intro__post--title wow fadeIn" data-wow-duration="3s">
           <h2>How to prepare for shooting</h2>
           <div class="intro__post--date">16/04/2020</div>
         </div><!--/.post__title-->
-        <img src="../img/post__page/mask__intro.png" alt="post" class="img intro__post--img">
+        <img src="../img/post__page/mask__intro.png" alt="post" class="img intro__post--img wow fadeIn" data-wow-duration="3s">
         <div class="intro__post--content">
-          <div class="post__content--text">
+          <div class="post__content--text wow fadeInLeft" data-wow-duration="3s">
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
             when an unknown printer took a galley of type and scrambled it to make a type 
@@ -170,7 +170,7 @@
             survived not only five centuries, but also the leap into electronic typesetting, 
             remaining essentially Lorem Ipsum is simply dummy text of the printing and
           </div>
-          <div class="post__content--cat">
+          <div class="post__content--cat wow fadeInRight" data-wow-duration="3s">
             <h3>Categories</h3>
             <a data-link="Photoshoot" href="#" class="post__cat--link">Photoshoot</a>
             <a data-link="Camera" href="#">Camera</a>
@@ -185,7 +185,7 @@
   <section id="galeryPost">
     <div class="container">
       <div class="galery__post--row">
-       <div class="galery__post--tittle">
+       <div class="galery__post--tittle wow fadeInUp" data-wow-duration="3s">
         <h3>Gallery photos for post</h3>
           <div class="tittle__arrows">
             <span id="postBtnLeft" class="waves"><i class="fas fa-angle-double-left"></i></span>
@@ -194,7 +194,7 @@
         </div><!--galery__post--tittle-->
         <div class="galery__post--colum">
           <!--phoho shot-->
-           <div class="galery__post--content" data-cat="Photoshoot" data-slider="galery-slider">
+           <div class="galery__post--content wow fadeIn" data-wow-duration="3s" data-cat="Photoshoot" data-slider="galery-slider">
              <div class="galery__post--block">
                <img src="../img/blog/blog__foto1.jpeg" alt="post" class="img">
                <div class="content__date">
@@ -413,8 +413,8 @@
   <div id="postText">
     <div class="container">
       <div class="about__post--text">
-        <img src="../img/gallery__post/3.png" alt="post" class="img">
-        <p>Lorem Ipsum is simply dummy text of the printing and 
+        <img src="../img/gallery__post/3.png" alt="post" class="img wow zoomInLeft" data-wow-duration="3s">
+        <p class="wow zoomInRight" data-wow-duration="3s">Lorem Ipsum is simply dummy text of the printing and 
           typesetting industry. Lorem Ipsum has been the industry's 
           standard dummy text ever since the 1500s, when an unknown 
           printer took a galley of type and scrambled it to make a 
@@ -428,7 +428,8 @@
           electronic typesetting, remaining essentially Lorem Ipsum is 
           simply dummy</p>
       </div>
-      <p class="post__text">Lorem Ipsum is simply dummy text of the printing 
+      <p class="post__text wow fadeInRight" data-wow-duration="3s">Lorem Ipsum 
+        is simply dummy text of the printing 
         and typesetting industry. Lorem Ipsum has been the industry's 
         standard dummy text ever since the 1500s, when an unknown printer 
         took a galley of type and scrambled it to make a type specimen book. 
@@ -442,7 +443,7 @@
     </div><!--/.container-->
   </div>
   <!--footer-->
-  <footer id="footer">
+  <footer id="footer" class="wow fadeIn" data-wow-duration="3s">
     <div class="container">
       <div id="footer-instafeed"></div>
       <div class="footer__social">
@@ -593,6 +594,19 @@
           });
       });
   })(jQuery);
+  </script>
+  <!--wow animation https://wowjs.uk/ -->
+  <script src="../js/vendor/wow.min.js"></script>
+  <!--use wow animation-->
+  <script>
+    wow = new WOW({
+      boxClass: "wow", // default
+      animateClass: "animated", // default
+      offset: 0, // default
+      mobile: false, // default
+      live: true // default
+    });
+    wow.init();
   </script>
   <!--use main script-->
   <!--use burger btn script-->

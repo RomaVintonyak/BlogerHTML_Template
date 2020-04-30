@@ -17,7 +17,7 @@
   </head>
 <body>
   <!--header-->
-  <header id="header">
+  <header id="header" class="wow fadeIn" data-wow-duration="3s">
     <div class="header__top">
       <div class="container">
         <div class="top__content">
@@ -162,7 +162,7 @@
             <img src="../img/about__page--book/lg-1.png" alt="post foto" class="img">
           </div>
         </div><!--/.book__collum--img-->
-        <div class="book__collum--text">
+        <div class="book__collum--text wow fadeInRight" data-wow-duration="3s">
           <h3>This is my Story</h3>
           <h4>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
@@ -182,17 +182,17 @@
     <section id="skils--2">
       <div class="container">
         <div class="skils__row--2">
-          <div class="skils__collum--2">
+          <div class="skils__collum--2 wow flipInX" data-wow-duration="3s" data-wow-offset="100">
             <img src="../img/skils/1.svg" alt="icon">
             <h4>I know how to find a client</h4>
             <p>more than 100 clients</p>
           </div>
-          <div class="skils__collum--2">
+          <div class="skils__collum--2 wow flipInX" data-wow-duration="3s" data-wow-offset="100">
             <img src="../img/skils/2.svg" alt="icon">
             <h4>I know the secrets</h4>
             <p>for successful shooting</p>
           </div>
-          <div class="skils__collum--2">
+          <div class="skils__collum--2 wow flipInX" data-wow-duration="3s" data-wow-offset="100">
             <img src="../img/skils/3.svg" alt="icon">
             <h4>I teach photography</h4>
             <p>for successful shooting</p>
@@ -247,7 +247,7 @@
     <section id="contact" >
       <div class="container">
         <div class="contact__content" data-parallax="scroll" data-image-src="../img/contact/contact.png"> 
-          <div class="contact__social">
+          <div class="contact__social wow zoomInLeft" data-wow-duration="3s">
             <h3>Social media</h3>
             <div class="social__link">
               <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -271,7 +271,7 @@
               <p>mail@google.com</p>
             </div>
           </div><!--/.contact__social-->
-          <div class="contact__form">
+          <div class="contact__form wow zoomInRight" data-wow-duration="3s">
             <form method="POST">
             <input type="email" placeholder="E-mail" required>
             <input type="text" placeholder="Name" required>
@@ -284,7 +284,7 @@
       </div><!--/.container-->
   </section>
   <!--footer-->
-  <footer id="footer">
+  <footer id="footer" class="wow fadeIn" data-wow-duration="3s">
     <div class="container">
       <div id="footer-instafeed"></div>
       <div class="footer__social">
@@ -393,6 +393,19 @@
           });
       });
   })(jQuery);
+  </script>
+  <!--wow animation https://wowjs.uk/ -->
+  <script src="../js/vendor/wow.min.js"></script>
+  <!--use wow animation-->
+  <script>
+    wow = new WOW({
+      boxClass: "wow", // default
+      animateClass: "animated", // default
+      offset: 0, // default
+      mobile: false, // default
+      live: true // default
+    });
+    wow.init();
   </script>
   <!--use main script-->
   <!--use burger btn script-->
