@@ -1,6 +1,15 @@
 //main: ../style.less
 #footer {
   padding-top: 3.12rem;
+  @media @tablet{
+    padding-top: 2.12rem;
+  }
+  @media @mobile{
+    padding-top: 1.12rem;
+  }
+  @media @mobile-sm{
+    padding-top: 1rem;
+  }
 }
 .footer__row {
   width: 100%;
@@ -11,6 +20,15 @@
     font-style: normal;
     font-weight: 600;
     font-size: 2.25rem;
+    @media @tablet{
+      font-size: 2rem;
+    }
+    @media @mobile{
+      font-size: 1.75rem;
+    }
+    @media @mobile-sm{
+      font-size: 1.5rem;
+    }
   }
   p {
     margin-top: 0.5rem;
@@ -32,4 +50,13 @@
   font-size: 1rem;
   font-weight: 400;
   font-style: normal;
+  @media @tablet{
+    margin-top: 3.12rem;
+  }
+  @media @mobile{
+    margin-top: 2.12rem;
+  }
+  @media @mobile-sm{
+    margin-top: 2rem;
+  }
 }

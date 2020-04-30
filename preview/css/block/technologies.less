@@ -4,6 +4,15 @@
   width: 100%;
   background-color: @pink;
   padding: 3rem 0;
+  @media @tablet {
+    margin-top: 2.12rem;
+  }
+  @media @mobile {
+    margin-top: 1.12rem;
+  }
+  @media @mobile-sm {
+    margin-top: 1rem;
+  }
 }
 .technologies__title {
   width: 100%;
@@ -14,6 +23,15 @@
     text-transform: uppercase;
     font-style: normal;
     font-size: 2.25rem;
+    @media @tablet {
+      font-size: 2rem;
+    }
+    @media @mobile {
+      font-size: 1.75rem;
+    }
+    @media @mobile-sm {
+      font-size: 1.5rem;
+    }
   }
   h3 {
     font-weight: 500;
@@ -31,6 +49,18 @@
   -webkit-box-pack: justify;
   justify-content: space-between;
   margin-top: 3.12rem;
+  @media @tablet {
+    margin-top: 2.12rem;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    justify-content: center;
+  }
+  @media @mobile {
+    margin-top: 1.12rem;
+  }
+  @media @mobile-sm {
+    margin-top: 1rem;
+  }
 }
 .technologies__col {
   background-color: @white;
@@ -39,10 +69,18 @@
   transition: box-shadow 0.2s linear, transform 0.2s linear;
   transition: box-shadow 0.2s linear, transform 0.2s linear,
     -webkit-transform 0.2s linear;
+  transition: box-shadow 0.2s linear, transform 0.2s linear,
+    -webkit-transform 0.2s linear;
   &:hover {
     box-shadow: 1px 1px @white, 2px 2px @white, 3px 3px @white, 4px 4px @white,
       5px 5px @white, 6px 6px @white, 7px 7px @white, 8px 8px @white;
     -webkit-transform: translateX(-8px);
     transform: translateX(-8px);
+  }
+  @media @tablet {
+    margin-bottom: 1rem;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
