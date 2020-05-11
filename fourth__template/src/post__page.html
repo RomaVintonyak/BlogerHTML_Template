@@ -29,9 +29,17 @@
     <meta name="theme-color" content="#ffffff">
     <title>&commat;Travel bloger html template</title>
   </head>
-<body>
+<body style="overflow-y: hidden;">
+  <!--preloader-->
+  <div class="preloader" id="preloader">
+    <div class="load__big">
+      <div class="load__small">
+        <div class="load__xsmall"></div>
+      </div>
+    </div>
+  </div>
   <!--header-->
-  <header id="header" class="wow fadeIn" data-wow-duration="3s">
+  <header id="header">
     <div class="header__top">
       <div class="container">
         <div class="top__content">
@@ -166,13 +174,13 @@
   <section id="introPost">
     <div class="container">
       <div class="intro__post--row">
-        <div class="intro__post--title wow fadeIn" data-wow-duration="3s">
-          <h2>How to prepare for shooting</h2>
+        <div class="intro__post--title">
+          <h2 class="wow fadeInUp" data-wow-duration="5s" data-wow-delay="500ms" data-wow-offset="100">How to prepare for shooting</h2>
           <div class="intro__post--date">16/04/2020</div>
         </div><!--/.post__title-->
-        <img src="../img/post__page/mask__intro.png" alt="post" class="img intro__post--img wow fadeIn" data-wow-duration="3s">
+        <img src="../img/post__page/mask__intro.png" alt="post" class="img intro__post--img">
         <div class="intro__post--content">
-          <div class="post__content--text wow fadeInLeft" data-wow-duration="3s">
+          <div class="post__content--text">
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
             when an unknown printer took a galley of type and scrambled it to make a type 
@@ -184,7 +192,7 @@
             survived not only five centuries, but also the leap into electronic typesetting, 
             remaining essentially Lorem Ipsum is simply dummy text of the printing and
           </div>
-          <div class="post__content--cat wow fadeInRight" data-wow-duration="3s">
+          <div class="post__content--cat">
             <h3>Categories</h3>
             <a data-link="Photoshoot" href="#" class="post__cat--link">Photoshoot</a>
             <a data-link="Camera" href="#">Camera</a>
@@ -199,7 +207,7 @@
   <section id="galeryPost">
     <div class="container">
       <div class="galery__post--row">
-       <div class="galery__post--tittle wow fadeInUp" data-wow-duration="3s">
+       <div class="galery__post--tittle wow fadeInUp" data-wow-duration="5s" data-wow-delay="500ms" data-wow-offset="100">
         <h3>Gallery photos for post</h3>
           <div class="tittle__arrows">
             <span id="postBtnLeft" class="waves"><i class="fas fa-angle-double-left"></i></span>
@@ -208,7 +216,7 @@
         </div><!--galery__post tittle-->
         <div class="galery__post--colum">
           <!--phoho shot-->
-           <div class="galery__post--content wow fadeIn" data-wow-duration="3s" data-cat="Photoshoot" data-slider="galery-slider">
+           <div class="galery__post--content" data-cat="Photoshoot" data-slider="galery-slider">
              <div class="galery__post--block">
                <img src="../img/blog/blog__foto1.jpeg" alt="post" class="img">
                <div class="content__date">
@@ -427,8 +435,8 @@
   <div id="postText">
     <div class="container">
       <div class="about__post--text">
-        <img src="../img/gallery__post/3.png" alt="post" class="img wow zoomInLeft" data-wow-duration="3s">
-        <p class="wow zoomInRight" data-wow-duration="3s">Lorem Ipsum is simply dummy text of the printing and 
+        <img src="../img/gallery__post/3.png" alt="post" class="img" >
+        <p>Lorem Ipsum is simply dummy text of the printing and 
           typesetting industry. Lorem Ipsum has been the industry's 
           standard dummy text ever since the 1500s, when an unknown 
           printer took a galley of type and scrambled it to make a 
@@ -442,7 +450,7 @@
           electronic typesetting, remaining essentially Lorem Ipsum is 
           simply dummy</p>
       </div>
-      <p class="post__text wow fadeInRight" data-wow-duration="3s">Lorem Ipsum 
+      <p class="post__text wow fadeInUp" data-wow-duration="4s" data-wow-offset="100" data-wow-delay="500ms">Lorem Ipsum 
         is simply dummy text of the printing 
         and typesetting industry. Lorem Ipsum has been the industry's 
         standard dummy text ever since the 1500s, when an unknown printer 
@@ -457,9 +465,9 @@
     </div><!--/.container-->
   </div>
   <!--footer-->
-  <footer id="footer" class="wow fadeIn" data-wow-duration="3s">
+  <footer id="footer">
     <div class="container">
-      <div id="footer-instafeed"></div>
+      <div id="footer-instafeed" class="wow fadeIn" data-wow-delay="500ms" data-wow-duration="3s"></div>
       <div class="footer__social">
          <a href="#" target="_blank">
             <svg
@@ -496,7 +504,7 @@
           <span>Lorem Ipsum</span>
         </a>
       </div><!--/.footer__social-->
-      <div class="footer__copyright text__center">
+      <div class="footer__copyright text__center wow fadeIn" data-wow-delay="500ms" data-wow-duration="3s">
         Designed by DT themes &copy; 2019 &mdash; <script>"use script";
         document.write(new Date().getFullYear());
         </script>
@@ -637,5 +645,7 @@
   <script src="../js/block/filter__cat.js"></script>
   <!--use mobile menu script-->
   <script src="../js/block/mobile__menu.js"></script>
+  <!--use preloader script-->
+  <script src="../js/block/preloader.js"></script>
 </body>
 </html>

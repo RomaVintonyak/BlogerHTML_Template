@@ -29,9 +29,17 @@
     <meta name="theme-color" content="#ffffff">
     <title>&commat;Travel bloger html template</title>
   </head>
-<body>
+<body style="overflow-y: hidden;">
+  <!--preloader-->
+  <div class="preloader" id="preloader">
+    <div class="load__big">
+      <div class="load__small">
+        <div class="load__xsmall"></div>
+      </div>
+    </div>
+  </div>
   <!--header-->
-  <header id="header" class="wow fadeIn" data-wow-duration="3s">
+  <header id="header">
     <div class="header__top">
       <div class="container">
         <div class="top__content">
@@ -165,7 +173,7 @@
   </div><!--/.mobile__content-->
   <!--blog category filter-->
   <div class="container">
-    <div class="filter__content filter__content--second wow zoomInUp" data-wow-duration="3s">
+    <div class="filter__content filter__content--second wow zoomIn" data-wow-duration="4s" data-wow-delay="500ms" data-wow-offset="100">
       <h3>Categories</h3>
       <a data-filter="all" href="#">All</a>
       <a data-filter="Photoshoot" href="#">Photoshoot</a>
@@ -177,7 +185,7 @@
   <!--blog post-->
   <section id="blogPost" style="margin-top: 0rem;">
   <div class="container">
-   <div id="postSlider" class="slider__wraper wow fadeIn" data-wow-duration="3s">
+   <div id="postSlider" class="slider__wraper">
     <!-- first slide block-->
     <div class="post__footer post__footer--page">
       <div class="post__colum post__colum--secondBlog" data-blog="Photoshoot">
@@ -488,9 +496,9 @@
  </div><!--/.container-->
 </section>
   <!--footer-->
-  <footer id="footer" class="wow fadeIn" data-wow-duration="3s">
+  <footer id="footer">
     <div class="container">
-      <div id="footer-instafeed"></div>
+      <div id="footer-instafeed" class="wow fadeIn" data-wow-delay="500ms" data-wow-duration="3s"></div>
       <div class="footer__social">
          <a href="#" target="_blank">
             <svg
@@ -527,7 +535,7 @@
           <span>Lorem Ipsum</span>
         </a>
       </div><!--/.footer__social-->
-      <div class="footer__copyright text__center">
+      <div class="footer__copyright text__center wow fadeIn" data-wow-delay="500ms" data-wow-duration="3s">
         Designed by DT themes &copy; 2019 &mdash; <script>"use script";
         document.write(new Date().getFullYear());
         </script>
@@ -648,5 +656,7 @@
   <script src="../js/block/filter__cat.js"></script>
   <!--use mobile menu script-->
   <script src="../js/block/mobile__menu.js"></script>
+  <!--use preloader script-->
+  <script src="../js/block/preloader.js"></script>
 </body>
 </html>

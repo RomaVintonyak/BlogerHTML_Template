@@ -29,9 +29,17 @@
     <meta name="theme-color" content="#ffffff">
     <title>&commat;Travel bloger html template</title>
   </head>
-<body>
+<body style="overflow-y: hidden;">
+  <!--preloader-->
+  <div class="preloader" id="preloader">
+    <div class="load__big">
+      <div class="load__small">
+        <div class="load__xsmall"></div>
+      </div>
+    </div>
+  </div>
   <!--header-->
-  <header id="header" class="wow fadeIn" data-wow-duration="3s">
+  <header id="header">
     <div class="header__top">
       <div class="container">
         <div class="top__content">
@@ -167,37 +175,37 @@
   <section id="contact__page">
     <div class="container">
       <div class="contact__content"> 
-        <div class="contact__social wow fadeInLeft" data-wow-duration="3s">
+        <div class="contact__social">
           <h3>Social media</h3>
-          <div class="social__link">
+          <div class="social__link wow zoomIn" data-wow-delay="300ms" data-wow-offset="50" data-wow-duration="2s">
             <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
             <p>Lorem Ipsum</p>
           </div>
-          <div class="social__link">
+          <div class="social__link wow zoomIn" data-wow-delay="300ms" data-wow-offset="50" data-wow-duration="2s">
             <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
             <p>Lorem Ipsum</p>
           </div>
-          <div class="social__link">
+          <div class="social__link wow zoomIn" data-wow-delay="300ms" data-wow-offset="50" data-wow-duration="2s">
             <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
             <p>Lorem Ipsum</p>
           </div>
           <h3 class="mt-2">Contact</h3>
-          <div class="social__link">
+          <div class="social__link wow zoomIn" data-wow-delay="500ms" data-wow-offset="50" data-wow-duration="2s">
             <a href="tel:+380123456789"><i class="fas fa-phone-alt"></i></a>
             <p>+380 12 34 56 789</p>
           </div>
-          <div class="social__link">
+          <div class="social__link wow zoomIn" data-wow-delay="500ms" data-wow-offset="50" data-wow-duration="2s">
             <a href="mailto:mail@google.com"><i class="fas fa-envelope"></i></a>
             <p>mail@google.com</p>
           </div>
         </div><!--/.contact__social-->
-        <div class="contact__form contact__form--page wow fadeInRight" data-wow-duration="3s">
+        <div class="contact__form contact__form--page">
           <form method="POST">
           <input type="email" placeholder="E-mail" required>
           <input type="text" placeholder="Name" required>
           <input type="text" placeholder="Subject" required>
           <textarea placeholder="Text message"></textarea>
-          <button type="submit" class="btn waves waves-light">Send message</button>
+          <button type="submit" class="btn waves waves-light wow fadeInUp" data-wow-offset="50" data-wow-duration="3s" data-wow-delay="500ms">Send message</button>
           </form>
         </div><!--/.contact__form-->
       </div><!--/.contact__content-->
@@ -205,9 +213,9 @@
   </section>
   <section id="contact" >
     <div class="container">
-      <div class="subscribe__content wow zoomIn" data-wow-duration="3s">
+      <div class="subscribe__content">
         <form method="POST" class="subscribe__form">
-          <h3>Sign up for updates, be the first to 
+          <h3 class="wow fadeInLeft" data-wow-offset="100" data-wow-duration="4s" data-wow-delay="500ms">Sign up for updates, be the first to 
             know about the news
           </h3>
           <input type="text" placeholder="Name" required>
@@ -220,9 +228,9 @@
     </div>
   </section>
   <!--footer-->
-  <footer id="footer" class="wow fadeIn" data-wow-duration="3s">
+  <footer id="footer">
     <div class="container">
-      <div id="footer-instafeed"></div>
+      <div id="footer-instafeed" class="wow fadeIn" data-wow-delay="500ms" data-wow-duration="3s"></div>
       <div class="footer__social">
         <a href="#" target="_blank">
             <svg
@@ -259,7 +267,7 @@
           <span>Lorem Ipsum</span>
         </a>
       </div><!--/.footer__social-->
-      <div class="footer__copyright text__center">
+      <div class="footer__copyright text__center wow fadeIn" data-wow-delay="500ms" data-wow-duration="3s">
         Designed by DT themes &copy; 2019 &mdash; <script>"use script";
         document.write(new Date().getFullYear());
         </script>
@@ -346,5 +354,7 @@
   <script src="../js/block/hover__dropdown.js"></script>
   <!--use mobile menu script-->
   <script src="../js/block/mobile__menu.js"></script>
+  <!--use preloader script-->
+  <script src="../js/block/preloader.js"></script>
 </body>
 </html>

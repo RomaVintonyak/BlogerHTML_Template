@@ -29,11 +29,19 @@
     <meta name="theme-color" content="#ffffff">
     <title>&commat;Travel bloger html template</title>
   </head>
-<body>
+<body style="overflow-y: hidden;">
+  <!--preloader-->
+  <div class="preloader" id="preloader">
+    <div class="load__big">
+      <div class="load__small">
+        <div class="load__xsmall"></div>
+      </div>
+    </div>
+  </div>
   <!--wraper container-->
   <div class="wraper__container">
   <!--header-->
-  <header id="header" class="wow fadeIn" data-wow-duration="3s">
+  <header id="header">
     <div class="header__top">
       <div class="container">
         <div class="top__content">
@@ -166,11 +174,11 @@
     </ul><!--/.mobile__menu-->
   </div><!--/.mobile__content-->
   <!--main block-->
-  <section id="errorBlock" class="wow fadeIn" data-wow-duration="3s">
+  <section id="errorBlock">
     <div class="container">
       <div class="error__row">
         <div class="error__collum--text">
-          <h1>Oops, we couldn't find this page.</h1>
+          <h1 class="wow fadeInUp" data-wow-duration="4s" data-wow-delay="500ms" data-wow-offset="100">Oops, we couldn't find this page.</h1>
           <h2>404</h2>
           <h3 id="errortyped"></h3>
         </div>
@@ -185,9 +193,9 @@
     </div>
   </section>
   <!--footer section-->
-  <footer id="footer" class="wow fadeIn" data-wow-duration="3s">
+  <footer id="footer">
     <div class="container">
-      <div id="footer-instafeed"></div>
+      <div id="footer-instafeed" class="wow fadeIn" data-wow-delay="500ms" data-wow-duration="3s"></div>
       <div class="footer__social">
         <a href="#" target="_blank">
             <svg
@@ -224,7 +232,7 @@
           <span>Lorem Ipsum</span>
         </a>
       </div><!--/.footer__social-->
-      <div class="footer__copyright text__center">
+      <div class="footer__copyright text__center wow fadeIn" data-wow-delay="500ms" data-wow-duration="3s">
         Designed by DT themes &copy; 2019 &mdash; <script>"use script";
         document.write(new Date().getFullYear());
         </script>
@@ -326,5 +334,7 @@
   <script src="../js/block/hover__dropdown.js"></script>
   <!--use mobile menu script-->
   <script src="../js/block/mobile__menu.js"></script>
+  <!--use preloader script-->
+  <script src="../js/block/preloader.js"></script>
 </body>
 </html>

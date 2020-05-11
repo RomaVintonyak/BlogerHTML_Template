@@ -29,9 +29,17 @@
     <meta name="theme-color" content="#ffffff">
     <title>&commat;Travel bloger html template</title>
   </head>
-<body>
+<body style="overflow-y: hidden;">
+  <!--preloader-->
+  <div class="preloader" id="preloader">
+    <div class="load__big">
+      <div class="load__small">
+        <div class="load__xsmall"></div>
+      </div>
+    </div>
+  </div>
   <!--header-->
-  <header id="header" class="wow fadeIn" data-wow-duration="3s">
+  <header id="header">
     <div class="header__top">
       <div class="container">
         <div class="top__content">
@@ -166,9 +174,9 @@
   <!--about section-->
   <section id="about">
     <div class="container">
-      <div class="about__title wow zoomInUp" data-wow-duration="3s">
-        <h2>This is my Story</h2>
-        <h3>What you must know about me</h3>
+      <div class="about__title">
+        <h2 class="wow fadeInUp" data-wow-offset="100" data-wow-delay="500ms" data-wow-duration="5s">This is my Story</h2>
+        <h3 class="wow fadeInUp" data-wow-offset="100" data-wow-delay="500ms" data-wow-duration="5s">What you must know about me</h3>
       </div><!--/.about__title-->
       <div class="about__row">
         <div class="row__collum--img">
@@ -181,7 +189,7 @@
           </div>
         </div>
         <div class="row__collum--text">
-          <p class="wow fadeInRight" data-wow-duration="3s">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
             when an unknown printer took a galley of type and scrambled it to make a type 
             specimen book. It has survived not only five centuries, but also the leap 
@@ -190,7 +198,7 @@
             standard dummy text ever since the 1500s, when an unknown printer took a galley of 
             type and scrambled it to make a type specimen book. 
           </p>
-          <p class="wow fadeInRight" data-wow-duration="3s">Elizabeth, Fahion photographer</p>
+          <p>Elizabeth, Fahion photographer</p>
         </div>
       </div><!--/.about__row-->
     </div><!--/.container-->
@@ -199,17 +207,17 @@
   <section id="skils">
     <div class="container">
       <div class="skils__row">
-        <div class="skils__collum wow zoomIn" data-wow-duration="3s" data-wow-offset="100">
+        <div class="skils__collum wow zoomIn" data-wow-duration="5s" data-wow-offset="100" data-wow-delay="500ms">
           <img src="../img/skils/1.svg" alt="icon">
           <h4>I know how to find a client</h4>
           <p>more than 100 clients</p>
         </div>
-        <div class="skils__collum wow zoomIn" data-wow-duration="3s" data-wow-offset="100">
+        <div class="skils__collum wow zoomIn" data-wow-duration="5s" data-wow-offset="100" data-wow-delay="500ms">
           <img src="../img/skils/2.svg" alt="icon">
           <h4>I know the secrets</h4>
           <p>for successful shooting</p>
         </div>
-        <div class="skils__collum wow zoomIn" data-wow-duration="3s" data-wow-offset="100">
+        <div class="skils__collum wow zoomIn" data-wow-duration="5s" data-wow-offset="100" data-wow-delay="500ms">
           <img src="../img/skils/3.svg" alt="icon">
           <h4>I teach photography</h4>
           <p>for successful shooting</p>
@@ -221,36 +229,36 @@
   <section id="blog__Post">
     <div class="container">
     <div class="post__footer">
-        <div class="post__colum wow fadeInLeft" data-wow-duration="3s" data-wow-offset="100">
+        <div class="post__colum">
           <img src="../img/blog/blog__foto1.jpeg" alt="blog foto">
           <div class="post__figure">
             <div class="content__date">
             <i class="far fa-calendar-alt"></i>
             <p>October 8, 2019</p>
           </div>
-          <h4>Lorem Ipsum is simply 
+          <h4 class="wow fadeInUp" data-wow-delay="500ms" data-wow-duration="2s" data-wow-offset="100">Lorem Ipsum is simply 
             dummy simply</h4>
           </div>
          </div>
-         <div class="post__colum wow fadeInUp" data-wow-duration="3s" data-wow-offset="100">
+         <div class="post__colum">
           <img src="../img/blog/blog__foto2.jpeg" alt="blog foto">
           <div class="post__figure">
             <div class="content__date">
             <i class="far fa-calendar-alt"></i>
             <p>October 8, 2019</p>
           </div>
-          <h4>Lorem Ipsum is simply 
+          <h4 class="wow fadeInUp" data-wow-delay="500ms" data-wow-duration="2s" data-wow-offset="100">Lorem Ipsum is simply 
             dummy simply</h4>
           </div>
          </div>
-         <div class="post__colum wow fadeInRight" data-wow-duration="3s" data-wow-offset="100">
+         <div class="post__colum">
           <img src="../img/blog/blog__foto3.jpeg" alt="blog foto">
           <div class="post__figure">
             <div class="content__date">
             <i class="far fa-calendar-alt"></i>
             <p>October 8, 2019</p>
           </div>
-          <h4>Lorem Ipsum is simply 
+          <h4 class="wow fadeInUp" data-wow-delay="500ms" data-wow-duration="2s" data-wow-offset="100">Lorem Ipsum is simply 
             dummy simply</h4>
           </div>
          </div>     
@@ -258,11 +266,11 @@
     </div><!--/.container-->
   </section>
   <!--subscribe section-->
-  <section id="subscribe" class="wow zoomIn" data-wow-offset="100" data-wow-duration="3s">
+  <section id="subscribe">
     <div class="container">
       <div class="subscribe__content">
         <form method="POST" class="subscribe__form">
-          <h3>Sign up for updates, be the first to 
+          <h3 class="wow bounceInLeft" data-wow-offset="100" data-wow-duration="6s" data-wow-delay="500ms">Sign up for updates, be the first to 
             know about the news
           </h3>
           <input type="text" placeholder="Name" required>
@@ -275,9 +283,9 @@
     </div>
   </section>
   <!--footer-->
-  <footer id="footer" class="mt-2 wow fadeIn" data-wow-duration="3s">
+  <footer id="footer" class="mt-2">
     <div class="container">
-      <div id="footer-instafeed"></div>
+      <div id="footer-instafeed" class="wow fadeIn" data-wow-delay="500ms" data-wow-duration="3s"></div>
       <div class="footer__social">
           <a href="#" target="_blank">
             <svg
@@ -314,7 +322,7 @@
           <span>Lorem Ipsum</span>
         </a>
       </div><!--/.footer__social-->
-      <div class="footer__copyright text__center">
+      <div class="footer__copyright text__center wow fadeIn" data-wow-delay="500ms" data-wow-duration="3s">
         Designed by DT themes &copy; 2019 &mdash; <script>"use script";
         document.write(new Date().getFullYear());
         </script>
@@ -403,5 +411,7 @@
   <script src="../js/block/hover__dropdown.js"></script>
   <!--use mobile menu script-->
   <script src="../js/block/mobile__menu.js"></script>
+  <!--use preloader script-->
+  <script src="../js/block/preloader.js"></script>
 </body>
 </html>
