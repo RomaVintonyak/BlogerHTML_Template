@@ -1,5 +1,5 @@
 //main: ../style.less
-.dpor__down{
+.dpor__down {
   position: absolute;
   left: 0;
   top: 170%;
@@ -8,32 +8,44 @@
   background-color: #f3f3f3;
   visibility: hidden;
   opacity: 0;
+  -webkit-transition: opacity 0.4s linear, visibility 0.4s linear;
+  -o-transition: opacity 0.4s linear, visibility 0.4s linear;
   transition: opacity 0.4s linear, visibility 0.4s linear;
 }
-.drop__item{
+.drop__item {
   width: 100%;
   height: 3rem;
-  display: flex; 
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-transition: background-color 0.3s linear;
+  -o-transition: background-color 0.3s linear;
   transition: background-color 0.3s linear;
-  img{
+  img {
     width: 10px;
     height: 10px;
     margin-right: 1rem;
     color: @black;
   }
-  a{
+  a {
     text-decoration: none;
     font-size: 1rem;
     font-style: normal;
     font-weight: normal;
     color: @black;
+    -webkit-transition: color 0.3s linear;
+    -o-transition: color 0.3s linear;
     transition: color 0.3s linear;
   }
-  &:hover{
+  &:hover {
     background-color: @hover;
-    a{
+    a {
       color: @gray;
     }
   }
