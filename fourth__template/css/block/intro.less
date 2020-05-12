@@ -28,6 +28,7 @@
     .bloger__foto {
       img {
         -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
         transform: scale(1.1);
       }
     }
@@ -60,6 +61,7 @@
   img {
     -webkit-transition: -webkit-transform 1.5s linear;
     transition: -webkit-transform 1.5s linear;
+    -o-transition: transform 1.5s linear;
     transition: transform 1.5s linear;
     transition: transform 1.5s linear, -webkit-transform 1.5s linear;
   }
@@ -170,11 +172,11 @@
   @media @notebook {
     left: 51%;
   }
-  @media @mobile{
+  @media @mobile {
     top: 28rem;
     left: calc(50% - 7.13rem);
   }
-  @media @mobile-sm{
+  @media @mobile-sm {
     top: 20rem;
   }
 }
@@ -189,7 +191,7 @@
   @media @tablet {
     right: 4%;
   }
-  @media @mobile-sm{
+  @media @mobile-sm {
     right: 0;
     left: -12%;
     top: 17rem;
@@ -204,6 +206,7 @@
     top: 0;
     left: 12%;
     -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
     transform: rotate(45deg);
     -webkit-animation-name: DownScroll;
     animation-name: DownScroll;

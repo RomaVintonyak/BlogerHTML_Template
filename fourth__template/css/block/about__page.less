@@ -28,7 +28,7 @@
   @media @mobile {
     margin-top: 1.12rem;
   }
-  @media @mobile-sm{
+  @media @mobile-sm {
     margin-top: 1rem;
   }
 }
@@ -38,10 +38,13 @@
   height: 26rem;
   overflow: hidden;
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-align: start;
+  -ms-flex-align: start;
   align-items: flex-start;
   -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   &:hover {
     .row__collum--img {
@@ -49,14 +52,17 @@
       .img__2 {
         img {
           -webkit-transform: scale(1.1);
+          -ms-transform: scale(1.1);
           transform: scale(1.1);
         }
       }
     }
   }
   @media @notebook {
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     height: auto;
   }
@@ -68,15 +74,19 @@
   width: 49%;
   height: 100%;
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-align: start;
+  -ms-flex-align: start;
   align-items: flex-start;
   -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   @media @notebook {
     width: 60%;
     overflow: hidden;
     -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
     order: 2;
     margin-top: 1.5rem;
   }
@@ -94,6 +104,7 @@
   img {
     -webkit-transition: -webkit-transform 1.5s linear;
     transition: -webkit-transform 1.5s linear;
+    -o-transition: transform 1.5s linear;
     transition: transform 1.5s linear;
     transition: transform 1.5s linear, -webkit-transform 1.5s linear;
     &:first-child {
@@ -116,6 +127,7 @@
   img {
     -webkit-transition: -webkit-transform 1.5s linear;
     transition: -webkit-transform 1.5s linear;
+    -o-transition: transform 1.5s linear;
     transition: transform 1.5s linear;
     transition: transform 1.5s linear, -webkit-transform 1.5s linear;
   }
@@ -124,11 +136,14 @@
   width: 49%;
   height: 100%;
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   p {
     color: #6d6866;
@@ -143,6 +158,7 @@
   @media @notebook {
     width: 100%;
     -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
     order: 1;
   }
 }

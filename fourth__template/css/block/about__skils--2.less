@@ -14,14 +14,19 @@
 }
 .skils__row--2 {
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   -webkit-box-align: start;
+  -ms-flex-align: start;
   align-items: flex-start;
   @media @notebook {
     -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
 }
@@ -32,7 +37,13 @@
   background-color: @gray-sl;
   -webkit-transition: box-shadow 0.3s linear, -webkit-transform 0.3s linear;
   transition: box-shadow 0.3s linear, -webkit-transform 0.3s linear;
+  -webkit-transition: -webkit-transform 0.3s linear,
+    -webkit-box-shadow 0.3s linear;
+  transition: -webkit-transform 0.3s linear, -webkit-box-shadow 0.3s linear;
+  -o-transition: transform 0.3s linear, box-shadow 0.3s linear;
   transition: transform 0.3s linear, box-shadow 0.3s linear;
+  transition: transform 0.3s linear, box-shadow 0.3s linear,
+    -webkit-transform 0.3s linear, -webkit-box-shadow 0.3s linear;
   transition: transform 0.3s linear, box-shadow 0.3s linear,
     -webkit-transform 0.3s linear;
   transition: transform 0.3s linear, box-shadow 0.3s linear,
@@ -59,10 +70,14 @@
     font-size: 1.1rem;
   }
   &:hover {
+    -webkit-box-shadow: 1px 1px @green-l, 2px 2px @green-l, 3px 3px @green-l,
+      4px 4px @green-l, 5px 5px @green-l, 6px 6px @green-l, 7px 7px @green-l,
+      8px 8px @green-l;
     box-shadow: 1px 1px @green-l, 2px 2px @green-l, 3px 3px @green-l,
       4px 4px @green-l, 5px 5px @green-l, 6px 6px @green-l, 7px 7px @green-l,
       8px 8px @green-l;
     -webkit-transform: translateX(-8px);
+    -ms-transform: translateX(-8px);
     transform: translateX(-8px);
   }
   @media @notebook {

@@ -5,7 +5,9 @@
   width: 100%;
   background-color: @gray-sl;
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-line-pack: start;
   align-content: flex-start;
   &:hover {
     .book__collum--img {
@@ -13,6 +15,7 @@
       .book__img--2 {
         img {
           -webkit-transform: scale(1.1);
+          -ms-transform: scale(1.1);
           transform: scale(1.1);
         }
       }
@@ -21,7 +24,9 @@
   @media @tablet {
     margin-top: 2.12rem;
     -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     padding: 1.2rem 1.2rem 1.2rem 0;
   }
@@ -37,14 +42,18 @@
 .book__collum--img {
   width: 45%;
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-align: start;
+  -ms-flex-align: start;
   align-items: flex-start;
   -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   overflow: hidden;
   @media @tablet {
     -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
     order: 2;
     width: 80%;
   }
@@ -61,6 +70,7 @@
   img {
     -webkit-transition: -webkit-transform 1.5s linear;
     transition: -webkit-transform 1.5s linear;
+    -o-transition: transform 1.5s linear;
     transition: transform 1.5s linear;
     transition: transform 1.5s linear, -webkit-transform 1.5s linear;
     &:first-child {
@@ -74,6 +84,7 @@
   img {
     -webkit-transition: -webkit-transform 1.5s linear;
     transition: -webkit-transform 1.5s linear;
+    -o-transition: transform 1.5s linear;
     transition: transform 1.5s linear;
     transition: transform 1.5s linear, -webkit-transform 1.5s linear;
   }
@@ -82,6 +93,7 @@
   width: 55%;
   background-color: @white;
   border-left: 5px solid @black;
+  -webkit-box-shadow: 10px 0 10px @white;
   box-shadow: 10px 0 10px @white;
   padding: 3rem 1.5rem 0 3rem;
   h3 {
@@ -128,6 +140,7 @@
   @media @tablet {
     width: 80%;
     -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
     order: 1;
     border-left: none;
     border-bottom: 5px solid @black;
@@ -146,13 +159,18 @@
 .about__post--row {
   margin-top: 3.12rem;
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-line-pack: start;
   align-content: flex-start;
   -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   @media @notebook {
     -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
   @media @tablet {
