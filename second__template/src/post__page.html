@@ -187,7 +187,35 @@
           <h2>How to prepare for shooting</h2>
           <div class="intro__post--date">16/04/2020</div>
         </div><!--/.post__title-->
-        <img src="../img/post__page/post__header.jpeg" alt="post" class="img intro__post--img">
+        
+        
+        <!--3D post slider-->
+        <div class="slider-viewport"><!-- works as a viewport for the 3D transitions -->
+          <div id="content-box"><!-- the 3d box -->
+            <figure class="jbs-current"><!-- slide -->
+              <img src="../img/post__page/post__header.jpeg" class="img">
+            </figure>
+            <figure>
+              <img src="../img/post__page/1.jpeg" class="img">
+            </figure>
+            <figure>
+              <img src="../img/post__page/2.jpeg" class="img">
+            </figure>
+            <figure class="slide">
+              <img src="../img/post__page/3.jpeg" class="img">
+            </figure>
+          </div>
+        </div>
+        
+
+
+
+
+
+
+
+
+        <!--<img src="../img/post__page/post__header.jpeg" alt="post" class="img intro__post--img">-->
         <div class="intro__post--content">
           <div class="post__content--text">
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
@@ -557,6 +585,7 @@
   <!--us slick slider https://kenwheeler.github.io/slick/ -->
   <script src="../js/vendor/slick.min.js"></script>
   <script>
+    "use script";
   $(document).ready(function(){
     $("[data-slider]").slick({
         slidesToShow: 4,
@@ -607,6 +636,7 @@
   <!--insta feed https://www.sowecms.com/demos/jquery.instagramFeed/index.html-->
   <script src="../js/vendor/jquery.instagramFeed.min.js"></script>
   <script>
+    "use script";
     (function($){
       $(window).on('load', function(){
           $.instagramFeed({
@@ -624,6 +654,29 @@
           });
       });
   })(jQuery);
+  </script>
+  <!--use 3d adaptor slider https://github.com/p-m-p/jquery-box-slider-->
+  <script src="../js/vendor/box-slider-all.jquery.min.js"></script>
+  <script>
+    "use script";
+    $('#content-box').boxSlider( {
+      effect:'scrollHorz3d',
+      speed: 1500,
+      timeout: 4000,
+      perspective: 1000,
+      autoScroll: true,
+      responsive:true
+    },
+      effectOptions = {
+        blindCount: 15,
+        tileRows: 6, 
+        rowOffset: 80
+      /*'blindLeft': {blindCount: 15},
+      'blindDown': {blindCount: 15},
+      'tile3d': {tileRows: 6, rowOffset: 80},
+      'tile': {tileRows: 6, rowOffset: 80}*/
+    } 
+    );
   </script>
   <!--use main script-->
   <!--use burger btn script-->
