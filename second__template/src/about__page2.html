@@ -29,7 +29,17 @@
     <meta name="theme-color" content="#ffffff">
     <title>&commat;Travel bloger html template</title>
   </head>
-<body>
+<body style="overflow-y: hidden;">
+  <!--preloader-->
+  <div class="preloader" id="preloader">
+    <div class="preloader__wraper">
+      <span class="loader loader--top"></span>
+      <span class="loader loader--right"></span>
+      <span class="loader loader--bottom"></span>
+      <span class="loader loader--left"></span>
+      <span class="loader loader--center"></span>
+    </div>
+  </div>
   <!--header-->
   <header id="header">
     <div class="header__top">
@@ -425,5 +435,7 @@
   <script src="../js/block/hover__dropdown.js"></script>
   <!--use mobile menu script-->
   <script src="../js/block/mobile__menu.js"></script>
+  <!--use preloader script-->
+  <script src="../js/block/preloader.js"></script>
 </body>
 </html>
