@@ -21,22 +21,28 @@
 }
 .post__block--post {
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   @media @tablet {
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
   }
 }
 .post__collum-l {
+  -ms-flex-preferred-size: 45%;
   flex-basis: 45%;
   overflow: hidden;
   img {
     margin-bottom: 1.3rem;
     -webkit-transition: -webkit-transform 1.5s linear;
     transition: -webkit-transform 1.5s linear;
+    -o-transition: transform 1.5s linear;
     transition: transform 1.5s linear;
     transition: transform 1.5s linear, -webkit-transform 1.5s linear;
     &:last-child {
@@ -46,22 +52,28 @@
   &:hover {
     img {
       -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
       transform: scale(1.1);
     }
   }
   @media @tablet {
     -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
     order: 1;
+    -ms-flex-preferred-size: 55%;
     flex-basis: 55%;
   }
   @media @mobile {
+    -ms-flex-preferred-size: 70%;
     flex-basis: 70%;
   }
   @media @mobile-sm {
+    -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
   }
 }
 .post__collum-c {
+  -ms-flex-preferred-size: 50%;
   flex-basis: 50%;
   overflow: hidden;
   margin: 0 1rem;
@@ -70,18 +82,22 @@
     margin-bottom: 1.5rem;
     -webkit-transition: -webkit-transform 1.5s linear;
     transition: -webkit-transform 1.5s linear;
+    -o-transition: transform 1.5s linear;
     transition: transform 1.5s linear;
     transition: transform 1.5s linear, -webkit-transform 1.5s linear;
   }
   &:hover {
     img {
       -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
       transform: scale(1.1);
     }
   }
   @media @tablet {
     -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
     order: 2;
+    -ms-flex-preferred-size: 55%;
     flex-basis: 55%;
     margin: 1rem 0;
     a {
@@ -89,19 +105,23 @@
     }
   }
   @media @mobile {
+    -ms-flex-preferred-size: 70%;
     flex-basis: 70%;
   }
   @media @mobile-sm {
+    -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
   }
 }
 .post__collum-r {
+  -ms-flex-preferred-size: 45%;
   flex-basis: 45%;
   overflow: hidden;
   img {
     margin-bottom: 1.3rem;
     -webkit-transition: -webkit-transform 1.5s linear;
     transition: -webkit-transform 1.5s linear;
+    -o-transition: transform 1.5s linear;
     transition: transform 1.5s linear;
     transition: transform 1.5s linear, -webkit-transform 1.5s linear;
     &:last-child {
@@ -111,18 +131,23 @@
   &:hover {
     img {
       -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
       transform: scale(1.1);
     }
   }
   @media @tablet {
     -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
     order: 3;
+    -ms-flex-preferred-size: 55%;
     flex-basis: 55%;
   }
   @media @mobile {
+    -ms-flex-preferred-size: 70%;
     flex-basis: 70%;
   }
   @media @mobile-sm {
+    -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
   }
 }

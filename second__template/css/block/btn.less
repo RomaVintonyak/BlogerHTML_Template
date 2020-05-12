@@ -1,5 +1,5 @@
 //main: ../style.less
-.btn{
+.btn {
   text-decoration: none;
   display: block;
   text-align: center;
@@ -12,14 +12,15 @@
   color: @white;
   border: none;
   -webkit-transition: background-color 0.15s ease-in-out;
+  -o-transition: background-color 0.15s ease-in-out;
   transition: background-color 0.15s ease-in-out;
-  &:hover{
+  &:hover {
     background-color: @hover;
-    &:active{
+    &:active {
       background-color: rgba(@hover, 0.8);
     }
   }
-  &:focus{
+  &:focus {
     outline: none;
   }
   @media @tablet {

@@ -2,10 +2,13 @@
 /*first page*/
 .filter__content {
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   border: 10px solid #f3f3f3;
   width: 94%;
@@ -41,6 +44,7 @@
     margin-right: 1.8rem;
     -webkit-transition: color 0.3s linear, -webkit-transform 0.3s linear;
     transition: color 0.3s linear, -webkit-transform 0.3s linear;
+    -o-transition: color 0.3s linear, transform 0.3s linear;
     transition: color 0.3s linear, transform 0.3s linear;
     transition: color 0.3s linear, transform 0.3s linear,
       -webkit-transform 0.3s linear;
@@ -50,7 +54,10 @@
       -webkit-transform 0.3s linear;
     transition: color 0.3s linear, transform 0.3s linear,
       -webkit-transform 0.3s linear;
+    transition: color 0.3s linear, transform 0.3s linear,
+      -webkit-transform 0.3s linear;
     -webkit-transform-origin: center top;
+    -ms-transform-origin: center top;
     transform-origin: center top;
     &:last-child {
       margin-right: 0;
@@ -70,6 +77,7 @@
     &:hover {
       color: @black;
       -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
       transform: scale(1.2);
     }
   }
@@ -79,8 +87,10 @@
   @media @mobile {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
     padding: 2rem 0 2rem 2rem;
     width: 70%;
@@ -99,9 +109,11 @@
 }
 .post__footer {
   &--page {
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     width: 100%;
     -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     margin-bottom: 3.12rem;
     @media @tablet {
@@ -199,10 +211,13 @@
 .post__button {
   margin-bottom: 3.12rem;
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   -webkit-box-align: start;
+  -ms-flex-align: start;
   align-items: flex-start;
   width: 100%;
   @media @tablet {
@@ -234,6 +249,7 @@
       from(@white),
       to(rgba(@gray, 0.5))
     );
+    background: -o-linear-gradient(left, @white, rgba(@gray, 0.5));
     background: linear-gradient(to right, @white, rgba(@gray, 0.5));
     background-position: right;
     background-size: 100%;
@@ -246,6 +262,7 @@
       from(rgba(@gray, 0.5)),
       to(@white)
     );
+    background: -o-linear-gradient(left, rgba(@gray, 0.5), @white);
     background: linear-gradient(to right, rgba(@gray, 0.5), @white);
     background-position: left;
     background-size: 100%;
@@ -269,14 +286,18 @@
 /*second blog page*/
 .post__content {
   -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   height: 100%;
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   h4 {
     font-weight: 700;
@@ -301,9 +322,11 @@
 }
 .post__date {
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 2rem;
   -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   width: 100%;
   background-color: #f3f3f3;

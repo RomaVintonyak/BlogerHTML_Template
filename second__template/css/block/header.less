@@ -5,16 +5,20 @@
   height: 2.93rem;
   background-color: rgba(#050505, 0.9);
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   position: relative;
   z-index: 2;
 }
 .top__content {
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 .top__mail {
@@ -24,6 +28,7 @@
     font-weight: 400;
     font-size: 1.06rem;
     -webkit-transition: color 0.2s ease-in-out;
+    -o-transition: color 0.2s ease-in-out;
     transition: color 0.2s ease-in-out;
     &:hover {
       color: @hover;
@@ -47,6 +52,7 @@
       color: @white;
       font-weight: 400;
       -webkit-transition: color 0.2s ease-in-out;
+      -o-transition: color 0.2s ease-in-out;
       transition: color 0.2s ease-in-out;
     }
   }
@@ -56,12 +62,15 @@
   width: 100%;
   height: 5.86rem;
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: rgba(#2a352c, 0.5);
   border-bottom: 2px solid #000000;
   -webkit-transition: height 0.5s linear, background-colo 0.5s linear;
+  -o-transition: height 0.5s linear, background-colo 0.5s linear;
   transition: height 0.5s linear, background-colo 0.5s linear;
   position: relative;
   z-index: 4;
@@ -77,14 +86,18 @@
 }
 .bottom__content {
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 .bottom__logo {
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   img {
     width: 3.33rem;
@@ -93,12 +106,14 @@
     border-radius: 50%;
     -webkit-transition: -webkit-transform 1.5s linear;
     transition: -webkit-transform 1.5s linear;
+    -o-transition: transform 1.5s linear;
     transition: transform 1.5s linear;
     transition: transform 1.5s linear, -webkit-transform 1.5s linear;
   }
   &:hover {
     img {
       -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
       transform: scale(1.1);
     }
   }
