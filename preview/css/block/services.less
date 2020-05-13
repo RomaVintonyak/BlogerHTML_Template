@@ -6,14 +6,19 @@
 }
 .services__row {
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   -webkit-box-align: start;
+  -ms-flex-align: start;
   align-items: flex-start;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   @media @mobile {
     -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
   }
 }
@@ -27,7 +32,13 @@
   text-align: center;
   -webkit-transition: box-shadow 0.2s linear, -webkit-transform 0.2s linear;
   transition: box-shadow 0.2s linear, -webkit-transform 0.2s linear;
+  -webkit-transition: -webkit-box-shadow 0.2s linear,
+    -webkit-transform 0.2s linear;
+  transition: -webkit-box-shadow 0.2s linear, -webkit-transform 0.2s linear;
+  -o-transition: box-shadow 0.2s linear, transform 0.2s linear;
   transition: box-shadow 0.2s linear, transform 0.2s linear;
+  transition: box-shadow 0.2s linear, transform 0.2s linear,
+    -webkit-box-shadow 0.2s linear, -webkit-transform 0.2s linear;
   transition: box-shadow 0.2s linear, transform 0.2s linear,
     -webkit-transform 0.2s linear;
   transition: box-shadow 0.2s linear, transform 0.2s linear,
@@ -58,10 +69,14 @@
     text-transform: uppercase;
   }
   &:hover {
+    -webkit-box-shadow: 1px 1px #708fa0, 2px 2px #708fa0, 3px 3px #708fa0,
+      4px 4px #708fa0, 5px 5px #708fa0, 6px 6px #708fa0, 7px 7px #708fa0,
+      8px 8px #708fa0;
     box-shadow: 1px 1px #708fa0, 2px 2px #708fa0, 3px 3px #708fa0,
       4px 4px #708fa0, 5px 5px #708fa0, 6px 6px #708fa0, 7px 7px #708fa0,
       8px 8px #708fa0;
     -webkit-transform: translateX(-8px);
+    -ms-transform: translateX(-8px);
     transform: translateX(-8px);
   }
   @media @tablet {
@@ -84,5 +99,6 @@
   top: -85%;
   left: 50%;
   -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
   transform: translateX(-50%);
 }

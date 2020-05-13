@@ -47,12 +47,16 @@
   width: 100%;
   height: 100%;
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   @media @mobile {
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     margin-top: -4rem;
   }
@@ -131,6 +135,7 @@
   }
   @media @mobile {
     -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
     order: 2;
     width: 80%;
     margin-right: 0;
@@ -147,6 +152,7 @@
   @media @mobile {
     width: 60%;
     -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
     order: 1;
     width: 80%;
     margin-top: 0;

@@ -14,6 +14,11 @@
     from(rgba(229, 203, 59, 1)),
     to(rgba(223, 149, 54, 1))
   );
+  background: -o-linear-gradient(
+    left,
+    rgba(229, 203, 59, 1) 0%,
+    rgba(223, 149, 54, 1) 100%
+  );
   background: linear-gradient(
     90deg,
     rgba(229, 203, 59, 1) 0%,
@@ -21,7 +26,12 @@
   );
   border-radius: 5px;
   -webkit-transition: color 0.2s linear, box-shadow 0.2s linear;
+  -webkit-transition: color 0.2s linear, -webkit-box-shadow 0.2s linear;
+  transition: color 0.2s linear, -webkit-box-shadow 0.2s linear;
+  -o-transition: color 0.2s linear, box-shadow 0.2s linear;
   transition: color 0.2s linear, box-shadow 0.2s linear;
+  transition: color 0.2s linear, box-shadow 0.2s linear,
+    -webkit-box-shadow 0.2s linear;
   &:hover {
     background: rgb(223, 149, 54);
     background: -webkit-gradient(
@@ -30,6 +40,11 @@
       right top,
       from(rgba(223, 149, 54, 1)),
       to(rgba(229, 205, 59, 1))
+    );
+    background: -o-linear-gradient(
+      left,
+      rgba(223, 149, 54, 1) 0%,
+      rgba(229, 205, 59, 1) 100%
     );
     background: linear-gradient(
       90deg,
@@ -49,6 +64,11 @@
       from(rgba(205, 0, 255, 1)),
       to(rgba(137, 0, 255, 1))
     );
+    background: -o-linear-gradient(
+      left,
+      rgba(205, 0, 255, 1) 0%,
+      rgba(137, 0, 255, 1) 100%
+    );
     background: linear-gradient(
       90deg,
       rgba(205, 0, 255, 1) 0%,
@@ -63,6 +83,11 @@
         from(rgba(137, 0, 255, 1)),
         to(rgba(210, 0, 255, 1))
       );
+      background: -o-linear-gradient(
+        left,
+        rgba(137, 0, 255, 1) 0%,
+        rgba(210, 0, 255, 1) 100%
+      );
       background: linear-gradient(
         90deg,
         rgba(137, 0, 255, 1) 0%,
@@ -73,7 +98,7 @@
       }
     }
   }
-  @media @mobile-sm{
+  @media @mobile-sm {
     padding: 1rem 1rem;
   }
 }
@@ -82,16 +107,27 @@
   vertical-align: middle;
   -webkit-transform: perspective(100px) translateZ(0);
   transform: perspective(100px) translateZ(0);
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0);
   -webkit-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
   transition-duration: 0.2s;
   -webkit-transition-property: box-shadow, transform;
+  -webkit-transition-property: -webkit-box-shadow, -webkit-transform;
+  transition-property: -webkit-box-shadow, -webkit-transform;
+  -o-transition-property: box-shadow, transform;
   transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform, -webkit-box-shadow,
+    -webkit-transform;
   &:hover {
+    -webkit-box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.8);
     box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.8);
     -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
     transform: scale(1.1);
     &:active {
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
       transform: scale(1);
     }
   }
