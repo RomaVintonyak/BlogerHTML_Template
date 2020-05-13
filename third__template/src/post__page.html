@@ -187,7 +187,26 @@
           <h2>How to prepare for shooting</h2>
           <div class="intro__post--date">16/04/2020</div>
         </div><!--/.post__title-->
-        <img src="../img/post__page/post__header.jpeg" alt="post" class="img intro__post--img">
+        <!--3D post slider-->
+        <div class="slider-viewport">
+          <div id="content-box">
+            <figure class="jbs-current">
+              <img src="../img/post__page/post__header.jpeg" class="img">
+            </figure>
+            <figure>
+              <img src="../img/post__page/1.jpeg" class="img">
+            </figure>
+            <figure>
+              <img src="../img/post__page/2.jpeg" class="img">
+            </figure>
+            <figure>
+              <img src="../img/post__page/7.jpeg" class="img">
+            </figure>
+            <figure class="slide">
+              <img src="../img/post__page/3.jpeg" class="img">
+            </figure>
+          </div><!--/.content-box-->
+        </div><!--/.slider-viewport-->
         <div class="intro__post--content">
           <div class="post__content--text">
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
@@ -626,6 +645,20 @@
           });
       });
   })(jQuery);
+  </script>
+  <!--use 3d adaptor slider https://philparsons.co.uk/demos/box-slider/ -->
+  <script src="../js/vendor/box-slider-all.jquery.min.js"></script>
+  <script>
+    "use script";
+    $('#content-box').boxSlider( {
+      effect:'scrollHorz3d',
+      speed: 1500,
+      timeout: 4000,
+      perspective: 2000,
+      autoScroll: true,
+      responsive:true
+    }
+    );
   </script>
   <!--use main script-->
   <!--use burger btn script-->
