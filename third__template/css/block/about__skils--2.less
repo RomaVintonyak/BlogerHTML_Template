@@ -1,5 +1,4 @@
 //main: ../style.less
-//main: ../style.less
 #skils--2 {
   margin-top: 3.12rem;
   width: 100%;
@@ -15,14 +14,19 @@
 }
 .skils__row--2 {
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   -webkit-box-align: start;
+  -ms-flex-align: start;
   align-items: flex-start;
   @media @notebook {
     -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
 }
@@ -33,7 +37,13 @@
   background-color: #f3f3f3;
   -webkit-transition: box-shadow 0.3s linear, -webkit-transform 0.3s linear;
   transition: box-shadow 0.3s linear, -webkit-transform 0.3s linear;
+  -webkit-transition: -webkit-transform 0.3s linear,
+    -webkit-box-shadow 0.3s linear;
+  transition: -webkit-transform 0.3s linear, -webkit-box-shadow 0.3s linear;
+  -o-transition: transform 0.3s linear, box-shadow 0.3s linear;
   transition: transform 0.3s linear, box-shadow 0.3s linear;
+  transition: transform 0.3s linear, box-shadow 0.3s linear,
+    -webkit-transform 0.3s linear, -webkit-box-shadow 0.3s linear;
   transition: transform 0.3s linear, box-shadow 0.3s linear,
     -webkit-transform 0.3s linear;
   transition: transform 0.3s linear, box-shadow 0.3s linear,
@@ -57,10 +67,14 @@
     font-size: 1.1rem;
   }
   &:hover {
+    -webkit-box-shadow: 1px 1px @blue-d, 2px 2px @blue-d, 3px 3px @blue-d,
+      4px 4px @blue-d, 5px 5px @blue-d, 6px 6px @blue-d, 7px 7px @blue-d,
+      8px 8px @blue-d;
     box-shadow: 1px 1px @blue-d, 2px 2px @blue-d, 3px 3px @blue-d,
       4px 4px @blue-d, 5px 5px @blue-d, 6px 6px @blue-d, 7px 7px @blue-d,
       8px 8px @blue-d;
     -webkit-transform: translateX(-8px);
+    -ms-transform: translateX(-8px);
     transform: translateX(-8px);
   }
   @media @notebook {

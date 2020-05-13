@@ -20,6 +20,12 @@
   background-size: cover;
   -o-object-position: center;
   object-position: center;
+  @media @mobile {
+    background-position: center;
+  }
+  @media @mobile-sm {
+    background-position: right;
+  }
 }
 .intro__content {
   width: 100%;
@@ -129,6 +135,7 @@
     top: 0;
     left: 12%;
     -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
     transform: rotate(45deg);
     -webkit-animation-name: DownScroll;
     animation-name: DownScroll;
