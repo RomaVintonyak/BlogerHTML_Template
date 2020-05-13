@@ -47,33 +47,26 @@
   background-color: #f3f3f3;
   padding: 0.8rem 1.5rem;
 }
-
-
-
-
-.intro__post--img {
-  margin-top: 3.12rem;
-  @media @tablet {
-    margin-top: 2.12rem;
-  }
-  @media @mobile {
-    margin-top: 1.12rem;
-  }
-  @media @mobile-sm {
-    margin-top: 1rem;
-  }
-}
-
 .slider-viewport { 
   width: 100%!important; 
   height: 650px!important;
   overflow: hidden!important;
+  @media @tablet{
+    height: 550px!important;
+  }
+  @media @mobile{
+    height: 400px!important;
+  }
+  @media (max-width: 600px){
+    height: 350px!important;
+  }
+  @media @mobile-sm{
+    height: 220px!important;
+  }
+  @media @mobile-xsm{
+    height: 160px!important;
+  }
 }
-
-
-
-
-
 .intro__post--content {
   margin-top: 2rem;
   display: -webkit-box;
