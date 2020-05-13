@@ -29,7 +29,17 @@
     <meta name="theme-color" content="#ffffff">
     <title>&commat;Travel bloger html template</title>
   </head>
-<body>
+<body style="overflow-y: hidden;">
+   <!--preloader-->
+   <div class="preloader" id="preloader">
+    <div class="preloader__wraper">
+      <span class="loader loader--top"></span>
+      <span class="loader loader--right"></span>
+      <span class="loader loader--bottom"></span>
+      <span class="loader loader--left"></span>
+      <span class="loader loader--center"></span>
+    </div>
+  </div>
   <!--header-->
   <header id="header">
     <div class="header__top">
@@ -598,6 +608,7 @@
   <!--us slick slider https://kenwheeler.github.io/slick/ -->
   <script src="../js/vendor/slick.min.js"></script>
   <script>
+    "use script";
   $(document).ready(function(){
     $("#postSlider").slick({
         slidesToShow: 1,
@@ -649,6 +660,7 @@
   <!--insta feed https://www.sowecms.com/demos/jquery.instagramFeed/index.html-->
   <script src="../js/vendor/jquery.instagramFeed.min.js"></script>
   <script>
+    "use script";
     (function($){
       $(window).on('load', function(){
           $.instagramFeed({
@@ -676,11 +688,13 @@
   <script src="../js/block/fixed__header.js"></script>
   <!--use top btn script-->
   <script src="../js/block/back__top.js"></script>
-   <!--use drop down hover script-->
-   <script src="../js/block/hover__dropdown.js"></script>
-   <!--use mobile menu script-->
-   <script src="../js/block/mobile__menu.js"></script>
-   <!--use filter category post galery block script-->
-   <script src="../js/block/filter__cat.js"></script>
+  <!--use drop down hover script-->
+  <script src="../js/block/hover__dropdown.js"></script>
+  <!--use mobile menu script-->
+  <script src="../js/block/mobile__menu.js"></script>
+  <!--use filter category post galery block script-->
+  <script src="../js/block/filter__cat.js"></script>
+  <!--use preloader script-->
+  <script src="../js/block/preloader.js"></script>
 </body>
 </html>
