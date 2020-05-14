@@ -339,13 +339,14 @@
             </div>
           </div><!--/.contact__social-->
           <div class="contact__form">
-            <form method="POST">
-            <input type="email" placeholder="E-mail" required>
-            <input type="text" placeholder="Name" required>
-            <input type="text" placeholder="Subject" required>
-            <textarea placeholder="Text message"></textarea>
-            <button type="submit" class="btn waves waves-light">Send message</button>
+            <form id="contactForm">
+              <input type="text" id="name" name="name" placeholder="Enter your name">
+              <input type="tel" id="phone" name="phone" placeholder="Enter your phone">
+              <input type="email" id="email" name="email" placeholder="Enter your email">
+              <textarea name="message" id="message" placeholder="Enter your text message"></textarea>
+              <button id="sendMail" type="button" class="btn waves waves-light">Send message</button>
             </form>
+            <div id="errorText"></div>
           </div><!--/.contact__form-->
         </div><!--/.contact__content-->
       </div><!--/.container-->
@@ -494,5 +495,7 @@
   <script src="js/block/mobile__menu.js"></script>
   <!--use preloader script-->
   <script src="js/block/preloader.js"></script>
+  <!--use ajax sendMail script-->
+  <script src="js/block/ajax__sendmail.js"></script>
 </body>
 </html>
