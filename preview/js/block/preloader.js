@@ -1,5 +1,5 @@
 $(window).on("load", function () {
-  jQuery(document).ready(function () {
+  /*jQuery(document).ready(function () {
     "use script";
     var loader = $("#preloader");
     var timeDelay = 5000;
@@ -9,5 +9,5 @@ $(window).on("load", function () {
         "overflow-y": "scroll",
       });
     }, timeDelay);
-  });
+  });*/
 });

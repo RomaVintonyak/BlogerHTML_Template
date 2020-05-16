@@ -42,18 +42,11 @@
   font-size: 4rem;
   margin: 0 0.2rem;
   display: block;
-  -webkit-transform: rotate3d(-100, 0, 0, -55deg);
-  transform: rotate3d(-100, 0, 0, -55deg);
   background-color: @white;
   padding: 0.2rem 0.2rem;
-  -webkit-transition: -webkit-transform 0.1s linear;
-  transition: -webkit-transform 0.1s linear;
-  -o-transition: transform 0.1s linear;
-  transition: transform 0.1s linear;
-  transition: transform 0.1s linear, -webkit-transform 0.1s linear;
-
+  -webkit-transform: rotate3d(-100, 0, 0, -55deg);
+  transform: rotate3d(-100, 0, 0, -55deg);
   -webkit-animation-name: symbool;
-
   animation-name: symbool;
   -webkit-animation-duration: 5.2s;
   animation-duration: 5.2s;
@@ -142,8 +135,8 @@
     transform: rotate3d(-100, 0, 0, -55deg);
   }
   50% {
-    -webkit-transform: translateY(-30px);
-    transform: translateY(-30px);
+    -webkit-transform: rotate3d(0, 0, 0, -55deg);
+    transform: rotate3d(0, 0, 0, -55deg);
   }
   100% {
     -webkit-transform: rotate3d(-100, 0, 0, -55deg);
@@ -156,8 +149,8 @@
     transform: rotate3d(-100, 0, 0, -55deg);
   }
   50% {
-    -webkit-transform: translateY(-30px);
-    transform: translateY(-30px);
+    -webkit-transform: rotate3d(0, 0, 0, -55deg);
+    transform: rotate3d(0, 0, 0, -55deg);
   }
   100% {
     -webkit-transform: rotate3d(-100, 0, 0, -55deg);
